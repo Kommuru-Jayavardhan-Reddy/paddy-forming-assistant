@@ -1,0 +1,29 @@
+{
+  "disease": "Brown Spot",
+  "confidence": 0.95,
+  "top3": [
+    {
+      "disease": "Brown Spot",
+      "probability": 0.95
+    },
+    {
+      "disease": "Leaf Smut",
+      "probability": 0.03
+    },
+    {
+      "disease": "Healthy",
+      "probability": 0.02
+    }
+  ],
+  "report": "MOCK DATA: The plant shows significant signs of Brown Spot. Recommend applying appropriate fungicides.",
+  "gradcam_url": "/assets/mock-gradcam.jpg",
+  "field_id": "FIELD-2049",
+  "ndvi_trend": [
+    0.3,
+    0.4,
+    0.6,
+    0.5,
+    0.3
+  ],
+  "health_status": "Attention Required"
+}
