@@ -1,0 +1,24 @@
+{
+  "results": {
+    "step_1_route_verification": "PASS",
+    "step_2_live_open_meteo_test": "PASS",
+    "step_3_http_endpoints": "PASS",
+    "step_4_data_correctness": "PASS",
+    "step_5_error_handling": "PASS",
+    "step_6_regression_testing": "PASS",
+    "step_7_performance_checks": "PASS"
+  },
+  "timings": {
+    "openapi_json_ms": 165.1401999997688,
+    "direct_open_meteo_latency_ms": 1277.1263000004183,
+    "weather_service_direct_latency_ms": 1423.2256999994206,
+    "endpoint_current_ms": 320.9557999998651,
+    "endpoint_forecast_ms": 198.637399999825,
+    "endpoint_field_01_ms": 209.8588999997446,
+    "endpoint_field_02_ms": 259.3289000005825,
+    "predict_latency_ms": 171.2100000004284,
+    "local_backend_overhead_ms": 6.311399999503919
+  },
+  "timestamp": "2026-10-13 19:28:07",
+  "status": "COMPLETE"
+}

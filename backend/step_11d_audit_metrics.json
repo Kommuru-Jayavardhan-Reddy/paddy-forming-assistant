@@ -1,0 +1,77 @@
+{
+  "results": {
+    "image_only_inference": "PASS",
+    "satellite_data_and_mapping": "PASS",
+    "cross_attention_multimodal": "PASS",
+    "gradcam_pipeline": "PASS",
+    "shap_pipeline": "PASS",
+    "http_end_to_end_integration": "PASS"
+  },
+  "details": {
+    "image_only_inference": {
+      "checkpoint": "efficientnet_b4_phaseC_best.pth",
+      "checkpoint_size_bytes": 222833055,
+      "parameters": 18473301,
+      "predicted_disease": "tungro",
+      "confidence": 0.945,
+      "latency_ms": 130.93530000060127
+    },
+    "satellite_data_and_mapping": {
+      "sequences_shape": [
+        58,
+        10,
+        3
+      ],
+      "features": [
+        "NDVI",
+        "NDRE",
+        "GNDVI"
+      ],
+      "timesteps": 10,
+      "total_fields": 58,
+      "field_01_coords": [
+        13.285588,
+        79.29686
+      ]
+    },
+    "cross_attention_multimodal": {
+      "checkpoint": "step7L_controlled_best.pth",
+      "checkpoint_size_bytes": 17891342,
+      "parameters": 1487115,
+      "image_classes_count": 13,
+      "multimodal_classes_count": 11,
+      "omitted_classes": [
+        "leaf_smut",
+        "normal"
+      ],
+      "predicted_class": "sheath_blight",
+      "confidence": 0.9197,
+      "latency_ms": 248.45329999971
+    },
+    "gradcam_pipeline": {
+      "target_layer": "features.8",
+      "predicted_class": "tungro",
+      "dimensions": [
+        252,
+        378
+      ],
+      "latency_ms": 499.47679999968386
+    },
+    "shap_pipeline": {
+      "model": "TemporalCrossAttentionModel (Controlled Step 7L)",
+      "scope": "conditional_satellite_input",
+      "dimensions": [
+        10,
+        3
+      ],
+      "features": [
+        "NDVI",
+        "NDRE",
+        "GNDVI"
+      ],
+      "latency_ms": 266.29959999991115
+    }
+  },
+  "timestamp": "2026-10-13 19:51:20",
+  "status": "COMPLETE"
+}

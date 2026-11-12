@@ -1,0 +1,44 @@
+# ============================================================
+# Paddy Farming Assistant - Backend Dependencies
+# Python Version: 3.12.10 | Windows (CPU Inference)
+# Compatible with packages already installed in venv
+# ============================================================
+
+# Web Framework & ASGI Server
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+python-multipart>=0.0.9
+
+# Environment Configuration & Data Modeling
+python-dotenv>=1.0.1
+pydantic>=2.6.0
+
+# Image Processing & Numerical Computation
+pillow>=10.2.0
+numpy>=1.26.0
+
+# Deep Learning Framework (CPU Inference)
+# Note: Virtual environment uses CPU builds (torch==2.14.1+cpu, torchvision==0.29.1+cpu)
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Explainable AI (XAI)
+shap>=0.52.0
+
+# External HTTP Services
+requests>=2.31.0
+
+# Database ORM & Async Driver (STEP 11F - PostgreSQL)
+sqlalchemy>=2.0.0
+asyncpg>=0.29.0
+greenlet>=3.0.0
+alembic>=1.13.0
+
+# Document & PDF Report Generation (STEP 11I.4)
+reportlab>=5.0.0
+
+# Authentication & Security (Argon2id, JWT, & Authenticated Encryption)
+argon2-cffi>=23.1.0
+pyjwt>=2.8.0
+cryptography>=42.0.0
+
