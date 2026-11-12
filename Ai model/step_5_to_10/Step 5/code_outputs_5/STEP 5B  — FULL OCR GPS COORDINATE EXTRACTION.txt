@@ -1,0 +1,175 @@
+======================================================================
+STEP 5B — FULL OCR GPS EXTRACTION
+======================================================================
+
+GPS folder:
+/content/drive/MyDrive/final year project/Real_world_test/gps
+
+Total images found: 3069
+Processed 25/3069 | GPS found: 18
+Processed 50/3069 | GPS found: 40
+Processed 75/3069 | GPS found: 50
+Processed 100/3069 | GPS found: 73
+Processed 125/3069 | GPS found: 94
+Processed 150/3069 | GPS found: 117
+Processed 175/3069 | GPS found: 137
+Processed 200/3069 | GPS found: 141
+Processed 225/3069 | GPS found: 151
+Processed 250/3069 | GPS found: 159
+Processed 275/3069 | GPS found: 166
+Processed 300/3069 | GPS found: 171
+Processed 325/3069 | GPS found: 181
+Processed 350/3069 | GPS found: 196
+Processed 375/3069 | GPS found: 205
+Processed 400/3069 | GPS found: 215
+Processed 425/3069 | GPS found: 237
+Processed 450/3069 | GPS found: 243
+Processed 475/3069 | GPS found: 244
+Processed 500/3069 | GPS found: 248
+Processed 525/3069 | GPS found: 249
+Processed 550/3069 | GPS found: 249
+Processed 575/3069 | GPS found: 249
+Processed 600/3069 | GPS found: 249
+Processed 625/3069 | GPS found: 249
+Processed 650/3069 | GPS found: 256
+Processed 675/3069 | GPS found: 265
+Processed 700/3069 | GPS found: 278
+Processed 725/3069 | GPS found: 289
+Processed 750/3069 | GPS found: 301
+Processed 775/3069 | GPS found: 312
+Processed 800/3069 | GPS found: 327
+Processed 825/3069 | GPS found: 338
+Processed 850/3069 | GPS found: 345
+Processed 875/3069 | GPS found: 354
+Processed 900/3069 | GPS found: 361
+Processed 925/3069 | GPS found: 367
+Processed 950/3069 | GPS found: 375
+Processed 975/3069 | GPS found: 384
+Processed 1000/3069 | GPS found: 392
+Processed 1025/3069 | GPS found: 395
+Processed 1050/3069 | GPS found: 397
+Processed 1075/3069 | GPS found: 400
+Processed 1100/3069 | GPS found: 404
+Processed 1125/3069 | GPS found: 411
+Processed 1150/3069 | GPS found: 413
+Processed 1175/3069 | GPS found: 413
+Processed 1200/3069 | GPS found: 413
+Processed 1225/3069 | GPS found: 413
+Processed 1250/3069 | GPS found: 413
+Processed 1275/3069 | GPS found: 413
+Processed 1300/3069 | GPS found: 413
+Processed 1325/3069 | GPS found: 413
+Processed 1350/3069 | GPS found: 434
+Processed 1375/3069 | GPS found: 449
+Processed 1400/3069 | GPS found: 463
+Processed 1425/3069 | GPS found: 484
+Processed 1450/3069 | GPS found: 484
+Processed 1475/3069 | GPS found: 486
+Processed 1500/3069 | GPS found: 494
+Processed 1525/3069 | GPS found: 494
+Processed 1550/3069 | GPS found: 496
+Processed 1575/3069 | GPS found: 496
+Processed 1600/3069 | GPS found: 496
+Processed 1625/3069 | GPS found: 508
+Processed 1650/3069 | GPS found: 522
+Processed 1675/3069 | GPS found: 532
+Processed 1700/3069 | GPS found: 549
+Processed 1725/3069 | GPS found: 563
+Processed 1750/3069 | GPS found: 572
+Processed 1775/3069 | GPS found: 580
+Processed 1800/3069 | GPS found: 583
+Processed 1825/3069 | GPS found: 587
+Processed 1850/3069 | GPS found: 601
+Processed 1875/3069 | GPS found: 613
+Processed 1900/3069 | GPS found: 623
+Processed 1925/3069 | GPS found: 636
+Processed 1950/3069 | GPS found: 646
+Processed 1975/3069 | GPS found: 653
+Processed 2000/3069 | GPS found: 661
+Processed 2025/3069 | GPS found: 667
+Processed 2050/3069 | GPS found: 677
+Processed 2075/3069 | GPS found: 691
+Processed 2100/3069 | GPS found: 705
+Processed 2125/3069 | GPS found: 718
+Processed 2150/3069 | GPS found: 727
+Processed 2175/3069 | GPS found: 741
+Processed 2200/3069 | GPS found: 754
+Processed 2225/3069 | GPS found: 764
+Processed 2250/3069 | GPS found: 783
+Processed 2275/3069 | GPS found: 799
+Processed 2300/3069 | GPS found: 804
+Processed 2325/3069 | GPS found: 804
+Processed 2350/3069 | GPS found: 804
+Processed 2375/3069 | GPS found: 804
+Processed 2400/3069 | GPS found: 804
+Processed 2425/3069 | GPS found: 804
+Processed 2450/3069 | GPS found: 804
+Processed 2475/3069 | GPS found: 804
+Processed 2500/3069 | GPS found: 804
+Processed 2525/3069 | GPS found: 804
+Processed 2550/3069 | GPS found: 804
+Processed 2575/3069 | GPS found: 819
+Processed 2600/3069 | GPS found: 843
+Processed 2625/3069 | GPS found: 866
+Processed 2650/3069 | GPS found: 868
+Processed 2675/3069 | GPS found: 880
+Processed 2700/3069 | GPS found: 898
+Processed 2725/3069 | GPS found: 916
+Processed 2750/3069 | GPS found: 936
+Processed 2775/3069 | GPS found: 943
+Processed 2800/3069 | GPS found: 943
+Processed 2825/3069 | GPS found: 943
+Processed 2850/3069 | GPS found: 952
+Processed 2875/3069 | GPS found: 969
+Processed 2900/3069 | GPS found: 981
+Processed 2925/3069 | GPS found: 995
+Processed 2950/3069 | GPS found: 1011
+Processed 2975/3069 | GPS found: 1017
+Processed 3000/3069 | GPS found: 1024
+Processed 3025/3069 | GPS found: 1027
+Processed 3050/3069 | GPS found: 1029
+Processed 3069/3069 | GPS found: 1035
+
+======================================================================
+IMAGE GPS EXTRACTION RESULT
+======================================================================
+
+Images scanned : 3069
+GPS found      : 1035
+GPS not found  : 2034
+
+======================================================================
+UNIQUE FIELD LOCATIONS
+======================================================================
+field_id	latitude	longitude
+0	FIELD_01	13.285588	79.296860
+1	FIELD_02	13.429626	79.581415
+2	FIELD_03	13.434257	79.578605
+3	FIELD_04	13.434258	79.578606
+4	FIELD_05	13.434251	79.578601
+...	...	...	...
+284	FIELD_285	13.321617	78.552759
+285	FIELD_286	13.321620	79.552763
+286	FIELD_287	13.321500	78.552779
+287	FIELD_288	13.327150	79.552770
+288	FIELD_289	13.285587	79.296848
+289 rows × 3 columns
+
+
+Number of unique fields: 289
+
+======================================================================
+STEP 5B — FINAL STATUS
+======================================================================
+
+✅ GPS coordinates successfully extracted
+✅ Unique field locations created
+✅ image_gps_coordinates.csv saved
+✅ field_locations.csv saved
+✅ Report saved
+✅ Code backup saved
+
+Field locations:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+
+======================================================================

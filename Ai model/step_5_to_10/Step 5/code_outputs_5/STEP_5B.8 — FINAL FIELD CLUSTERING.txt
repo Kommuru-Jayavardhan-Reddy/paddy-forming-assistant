@@ -1,0 +1,65 @@
+===========================================================================
+STEP 5B.8 — FINAL FIELD CLUSTERING
+===========================================================================
+
+Total records: 3069
+Valid GPS records: 1035
+
+DBSCAN settings:
+Radius: 100 meters
+Minimum samples: 2
+
+===========================================================================
+FINAL CLUSTERING RESULT
+===========================================================================
+GPS records: 1035
+Fields: 89
+Noise records: 52
+Noise percentage: 5.02 %
+
+===========================================================================
+TOP FIELDS
+===========================================================================
+field_id  image_count  center_latitude  center_longitude  rectified_image_count field_quality
+FIELD_03          176        13.434301         79.578328                      2        STRONG
+FIELD_07           92        13.429563         79.579270                      0        STRONG
+FIELD_01           72        13.285593         79.296835                      0        STRONG
+FIELD_09           65        14.039292         79.370880                      0        STRONG
+FIELD_05           58        14.429626         80.581415                     56        STRONG
+FIELD_79           50        13.293804         79.558288                      0        STRONG
+FIELD_46           41        14.826679         77.046584                      0        STRONG
+FIELD_47           36        13.368381         79.545596                      0        STRONG
+FIELD_26           32        13.418302         79.572238                      0        STRONG
+FIELD_02           31        13.429626         79.581415                      1        STRONG
+FIELD_87           29        13.321585         79.552765                      0        STRONG
+FIELD_08           20        13.430797         79.552240                      0        STRONG
+FIELD_22           19        14.434589         79.578779                      0        STRONG
+FIELD_78           17        16.826784         82.046685                      0        STRONG
+FIELD_11           14        13.435335         79.592580                      0        STRONG
+FIELD_15           13        14.020600         79.362076                      0        STRONG
+FIELD_18            7        13.401799         79.568542                      0        MEDIUM
+FIELD_27            7        14.026747         79.362045                      0        MEDIUM
+FIELD_82            6        13.420000         79.540000                      0        MEDIUM
+FIELD_10            6        13.409358         79.675191                      0        MEDIUM
+
+===========================================================================
+RECTIFIED IMAGES BY FIELD
+===========================================================================
+field_id
+FIELD_05    56
+FIELD_03     2
+FIELD_02     1
+FIELD_57     1
+dtype: int64
+
+===========================================================================
+FILES SAVED
+===========================================================================
+Image-level mapping:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_spatial_clusters_RECTIFIED.csv
+
+Field summary:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_cluster_summary_RECTIFIED.csv
+
+Original GPS file was NOT modified.
+===========================================================================

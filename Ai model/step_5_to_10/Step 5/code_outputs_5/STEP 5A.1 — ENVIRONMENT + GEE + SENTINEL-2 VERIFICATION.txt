@@ -1,0 +1,10 @@
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+============================================================
+STEP 5A — SENTINEL-2 COLLECTION CHECK
+============================================================
+Collection: COPERNICUS/S2_SR_HARMONIZED
+Date range: 2026-05-01 → 2026-10-01
+Images available: 2395735
+============================================================
+STEP 5A SENTINEL-2 CHECK COMPLETE
+============================================================

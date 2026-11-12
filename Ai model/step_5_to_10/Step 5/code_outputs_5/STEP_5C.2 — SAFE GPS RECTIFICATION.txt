@@ -1,0 +1,93 @@
+==============================================================================
+STEP 5C.2 — SAFE GPS RECTIFICATION
+==============================================================================
+
+Original records: 3069
+Records with GPS: 1035
+Unique in-region coordinates: 263
+Reliable repeated reference coordinates: 127
+
+Top reference coordinates:
+ latitude  longitude  count
+13.429553  79.579276     90
+13.434728  79.578072     72
+14.039334  79.370999     47
+13.418302  79.572238     32
+13.429626  79.581415     30
+13.293900  79.558300     27
+13.321617  79.552759     18
+13.293679  79.558272     18
+13.368290  79.545595     17
+13.430798  79.552240     16
+13.433677  79.578101     13
+14.020600  79.362076     13
+13.434290  79.578650     13
+13.435335  79.592580     10
+13.433644  79.578192     10
+13.368300  79.545599      9
+13.434289  79.578645      9
+13.433655  79.578194      8
+13.321500  79.552779      8
+14.039160  79.370510      7
+
+==============================================================================
+SAFE RECTIFICATION SUMMARY
+==============================================================================
+decision
+UNCHANGED_VALID_REGION    901
+REJECT                    134
+Name: count, dtype: int64
+
+Output:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_safe_rectification_candidates.csv
+
+==============================================================================
+SAFE CORRECTION CANDIDATES
+==============================================================================
+Total safe corrections: 0
+
+==============================================================================
+CHECKING IMPORTANT SUSPICIOUS COORDINATES
+==============================================================================
+
+Original: 14.429626, 87.581415
+ candidate_latitude  candidate_longitude  distance_km  reference_count decision confidence
+          14.429626            80.681415   743.013903                4   REJECT        LOW
+
+Original: 15.429626, 83.581415
+ candidate_latitude  candidate_longitude  distance_km  reference_count decision confidence
+          14.429626            80.681415   330.820091                4   REJECT        LOW
+
+Original: 18.285594, 79.296834
+ candidate_latitude  candidate_longitude  distance_km  reference_count decision confidence
+              14.87                79.98   386.709732                2   REJECT        LOW
+
+Original: 15.285558, 79.296783
+ candidate_latitude  candidate_longitude  distance_km  reference_count decision confidence
+               14.7                79.72    79.409216                2   REJECT        LOW
+
+Original: 18.433913, 79.578417
+ candidate_latitude  candidate_longitude  distance_km  reference_count decision confidence
+              14.87                79.98   398.590643                2   REJECT        LOW
+              14.87                79.98   398.590689                2   REJECT        LOW
+
+==============================================================================
+IMPORTANT
+==============================================================================
+
+NO GPS CORRECTIONS HAVE BEEN APPLIED.
+
+Original file remains untouched:
+image_gps_coordinates.csv
+
+Only candidate corrections were generated.
+
+Next step:
+1. Inspect SAFE_CORRECTION candidates.
+2. Validate them against trusted satellite fields.
+3. Only then create the final rectified GPS file.
+
+DO NOT run Step 6 again.
+DO NOT run Step 7 yet.
+
+==============================================================================

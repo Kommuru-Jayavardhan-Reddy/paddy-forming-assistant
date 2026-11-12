@@ -1,0 +1,399 @@
+======================================================================
+STEP 5G — LINEAR INTERPOLATION
+======================================================================
+
+Input records: 719
+
+Missing values before interpolation:
+NDVI     5
+NDRE     5
+GNDVI    5
+dtype: int64
+
+Fields found: ['FIELD_01', 'FIELD_02', 'FIELD_03', 'FIELD_04', 'FIELD_05', 'FIELD_06', 'FIELD_07', 'FIELD_08', 'FIELD_09', 'FIELD_10', 'FIELD_11', 'FIELD_12', 'FIELD_13', 'FIELD_14', 'FIELD_15', 'FIELD_16', 'FIELD_17', 'FIELD_18', 'FIELD_19', 'FIELD_20', 'FIELD_21', 'FIELD_22', 'FIELD_23', 'FIELD_24', 'FIELD_25', 'FIELD_26', 'FIELD_27', 'FIELD_28', 'FIELD_29', 'FIELD_30', 'FIELD_31', 'FIELD_32', 'FIELD_33', 'FIELD_34', 'FIELD_35', 'FIELD_36', 'FIELD_37', 'FIELD_38', 'FIELD_39', 'FIELD_40', 'FIELD_41', 'FIELD_42', 'FIELD_43', 'FIELD_44', 'FIELD_45', 'FIELD_46', 'FIELD_47', 'FIELD_48', 'FIELD_49', 'FIELD_50', 'FIELD_51', 'FIELD_52', 'FIELD_53', 'FIELD_54', 'FIELD_55', 'FIELD_56', 'FIELD_57', 'FIELD_58']
+
+============================================================
+FIELD_01
+============================================================
+Original observations: 7
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_02
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_03
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_04
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_05
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_06
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_07
+============================================================
+Original observations: 11
+NDVI: 4 missing value(s) found
+NDRE: 4 missing value(s) found
+GNDVI: 4 missing value(s) found
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_08
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_09
+============================================================
+Original observations: 8
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_10
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_11
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_12
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_13
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_14
+============================================================
+Original observations: 9
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_15
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_16
+============================================================
+Original observations: 15
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_17
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_18
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_19
+============================================================
+Original observations: 7
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_20
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_21
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_22
+============================================================
+Original observations: 13
+NDVI: 1 missing value(s) found
+NDRE: 1 missing value(s) found
+GNDVI: 1 missing value(s) found
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_23
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_24
+============================================================
+Original observations: 10
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_25
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_26
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_27
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_28
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_29
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_30
+============================================================
+Original observations: 15
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_31
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_32
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_33
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_34
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_35
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_36
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_37
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_38
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_39
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_40
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_41
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_42
+============================================================
+Original observations: 15
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_43
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_44
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_45
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_46
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_47
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_48
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_49
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_50
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_51
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_52
+============================================================
+Original observations: 15
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_53
+============================================================
+Original observations: 15
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_54
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_55
+============================================================
+Original observations: 8
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_56
+============================================================
+Original observations: 8
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_57
+============================================================
+Original observations: 4
+Interpolated sequence shape: (10, 3)
+
+============================================================
+FIELD_58
+============================================================
+Original observations: 13
+Interpolated sequence shape: (10, 3)
+
+======================================================================
+FINAL SATELLITE TENSOR
+======================================================================
+Shape: (58, 10, 3)
+Expected: (58, 10, 3)
+
+NaN values: 0
+Infinite values: 0
+
+Code backup saved:
+/content/drive/MyDrive/final year project/Real_world_test/code/Step_5G_Linear_Interpolation.py
+
+======================================================================
+STEP 5G — COMPLETE
+======================================================================
+
+Final CSV:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_timeseries.csv
+
+Final NumPy tensor:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+
+Field locations:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+
+Report:
+/content/drive/MyDrive/final year project/Real_world_test/results/Step_5G_Interpolation_Report.txt
+
+Final tensor shape: (58, 10, 3)
+
+✅ STEP 5G LINEAR INTERPOLATION COMPLETE

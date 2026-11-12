@@ -1,0 +1,79 @@
+===========================================================================
+STEP 5B.3 — SAFE GPS RECTIFICATION
+===========================================================================
+
+GPS records: 1035
+Trusted clean fields: 58
+
+Clean field columns:
+['field_id', 'latitude', 'longitude', 'sentinel2_image_count', 'dates', 'coordinate_valid', 'region_status', 'sentinel_status', 'duplicate_group', 'duplicate_group_size', 'duplicate_status', 'validation_status', 'clean_field_id']
+Usable trusted fields: 58
+
+===========================================================================
+RECTIFICATION CANDIDATE SUMMARY
+===========================================================================
+rectification_status
+ALREADY_IN_PROJECT_REGION    901
+REVIEW_FAR_FROM_FIELDS       134
+Name: count, dtype: int64
+
+Nearest-field distance statistics:
+count    1035.000000
+mean       75.832598
+std       188.046320
+min         0.000000
+25%         0.000000
+50%         0.002900
+75%        51.551100
+max      1724.870000
+Name: nearest_field_distance_km, dtype: float64
+
+===========================================================================
+POTENTIAL CORRECTION RECORDS
+===========================================================================
+Correction candidates: 0
+
+===========================================================================
+FAR / UNSAFE RECORDS
+===========================================================================
+Far records: 134
+                                       image_name  original_latitude  original_longitude nearest_field  nearest_field_distance_km
+WhatsApp Image 2026-09-20 at 12.28.54 PM (1).jpeg          14.429626           81.581415      FIELD_24                   225.3708
+ WhatsApp Image 2026-09-07 at 7.21.29 AM (1).jpeg          18.285594           79.296834      FIELD_24                   480.7956
+ WhatsApp Image 2026-09-07 at 7.21.31 AM (1).jpeg          15.285558           79.296783      FIELD_24                   148.8986
+WhatsApp Image 2026-09-20 at 12.28.54 PM (1).jpeg          14.429626           81.581415      FIELD_24                   225.3708
+     WhatsApp Image 2026-09-20 at 3.07.51 PM.jpeg          14.429626           87.581415      FIELD_09                   858.4886
+ WhatsApp Image 2026-09-20 at 3.07.55 PM (1).jpeg          14.429626           87.581415      FIELD_09                   858.4886
+ WhatsApp Image 2026-09-20 at 3.07.55 PM (2).jpeg          14.429626           87.581415      FIELD_09                   858.4886
+     WhatsApp Image 2026-09-20 at 3.07.55 PM.jpeg          14.429626           87.581415      FIELD_09                   858.4886
+     WhatsApp Image 2026-09-20 at 3.07.56 PM.jpeg          14.429626           87.581415      FIELD_09                   858.4886
+ WhatsApp Image 2026-09-20 at 3.07.57 PM (1).jpeg          14.429626           87.581415      FIELD_09                   858.4886
+ WhatsApp Image 2026-09-20 at 3.08.02 PM (2).jpeg          14.429626           87.581415      FIELD_09                   858.4886
+WhatsApp Image 2026-10-02 at 4.07.47 PM (11).jpeg          13.434728           72.570200      FIELD_57                   647.2848
+     WhatsApp Image 2026-09-20 at 1.23.16 PM.jpeg          15.429626           83.581415      FIELD_24                   463.4735
+     WhatsApp Image 2026-09-20 at 1.23.17 PM.jpeg          15.429626           83.581415      FIELD_24                   463.4735
+     WhatsApp Image 2026-09-20 at 1.23.20 PM.jpeg          15.429626           83.581415      FIELD_24                   463.4735
+ WhatsApp Image 2026-09-20 at 1.23.21 PM (1).jpeg          15.429626           83.581415      FIELD_24                   463.4735
+     WhatsApp Image 2026-09-20 at 1.23.21 PM.jpeg          15.429626           83.581415      FIELD_24                   463.4735
+ WhatsApp Image 2026-09-29 at 6.24.34 PM (1).jpeg          18.433913           79.578417      FIELD_24                   496.5659
+     WhatsApp Image 2026-09-29 at 6.24.37 PM.jpeg          18.433913           79.578413      FIELD_24                   496.5659
+    WhatsApp Image 2026-10-01 at 12.56.17 PM.jpeg          13.434728           72.570200      FIELD_57                   647.2848
+     WhatsApp Image 2026-09-20 at 1.40.30 PM.jpeg          15.429626           84.581415      FIELD_24                   565.4525
+     WhatsApp Image 2026-09-20 at 1.40.33 PM.jpeg          15.429626           84.581415      FIELD_24                   565.4525
+     WhatsApp Image 2026-09-20 at 1.40.38 PM.jpeg          15.429626           84.581415      FIELD_24                   565.4525
+     WhatsApp Image 2026-09-20 at 1.40.40 PM.jpeg          15.429626           84.581415      FIELD_24                   565.4525
+ WhatsApp Image 2026-09-20 at 1.40.41 PM (1).jpeg          15.429626           84.581415      FIELD_24                   565.4525
+ WhatsApp Image 2026-09-20 at 1.40.43 PM (2).jpeg          15.429626           84.581415      FIELD_24                   565.4525
+     WhatsApp Image 2026-09-20 at 1.40.43 PM.jpeg          15.429626           84.581415      FIELD_24                   565.4525
+     WhatsApp Image 2026-09-20 at 1.40.44 PM.jpeg          15.429626           84.581415      FIELD_24                   565.4525
+WhatsApp Image 2026-10-01 at 1.01.39 PM (10).jpeg          13.431110           72.588122      FIELD_57                   645.3437
+WhatsApp Image 2026-10-01 at 1.01.40 PM (12).jpeg          13.420801           75.595197      FIELD_57                   320.1390
+
+===========================================================================
+OUTPUT SAVED
+===========================================================================
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_rectification_candidates.csv
+
+Original GPS file was NOT modified.
+No coordinate was automatically changed.
+===========================================================================

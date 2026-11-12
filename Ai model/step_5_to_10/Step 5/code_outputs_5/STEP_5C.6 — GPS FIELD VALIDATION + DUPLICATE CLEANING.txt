@@ -1,0 +1,106 @@
+===========================================================================
+STEP_5C.5 — GPS FIELD VALIDATION + DUPLICATE CLEANING
+===========================================================================
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+
+[1/10] Searching for input CSV files...
+File not found in expected folders.
+Searching subfolders in Google Drive...
+
+INPUT FILE FOUND:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/text_and_csv_files/sentinel2_availability.csv
+
+[2/10] Loading CSV...
+
+Input shape: (58, 5)
+
+Columns found:
+['field_id', 'latitude', 'longitude', 'sentinel2_image_count', 'dates']
+
+[3/10] Validating required columns...
+
+[4/10] Checking Sentinel-2 image counts...
+Using image-count column: sentinel2_image_count
+
+[5/10] Validating GPS coordinates...
+
+[6/10] Checking study-region boundaries...
+
+[7/10] Detecting near-duplicate coordinates...
+
+[8/10] Assigning validation statuses...
+
+[9/10] Saving validation reports...
+
+[10/10] STEP 5C SUMMARY
+
+===========================================================================
+STEP 5C — COMPLETED
+===========================================================================
+Input file                 : /content/drive/MyDrive/final year project/Real_world_test/Step 5/text_and_csv_files/sentinel2_availability.csv
+Total records              : 58
+Inside study region        : 58
+Outside study region       : 0
+Invalid coordinates        : 0
+Records with image count > 0: 58
+Records without image count: 0
+Near-duplicate records     : 0
+Near-duplicate groups      : 0
+Final clean fields         : 58
+
+---------------------------------------------------------------------------
+OUTPUT FILES
+---------------------------------------------------------------------------
+
+Validation report:
+/content/drive/MyDrive/final year project/Step 5/text_and_csv_files/field_validation_report.csv
+
+Near-duplicate report:
+/content/drive/MyDrive/final year project/Step 5/text_and_csv_files/near_duplicate_fields.csv
+
+Clean field candidates:
+/content/drive/MyDrive/final year project/Step 5/text_and_csv_files/clean_field_candidates.csv
+
+---------------------------------------------------------------------------
+CLEAN FIELD PREVIEW
+---------------------------------------------------------------------------
+clean_field_id	field_id	latitude	longitude	sentinel2_image_count	duplicate_group_size
+0	CLEAN_FIELD_001	FIELD_01	13.285588	79.296860	7	1
+1	CLEAN_FIELD_002	FIELD_02	13.429626	79.581415	15	1
+2	CLEAN_FIELD_003	FIELD_03	13.434257	79.578605	15	1
+3	CLEAN_FIELD_004	FIELD_13	13.433872	79.581135	15	1
+4	CLEAN_FIELD_005	FIELD_22	13.429553	79.579276	15	1
+5	CLEAN_FIELD_006	FIELD_23	13.430798	79.552240	15	1
+6	CLEAN_FIELD_007	FIELD_26	13.409358	79.675191	12	1
+7	CLEAN_FIELD_008	FIELD_28	13.435335	79.592580	15	1
+8	CLEAN_FIELD_009	FIELD_29	13.435335	79.692580	8	1
+9	CLEAN_FIELD_010	FIELD_38	13.401756	79.568503	15	1
+10	CLEAN_FIELD_011	FIELD_39	13.433905	79.578698	15	1
+11	CLEAN_FIELD_012	FIELD_40	13.429371	79.568189	15	1
+12	CLEAN_FIELD_013	FIELD_53	13.434728	79.578072	15	1
+13	CLEAN_FIELD_014	FIELD_56	13.285600	79.206832	10	1
+14	CLEAN_FIELD_015	FIELD_76	13.433916	79.578420	15	1
+15	CLEAN_FIELD_016	FIELD_80	13.492913	79.578417	26	1
+16	CLEAN_FIELD_017	FIELD_88	13.433019	79.578930	15	1
+17	CLEAN_FIELD_018	FIELD_91	13.418302	79.572238	15	1
+18	CLEAN_FIELD_019	FIELD_106	13.286559	79.296831	7	1
+19	CLEAN_FIELD_020	FIELD_170	13.342800	79.578645	15	1
+20	CLEAN_FIELD_021	FIELD_183	13.368290	79.545595	15	1
+21	CLEAN_FIELD_022	FIELD_187	13.368290	79.645595	15	1
+22	CLEAN_FIELD_023	FIELD_188	13.369100	79.545597	15	1
+23	CLEAN_FIELD_024	FIELD_191	13.968300	79.545599	11	1
+24	CLEAN_FIELD_025	FIELD_214	13.435900	79.573000	15	1
+25	CLEAN_FIELD_026	FIELD_215	13.435800	79.572000	15	1
+26	CLEAN_FIELD_027	FIELD_216	13.435690	79.570000	15	1
+27	CLEAN_FIELD_028	FIELD_217	13.435700	79.571000	15	1
+28	CLEAN_FIELD_029	FIELD_218	13.435650	79.578990	15	1
+29	CLEAN_FIELD_030	FIELD_220	13.495670	79.578000	26	1
+
+
+IMPORTANT:
+1. Inspect the validation report.
+2. Confirm the study-region boundaries.
+3. Verify actual Sentinel-2 image availability.
+4. Inspect clean_field_candidates.csv before proceeding.
+
+STEP 5C FINISHED.

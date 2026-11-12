@@ -1,0 +1,3532 @@
+✅ Earth Engine initialized
+
+Fields found:
+['FIELD_01', 'FIELD_02', 'FIELD_03', 'FIELD_04', 'FIELD_05', 'FIELD_06', 'FIELD_07', 'FIELD_08', 'FIELD_09', 'FIELD_10', 'FIELD_11', 'FIELD_12', 'FIELD_13', 'FIELD_14', 'FIELD_15', 'FIELD_16', 'FIELD_17', 'FIELD_18', 'FIELD_19', 'FIELD_20', 'FIELD_21', 'FIELD_22', 'FIELD_23', 'FIELD_24', 'FIELD_25', 'FIELD_26', 'FIELD_27', 'FIELD_28', 'FIELD_29', 'FIELD_30', 'FIELD_31', 'FIELD_32', 'FIELD_33', 'FIELD_34', 'FIELD_35', 'FIELD_36', 'FIELD_37', 'FIELD_38', 'FIELD_39', 'FIELD_40', 'FIELD_41', 'FIELD_42', 'FIELD_43', 'FIELD_44', 'FIELD_45', 'FIELD_46', 'FIELD_47', 'FIELD_48', 'FIELD_49', 'FIELD_50', 'FIELD_51', 'FIELD_52', 'FIELD_53', 'FIELD_54', 'FIELD_55', 'FIELD_56', 'FIELD_57', 'FIELD_58']
+
+Raw satellite data loaded:
+(719, 7)
+
+======================================================================
+PROCESSING: FIELD_01
+======================================================================
+Latitude : 13.285588
+Longitude: 79.29686
+
+Dates: 7
+  2026-05-19
+  2026-05-22
+  2026-06-06
+  2026-06-28
+  2026-07-11
+  2026-08-10
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_01_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_02
+======================================================================
+Latitude : 13.429626
+Longitude: 79.581415
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_02_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_03
+======================================================================
+Latitude : 13.434257
+Longitude: 79.578605
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_03_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_04
+======================================================================
+Latitude : 13.433872
+Longitude: 79.581135
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_04_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_05
+======================================================================
+Latitude : 13.429553
+Longitude: 79.579276
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_05_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_06
+======================================================================
+Latitude : 13.430798
+Longitude: 79.55224
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_06_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_07
+======================================================================
+Latitude : 13.409358
+Longitude: 79.675191
+
+Dates: 11
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_07_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_08
+======================================================================
+Latitude : 13.435335
+Longitude: 79.59258
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_08_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_09
+======================================================================
+Latitude : 13.435335
+Longitude: 79.69258
+
+Dates: 8
+  2026-05-19
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-25
+  2026-06-28
+  2026-07-15
+  2026-09-01
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_09_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_10
+======================================================================
+Latitude : 13.401756
+Longitude: 79.568503
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_10_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_11
+======================================================================
+Latitude : 13.433905
+Longitude: 79.578698
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_11_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_12
+======================================================================
+Latitude : 13.429371
+Longitude: 79.568189
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_12_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_13
+======================================================================
+Latitude : 13.434728
+Longitude: 79.578072
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_13_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_14
+======================================================================
+Latitude : 13.2856
+Longitude: 79.206832
+
+Dates: 9
+  2026-05-12
+  2026-05-19
+  2026-05-22
+  2026-06-06
+  2026-06-16
+  2026-06-28
+  2026-07-11
+  2026-08-10
+  2026-09-29
+
+Downloading: 2026-05-12
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-16
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_14_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_15
+======================================================================
+Latitude : 13.433916
+Longitude: 79.57842
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_15_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_16
+======================================================================
+Latitude : 13.492913
+Longitude: 79.578417
+
+Dates: 15
+  2026-05-02
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-07-23
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-02
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-07-23
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_16_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_17
+======================================================================
+Latitude : 13.433019
+Longitude: 79.57893
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_17_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_18
+======================================================================
+Latitude : 13.418302
+Longitude: 79.572238
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_18_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_19
+======================================================================
+Latitude : 13.286559
+Longitude: 79.296831
+
+Dates: 7
+  2026-05-19
+  2026-05-22
+  2026-06-06
+  2026-06-28
+  2026-07-11
+  2026-08-10
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_19_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_20
+======================================================================
+Latitude : 13.3428
+Longitude: 79.578645
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_20_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_21
+======================================================================
+Latitude : 13.36829
+Longitude: 79.545595
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_21_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_22
+======================================================================
+Latitude : 13.36829
+Longitude: 79.645595
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_22_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_23
+======================================================================
+Latitude : 13.3691
+Longitude: 79.545597
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_23_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_24
+======================================================================
+Latitude : 13.9683
+Longitude: 79.545599
+
+Dates: 10
+  2026-05-02
+  2026-05-19
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-15
+  2026-07-23
+  2026-09-29
+
+Downloading: 2026-05-02
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-07-23
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_24_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_25
+======================================================================
+Latitude : 13.4359
+Longitude: 79.573
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_25_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_26
+======================================================================
+Latitude : 13.4358
+Longitude: 79.572
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_26_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_27
+======================================================================
+Latitude : 13.43569
+Longitude: 79.57
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_27_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_28
+======================================================================
+Latitude : 13.4357
+Longitude: 79.571
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_28_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_29
+======================================================================
+Latitude : 13.43565
+Longitude: 79.57899
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_29_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_30
+======================================================================
+Latitude : 13.49567
+Longitude: 79.578
+
+Dates: 15
+  2026-05-02
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-07-23
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-02
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-07-23
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_30_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_31
+======================================================================
+Latitude : 13.43666
+Longitude: 79.57899
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_31_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_32
+======================================================================
+Latitude : 13.43567
+Longitude: 79.578
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_32_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_33
+======================================================================
+Latitude : 13.435
+Longitude: 79.574
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_33_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_34
+======================================================================
+Latitude : 13.44
+Longitude: 79.57
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_34_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_35
+======================================================================
+Latitude : 13.45
+Longitude: 79.57
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_35_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_36
+======================================================================
+Latitude : 13.437
+Longitude: 79.576
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_36_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_37
+======================================================================
+Latitude : 13.438
+Longitude: 79.577
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_37_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_38
+======================================================================
+Latitude : 13.46
+Longitude: 79.58
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_38_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_39
+======================================================================
+Latitude : 13.43
+Longitude: 79.579
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_39_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_40
+======================================================================
+Latitude : 13.439
+Longitude: 79.578
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_40_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_41
+======================================================================
+Latitude : 13.436
+Longitude: 79.575
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_41_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_42
+======================================================================
+Latitude : 13.488
+Longitude: 79.577
+
+Dates: 15
+  2026-05-02
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-07-23
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-02
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-07-23
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_42_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_43
+======================================================================
+Latitude : 13.433644
+Longitude: 79.578192
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_43_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_44
+======================================================================
+Latitude : 13.293679
+Longitude: 79.558272
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_44_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_45
+======================================================================
+Latitude : 13.47
+Longitude: 79.59
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_45_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_46
+======================================================================
+Latitude : 13.44
+Longitude: 79.56
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_46_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_47
+======================================================================
+Latitude : 13.43
+Longitude: 79.55
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+WARNING:google_auth_httplib2:httplib2 transport does not support per-request timeout. Set the timeout when constructing the httplib2.Http instance.
+WARNING:google_auth_httplib2:httplib2 transport does not support per-request timeout. Set the timeout when constructing the httplib2.Http instance.
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_47_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_48
+======================================================================
+Latitude : 13.42
+Longitude: 79.54
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_48_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_49
+======================================================================
+Latitude : 13.41
+Longitude: 79.53
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_49_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_50
+======================================================================
+Latitude : 13.4
+Longitude: 79.52
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_50_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_51
+======================================================================
+Latitude : 13.4
+Longitude: 79.51
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_51_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_52
+======================================================================
+Latitude : 13.49
+Longitude: 79.5
+
+Dates: 15
+  2026-05-02
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-07-23
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-02
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-07-23
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_52_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_53
+======================================================================
+Latitude : 13.48
+Longitude: 79.59
+
+Dates: 15
+  2026-05-02
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-07-23
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-02
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-07-23
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_53_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_54
+======================================================================
+Latitude : 13.3215
+Longitude: 79.552779
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_54_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_55
+======================================================================
+Latitude : 13.3215
+Longitude: 79.662779
+
+Dates: 8
+  2026-05-19
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-25
+  2026-06-28
+  2026-07-15
+  2026-09-01
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_55_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_56
+======================================================================
+Latitude : 13.293679
+Longitude: 79.658272
+
+Dates: 8
+  2026-05-19
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-25
+  2026-06-28
+  2026-07-15
+  2026-09-01
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_56_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_57
+======================================================================
+Latitude : 13.321617
+Longitude: 78.552758
+
+Dates: 4
+  2026-05-12
+  2026-05-19
+  2026-06-16
+  2026-06-28
+
+Downloading: 2026-05-12
+  ✅ Done
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-06-16
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_57_Sentinel2_Presentation.png
+
+======================================================================
+PROCESSING: FIELD_58
+======================================================================
+Latitude : 13.32715
+Longitude: 79.55277
+
+Dates: 13
+  2026-05-19
+  2026-05-22
+  2026-05-24
+  2026-06-03
+  2026-06-05
+  2026-06-06
+  2026-06-25
+  2026-06-28
+  2026-07-11
+  2026-07-15
+  2026-08-10
+  2026-09-01
+  2026-09-29
+
+Downloading: 2026-05-19
+  ✅ Done
+
+Downloading: 2026-05-22
+  ✅ Done
+
+Downloading: 2026-05-24
+  ✅ Done
+
+Downloading: 2026-06-03
+  ✅ Done
+
+Downloading: 2026-06-05
+  ✅ Done
+
+Downloading: 2026-06-06
+  ✅ Done
+
+Downloading: 2026-06-25
+  ✅ Done
+
+Downloading: 2026-06-28
+  ✅ Done
+
+Downloading: 2026-07-11
+  ✅ Done
+
+Downloading: 2026-07-15
+  ✅ Done
+
+Downloading: 2026-08-10
+  ✅ Done
+
+Downloading: 2026-09-01
+  ✅ Done
+
+Downloading: 2026-09-29
+  ✅ Done
+
+✅ SAVED: /content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png/FIELD_58_Sentinel2_Presentation.png
+
+======================================================================
+🎉 STEP 5I — ALL FIELDS COMPLETED
+======================================================================
+
+Output folder:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/presentation_png
+
+Generated files:
+✅ FIELD_01_Sentinel2_Presentation.png
+✅ FIELD_02_Sentinel2_Presentation.png
+✅ FIELD_03_Sentinel2_Presentation.png
+✅ FIELD_04_Sentinel2_Presentation.png
+✅ FIELD_05_Sentinel2_Presentation.png
+✅ FIELD_06_Sentinel2_Presentation.png
+✅ FIELD_07_Sentinel2_Presentation.png
+✅ FIELD_08_Sentinel2_Presentation.png
+✅ FIELD_09_Sentinel2_Presentation.png
+✅ FIELD_10_Sentinel2_Presentation.png
+✅ FIELD_11_Sentinel2_Presentation.png
+✅ FIELD_12_Sentinel2_Presentation.png
+✅ FIELD_13_Sentinel2_Presentation.png
+✅ FIELD_14_Sentinel2_Presentation.png
+✅ FIELD_15_Sentinel2_Presentation.png
+✅ FIELD_16_Sentinel2_Presentation.png
+✅ FIELD_17_Sentinel2_Presentation.png
+✅ FIELD_18_Sentinel2_Presentation.png
+✅ FIELD_19_Sentinel2_Presentation.png
+✅ FIELD_20_Sentinel2_Presentation.png
+✅ FIELD_21_Sentinel2_Presentation.png
+✅ FIELD_22_Sentinel2_Presentation.png
+✅ FIELD_23_Sentinel2_Presentation.png
+✅ FIELD_24_Sentinel2_Presentation.png
+✅ FIELD_25_Sentinel2_Presentation.png
+✅ FIELD_26_Sentinel2_Presentation.png
+✅ FIELD_27_Sentinel2_Presentation.png
+✅ FIELD_28_Sentinel2_Presentation.png
+✅ FIELD_29_Sentinel2_Presentation.png
+✅ FIELD_30_Sentinel2_Presentation.png
+✅ FIELD_31_Sentinel2_Presentation.png
+✅ FIELD_32_Sentinel2_Presentation.png
+✅ FIELD_33_Sentinel2_Presentation.png
+✅ FIELD_34_Sentinel2_Presentation.png
+✅ FIELD_35_Sentinel2_Presentation.png
+✅ FIELD_36_Sentinel2_Presentation.png
+✅ FIELD_37_Sentinel2_Presentation.png
+✅ FIELD_38_Sentinel2_Presentation.png
+✅ FIELD_39_Sentinel2_Presentation.png
+✅ FIELD_40_Sentinel2_Presentation.png
+✅ FIELD_41_Sentinel2_Presentation.png
+✅ FIELD_42_Sentinel2_Presentation.png
+✅ FIELD_43_Sentinel2_Presentation.png
+✅ FIELD_44_Sentinel2_Presentation.png
+✅ FIELD_45_Sentinel2_Presentation.png
+✅ FIELD_46_Sentinel2_Presentation.png
+✅ FIELD_47_Sentinel2_Presentation.png
+✅ FIELD_48_Sentinel2_Presentation.png
+✅ FIELD_49_Sentinel2_Presentation.png
+✅ FIELD_50_Sentinel2_Presentation.png
+✅ FIELD_51_Sentinel2_Presentation.png
+✅ FIELD_52_Sentinel2_Presentation.png
+✅ FIELD_53_Sentinel2_Presentation.png
+✅ FIELD_54_Sentinel2_Presentation.png
+✅ FIELD_55_Sentinel2_Presentation.png
+✅ FIELD_56_Sentinel2_Presentation.png
+✅ FIELD_57_Sentinel2_Presentation.png
+✅ FIELD_58_Sentinel2_Presentation.png

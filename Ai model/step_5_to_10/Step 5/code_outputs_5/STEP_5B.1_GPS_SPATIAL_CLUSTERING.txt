@@ -1,0 +1,125 @@
+================================================================================
+STEP 5B — GPS SPATIAL CLUSTERING
+================================================================================
+
+Input file:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/image_gps_coordinates.csv
+
+✅ Input file found
+
+Total records in CSV: 3069
+Valid GPS records: 1035
+
+DBSCAN settings:
+Radius: 100 metres
+Minimum samples: 2
+
+================================================================================
+CLUSTER RESULT
+================================================================================
+
+Clusters found: 96
+Noise GPS records: 54
+
+================================================================================
+FIELD CLUSTER SUMMARY
+================================================================================
+field_id	cluster_id	image_count	center_latitude	center_longitude	min_latitude	max_latitude	min_longitude	max_longitude
+0	FIELD_03	2	174	13.434303	79.578326	13.433019	13.434728	79.578072	79.578940
+1	FIELD_08	7	92	13.429563	79.579270	13.429553	13.430000	79.579000	79.579276
+2	FIELD_01	0	72	13.285593	79.296835	13.285529	13.285616	79.296629	79.296889
+3	FIELD_10	9	65	14.039292	79.370880	14.039120	14.039335	79.370509	79.370999
+4	FIELD_85	84	50	13.293804	79.558288	13.293679	13.293900	79.558272	79.558300
+...	...	...	...	...	...	...	...	...	...
+91	FIELD_75	74	2	14.870000	79.980000	14.870000	14.870000	79.980000	79.980000
+92	FIELD_73	72	2	14.840000	79.950000	14.840000	14.840000	79.950000	79.950000
+93	FIELD_66	65	2	14.600000	79.630000	14.600000	14.600000	79.630000	79.630000
+94	FIELD_87	86	2	13.430000	79.550000	13.430000	13.430000	79.550000	79.550000
+95	FIELD_83	82	2	13.436000	79.575000	13.436000	13.436000	79.575000	79.575000
+96 rows × 9 columns
+
+
+================================================================================
+FIELD IMAGE COUNT
+================================================================================
+field_id	image_count	center_latitude	center_longitude
+0	FIELD_03	174	13.434303	79.578326
+1	FIELD_08	92	13.429563	79.579270
+2	FIELD_01	72	13.285593	79.296835
+3	FIELD_10	65	14.039292	79.370880
+4	FIELD_85	50	13.293804	79.558288
+...	...	...	...	...
+91	FIELD_75	2	14.870000	79.980000
+92	FIELD_73	2	14.840000	79.950000
+93	FIELD_66	2	14.600000	79.630000
+94	FIELD_87	2	13.430000	79.550000
+95	FIELD_83	2	13.436000	79.575000
+96 rows × 4 columns
+
+
+================================================================================
+NOISE RECORDS
+================================================================================
+Noise count: 54
+image_name	latitude	longitude
+174	WhatsApp Image 2026-09-07 at 5.43.4 PM.png	13.429371	79.568189
+184	WhatsApp Image 2026-09-07 at 7.21.29 AM (1).jpeg	18.285594	79.296834
+188	WhatsApp Image 2026-09-07 at 7.21.31 AM (1).jpeg	15.285558	79.296783
+254	WhatsApp Image 2026-09-07 at 7.18.58 AM.jpeg	13.285600	79.206832
+293	WhatsApp Image 2026-09-29 at 6.24.32 PM (2).jpeg	13.492913	79.578417
+354	WhatsApp Image 2026-10-06 at 10.58.55 AM (1).jpeg	14.026747	79.962038
+382	WhatsApp Image 2026-09-07 at 7.20.36 AM.jpeg	13.286559	79.296831
+394	WhatsApp Image 2026-10-01 at 1.01.39 PM (10).jpeg	13.431110	72.588122
+395	WhatsApp Image 2026-10-01 at 1.01.40 PM (12).jpeg	13.420801	75.595197
+396	WhatsApp Image 2026-10-01 at 1.01.40 PM (16).jpeg	13.440650	73.595190
+397	WhatsApp Image 2026-10-01 at 1.01.40 PM (38).jpeg	12.480600	73.595190
+398	WhatsApp Image 2026-10-01 at 1.01.40 PM (42).jpeg	13.400800	72.995197
+399	WhatsApp Image 2026-10-01 at 1.01.40 PM (48).jpeg	18.440500	73.595197
+400	WhatsApp Image 2026-10-01 at 1.01.40 PM (59).jpeg	12.480801	79.595797
+401	WhatsApp Image 2026-10-01 at 1.01.40 PM (8).jpeg	12.400800	73.595197
+447	WhatsApp Image 2026-09-20 at 1.54.27 PM (1).jpeg	15.429626	95.581415
+523	WhatsApp Image 2026-09-29 at 6.50.26 PM.jpeg	14.438000	79.580000
+524	WhatsApp Image 2026-09-29 at 6.50.56 PM.jpeg	14.438000	79.590000
+529	WhatsApp Image 2026-09-29 at 6.51.11 PM.jpeg	14.434000	79.577000
+537	WhatsApp Image 2026-09-29 at 6.51.18 PM.jpeg	14.430000	79.573000
+545	WhatsApp Image 2026-09-29 at 6.58.09 PM (2).jpeg	14.490000	79.540000
+546	WhatsApp Image 2026-09-29 at 6.58.09 PM.jpeg	14.400000	79.550000
+553	WhatsApp Image 2026-09-29 at 6.58.14 PM (1).jpeg	14.440000	79.500000
+570	WhatsApp Image 2026-10-06 at 10.46.19 AM (1).jpeg	13.342800	79.578645
+572	WhatsApp Image 2026-10-06 at 10.46.21 AM (1).jpeg	19.434289	79.578645
+649	WhatsApp Image 2026-10-06 at 10.39.50 AM (1).jpeg	13.968300	79.545599
+692	WhatsApp Image 2026-09-29 at 7.25.51 PM.jpeg	14.410000	79.550000
+693	WhatsApp Image 2026-09-29 at 7.25.52 PM.jpeg	14.400000	79.530000
+704	WhatsApp Image 2026-09-29 at 7.34.20 PM (1).jpeg	14.570000	79.590000
+705	WhatsApp Image 2026-09-29 at 7.34.23 PM.jpeg	14.550000	79.570000
+
+================================================================================
+FILES SAVED
+================================================================================
+
+Image-level clusters:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_spatial_clusters.csv
+
+Cluster summary:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_cluster_summary.csv
+
+================================================================================
+FINAL CHECK
+================================================================================
+
+Original CSV:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/image_gps_coordinates.csv
+
+Original image_gps_coordinates.csv was NOT modified.
+
+Coordinates were NOT manually changed.
+
+DBSCAN radius: 100 metres
+
+Total GPS records: 1035
+Total fields: 96
+Noise records: 54
+
+================================================================================
+✅ STEP 5B GPS SPATIAL CLUSTERING COMPLETE
+================================================================================
