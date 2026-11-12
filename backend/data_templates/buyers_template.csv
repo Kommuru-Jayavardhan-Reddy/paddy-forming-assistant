@@ -1,0 +1,3 @@
+business_name,buyer_type,district,state,address_summary,contact_person,contact_phone,contact_email,preferred_varieties,min_procurement_quintals,verification_status,verification_notes,is_active
+# EXAMPLE FORMAT (Do not un-comment without authentic data):
+# Sri Lakshmi Modern Rice Mill,mill,East Godavari,Andhra Pradesh,Industrial Estate Kakinada,Authorized Manager,,,"[""BPT 5204"", ""MTU 1010""]",50.00,verified,Official CMR Empanelled Miller,true

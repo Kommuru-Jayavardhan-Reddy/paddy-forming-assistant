@@ -1,0 +1,34 @@
+{
+  "status": "PASSED",
+  "source_db": "paddy_farming_db",
+  "staging_db": "paddy_farming_staging",
+  "backup_file": "c:\\paddy project\\backend\\backups\\paddy_farming_db_verified_pre_migration.dump",
+  "globals_backup_file": "c:\\paddy project\\backend\\backups\\paddy_farming_globals.sql",
+  "backup_size_bytes": 105735,
+  "globals_size_bytes": 2792,
+  "inventory_verified": {
+    "tables_count": 9,
+    "views_count": 0,
+    "sequences_count": 0,
+    "functions_count": 0,
+    "triggers_count": 0,
+    "extensions_count": 1,
+    "constraints_count": 105,
+    "indexes_count": 48
+  },
+  "row_counts": {
+    "alembic_version": 1,
+    "farmers": 0,
+    "buyers": 17,
+    "market_prices": 332,
+    "fields": 58,
+    "prediction_history": 53,
+    "satellite_observations": 580,
+    "weather_records": 466,
+    "reports": 4
+  },
+  "alembic_version": [
+    "c748e89f1d2a"
+  ],
+  "errors": []
+}

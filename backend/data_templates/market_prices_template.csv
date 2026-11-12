@@ -1,0 +1,3 @@
+market_name,district,state,commodity,variety,grade,min_price,max_price,modal_price,currency,unit,price_date,source
+# EXAMPLE FORMAT (Do not un-comment without authentic data):
+# Tirupati Mandi,Tirupati,Andhra Pradesh,Paddy (Dhan),Common,FAQ,2200.00,2450.00,2300.00,INR,Quintal,2026-10-14,Agmarknet
