@@ -1,0 +1,72 @@
+
+================================================================================
+STEP 8B — FINAL TEMPORAL CROSS-ATTENTION EXTRACTION REPORT
+================================================================================
+
+INPUTS
+--------------------------------------------------------------------------------
+Image embeddings             : (640, 1792)
+Satellite sequences          : (58, 10, 3)
+Final mapping                : (640, 13)
+
+MODEL
+--------------------------------------------------------------------------------
+Checkpoint                   : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/models_7/Step7L_Temporal_CrossAttention_m_1/step7L_controlled_best.pth
+Epoch                        : 11
+Best validation accuracy     : 0.8046875
+Best validation F1           : 0.6896991289301586
+
+ARCHITECTURE
+--------------------------------------------------------------------------------
+Image dimension              : 1792
+Image projection             : 256
+Satellite input              : 3
+Satellite timesteps          : 10
+BiLSTM layers                : 2
+BiLSTM hidden                : 128
+BiLSTM output                : 256
+Satellite projection         : 256
+Cross-attention heads        : 8
+Fusion input                 : 512
+Fusion hidden                : 256
+Fusion output                : 128
+Classes                      : 11
+
+EXTRACTION
+--------------------------------------------------------------------------------
+Images processed             : 640
+Attention matrix             : (640, 10)
+Logits matrix                : (640, 11)
+Attention NaN                : 0
+Attention Inf                : 0
+Minimum attention row sum    : 0.9999998807907104
+Maximum attention row sum    : 1.0000001192092896
+
+OUTPUTS
+--------------------------------------------------------------------------------
+Attention CSV               : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/step8B_final_640x10_temporal_attention.csv
+Prediction CSV               : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/step8B_final_predictions_640.csv
+Image summary CSV            : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/step8B_image_temporal_summary.csv
+Field summary CSV            : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/step8B_field_temporal_attention_summary.csv
+Timestep summary CSV         : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/step8B_timestep_attention_summary.csv
+Heatmap                      : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/step8B_temporal_attention_heatmap_640x10.png
+Mean temporal plot           : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/step8B_mean_temporal_attention.png
+Field plots                  : /content/drive/MyDrive/final year project/AI_model/step_5_to_10/Step 7/Step8B_Corrected_Normalization/field_temporal_plots
+
+STATUS
+--------------------------------------------------------------------------------
+Model loading               : COMPLETE
+640-image inference         : COMPLETE
+Temporal attention          : COMPLETE
+Prediction extraction       : COMPLETE
+Field-wise analysis         : COMPLETE
+Visualization               : COMPLETE
+Final validation            : COMPLETE
+
+IMPORTANT INTERPRETATION
+--------------------------------------------------------------------------------
+Attention weights indicate which satellite timesteps the trained model
+attended to during prediction. They should not by themselves be interpreted
+as proof of disease onset at a particular timestep.
+
+================================================================================
