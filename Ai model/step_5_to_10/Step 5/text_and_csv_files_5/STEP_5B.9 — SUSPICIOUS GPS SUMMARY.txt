@@ -1,0 +1,37 @@
+======================================================================
+STEP 5B.9 — SUSPICIOUS GPS SUMMARY
+======================================================================
+
+Total GPS records: 3069
+Suspicious records: 380
+Unique suspicious coordinates: 129
+
+======================================================================
+COORDINATE GROUPS
+======================================================================
+actual_ocr_latitude	actual_ocr_longitude	image_count	disease_classes
+26	14.039334	79.370999	47	bacterial_leaf_blight, blast, downy_mildew, sh...
+103	14.826672	77.046581	25	downy_mildew, hispa, tungro
+120	16.826784	82.046685	17	sheath_blight
+39	14.429626	87.581415	17	bacterial_leaf_streak, downy_mildew, leaf_scald
+8	14.020600	79.362076	13	bacterial_leaf_blight, downy_mildew
+...	...	...	...	...
+124	18.440500	73.595197	1	blast
+125	18.500000	79.530000	1	hispa
+126	19.299670	79.558272	1	tungro
+127	19.434289	79.578645	1	dead_heart
+128	19.821617	79.552759	1	tungro
+129 rows × 4 columns
+
+
+======================================================================
+FILES SAVED
+======================================================================
+
+CSV:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/suspicious_gps_summary.csv
+
+Report:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/Step_5B_Suspicious_GPS_Summary.txt
+
+✅ No original GPS files were modified.

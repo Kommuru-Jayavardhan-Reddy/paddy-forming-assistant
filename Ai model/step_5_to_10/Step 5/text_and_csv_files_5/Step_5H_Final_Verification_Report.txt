@@ -1,0 +1,14 @@
+STEP 5H — FINAL SATELLITE PIPELINE VERIFICATION
+============================================================
+
+Status: PASS
+
+Field file: /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+Time-series file: /content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_timeseries.csv
+NumPy tensor: /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+
+Fields: 58
+Final CSV rows: 580
+Tensor shape: (58, 10, 3)
+
+Errors: 0

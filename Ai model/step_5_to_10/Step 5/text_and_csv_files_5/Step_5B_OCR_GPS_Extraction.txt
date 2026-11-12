@@ -1,0 +1,32 @@
+
+STEP 5B — OCR GPS COORDINATE EXTRACTION REPORT
+==================================================
+
+Date:
+2026-10-07 05:12:07.375824
+
+GPS image folder:
+/content/drive/MyDrive/final year project/Real_world_test/gps
+
+Total images scanned:
+3069
+
+GPS coordinates extracted:
+1035
+
+GPS extraction failed:
+2034
+
+Unique field locations:
+289
+
+Image GPS CSV:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/image_gps_coordinates.csv
+
+Field locations CSV:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+
+NOTE:
+GPS coordinates were extracted from the GPS text
+embedded directly into the images using OCR.
+EXIF GPS metadata was not used.

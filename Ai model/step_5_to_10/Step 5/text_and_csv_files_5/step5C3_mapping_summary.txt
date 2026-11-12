@@ -1,0 +1,16 @@
+STEP 5C.3 — SAFE GPS FIELD TO SATELLITE FIELD MAPPING
+======================================================================
+
+Original GPS records: 3069
+GPS records with coordinates: 1035
+GPS records inside project region: 901
+GPS records outside project region: 134
+GPS fields created: 85
+Trusted satellite fields: 58
+
+REJECT: 49 fields
+CONFIRMED: 36 fields
+
+Confirmed threshold: <= 1.0 km
+Review threshold: > 1.0 km and <= 5.0 km
+Reject threshold: > 5.0 km

@@ -1,0 +1,5 @@
+metric,original,rectified
+GPS records,1035.0,1035.0
+clusters,96.0,89.0
+noise records,54.0,52.0
+noise percentage,5.22,5.02

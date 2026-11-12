@@ -1,0 +1,143 @@
+STEP 5B — SUSPICIOUS GPS SUMMARY
+======================================================================
+
+Total GPS records: 3069
+Suspicious records: 380
+Unique suspicious coordinates: 129
+
+COORDINATE GROUPS
+======================================================================
+ actual_ocr_latitude  actual_ocr_longitude  image_count                                           disease_classes
+           14.039334             79.370999           47 bacterial_leaf_blight, blast, downy_mildew, sheath_blight
+           14.826672             77.046581           25                               downy_mildew, hispa, tungro
+           16.826784             82.046685           17                                             sheath_blight
+           14.429626             87.581415           17           bacterial_leaf_streak, downy_mildew, leaf_scald
+           14.020600             79.362076           13                       bacterial_leaf_blight, downy_mildew
+           15.429626             85.581415           10                                                brown_spot
+           14.826628             77.046526            8                                                    tungro
+           14.429626             85.581415            8                                                    tungro
+           14.039160             79.370510            7                                  bacterial_panicle_blight
+           15.429626             84.581415            7                                                     blast
+           14.026747             79.362038            6                                  bacterial_panicle_blight
+           15.429626             86.581415            6                                                dead_heart
+           14.826784             77.046685            6                                                    tungro
+           14.460000             79.500000            5                                         dead_heart, hispa
+           14.490000             79.520000            5                                                     hispa
+           14.020600             79.962076            5                       bacterial_leaf_blight, downy_mildew
+           15.429626             83.581415            5                                  bacterial_panicle_blight
+           14.440000             79.580000            4                                         dead_heart, hispa
+           14.429626             80.681415            4              bacterial_leaf_blight, bacterial_leaf_streak
+           14.437000             79.579000            4                      bacterial_panicle_blight, dead_heart
+           14.026943             79.359960            4                                  bacterial_panicle_blight
+           14.436000             79.578000            3                      bacterial_panicle_blight, dead_heart
+           14.438000             79.570000            3                                                dead_heart
+           14.480000             79.510000            3                                                     hispa
+           14.470000             79.500000            3                                                     hispa
+           14.420000             79.560000            3                                         dead_heart, hispa
+           14.830000             79.940000            3                                                     hispa
+           14.431000             79.574000            3                                                dead_heart
+           14.433000             79.575000            3                                  bacterial_panicle_blight
+           14.039120             79.370520            3                                  bacterial_panicle_blight
+           14.434600             79.578870            3                                  bacterial_panicle_blight
+           14.039201             79.370525            3                                  bacterial_panicle_blight
+           14.600000             79.620000            2                                                     hispa
+           14.437000             79.570000            2                                                dead_heart
+           14.435000             79.577000            2                                                dead_heart
+           14.434700             79.578880            2                                  bacterial_panicle_blight
+           14.434100             79.578820            2                                  bacterial_panicle_blight
+           14.434900             79.578900            2                                  bacterial_panicle_blight
+           14.434800             79.578890            2                                  bacterial_panicle_blight
+           14.435000             79.578000            2                                                dead_heart
+           14.460000             79.510000            2                                                dead_heart
+           14.439000             79.571000            2                      bacterial_panicle_blight, dead_heart
+           14.850000             79.960000            2                                                     hispa
+           14.870000             79.980000            2                                                     hispa
+           14.840000             79.950000            2                                                     hispa
+           14.860000             79.970000            2                                                     hispa
+           14.450000             79.500000            2                                                dead_heart
+           14.450000             79.590000            2                                                dead_heart
+           14.630000             79.660000            2                                                     hispa
+           14.439000             79.580000            2                                                dead_heart
+           14.429626             80.581415            2              bacterial_leaf_blight, bacterial_leaf_streak
+           14.430000             79.570000            2                                                     hispa
+           14.429626             81.581415            2              bacterial_leaf_blight, bacterial_leaf_streak
+           14.430000             79.590000            2                                                dead_heart
+           14.432000             79.574000            2                                  bacterial_panicle_blight
+           14.433000             79.576000            2                                                dead_heart
+           14.432000             79.575000            2                                                dead_heart
+           14.035869             79.368254            2                       bacterial_leaf_blight, downy_mildew
+           14.039335             79.370999            2                       bacterial_leaf_blight, downy_mildew
+           14.039157             79.370509            2                       bacterial_leaf_blight, downy_mildew
+           14.039201             79.970525            2                                  bacterial_panicle_blight
+           14.020600             79.862076            2                       bacterial_leaf_blight, downy_mildew
+           13.434728             72.570200            2           bacterial_leaf_streak, bacterial_panicle_blight
+           14.400000             79.540000            2                                                     hispa
+           14.089334             79.370999            2                       bacterial_leaf_blight, downy_mildew
+           14.580000             79.600000            2                                                     hispa
+           14.600000             79.630000            2                                                     hispa
+           14.540000             79.560000            2                                                     hispa
+           14.700000             79.720000            2                                                     hispa
+           12.400800             73.595197            1                                                     blast
+           14.435000             79.579000            1                                  bacterial_panicle_blight
+           14.430000             79.573000            1                                                dead_heart
+           14.434000             79.577000            1                                                dead_heart
+           14.410000             79.550000            1                                                     hispa
+           14.434200             79.578830            1                                  bacterial_panicle_blight
+           14.434500             79.578860            1                                  bacterial_panicle_blight
+           14.434000             79.578830            1                                  bacterial_panicle_blight
+           14.434300             79.578840            1                                  bacterial_panicle_blight
+           14.434400             79.578850            1                                  bacterial_panicle_blight
+           14.400000             79.530000            1                                                     hispa
+           14.400000             79.550000            1                                                dead_heart
+           14.026948             79.359960            1                                  bacterial_panicle_blight
+           14.026747             79.962038            1                                  bacterial_panicle_blight
+           14.026747             79.362088            1                                  bacterial_panicle_blight
+           14.026628             77.040526            1                                                    tungro
+           13.420801             75.595197            1                                                     blast
+           13.400800             72.995197            1                                                     blast
+           13.431110             72.588122            1                                                     blast
+           13.440650             73.595190            1                                                     blast
+           12.480801             79.595797            1                                                     blast
+           12.480600             73.595190            1                                                     blast
+           14.039160             79.870511            1                                  bacterial_panicle_blight
+           14.039120             79.870520            1                                  bacterial_panicle_blight
+           14.039207             79.370525            1                                  bacterial_panicle_blight
+           14.260000             79.770000            1                                                leaf_scald
+           14.438000             79.590000            1                                                dead_heart
+           14.470000             79.520000            1                                                dead_heart
+           14.730000             79.740000            1                                                     hispa
+           14.680000             79.700000            1                                                     hispa
+           14.650000             79.680000            1                                                     hispa
+           14.600000             79.620000            1                                                     hispa
+           14.530000             79.550000            1                                                     hispa
+           14.520000             79.540000            1                                                     hispa
+           14.550000             79.570000            1                                                     hispa
+           14.570000             79.590000            1                                                     hispa
+           14.500000             79.530000            1                                                     hispa
+           14.490000             79.540000            1                                                dead_heart
+           14.470000             79.520000            1                                                dead_heart
+           14.438000             79.580000            1                                                dead_heart
+           14.440000             79.500000            1                                                dead_heart
+           14.826672             77.046581            1                                                    tungro
+           14.810000             79.920000            1                                                     hispa
+           14.826628             77.046526            1                                                    tungro
+           15.285558             79.296783            1                                     bacterial_leaf_streak
+           14.890000             79.900000            1                                                     hispa
+           14.750000             79.760000            1                                                leaf_scald
+           14.800000             79.910000            1                                                     hispa
+           14.820000             79.930000            1                                                     hispa
+           15.429626             84.581415            1                                                     blast
+           15.429626             86.581410            1                                                dead_heart
+           15.429626             95.581415            1                                                brown_spot
+           18.285594             79.296834            1                                     bacterial_leaf_streak
+           18.433913             79.578413            1                                  bacterial_panicle_blight
+           18.433913             79.578417            1                                  bacterial_panicle_blight
+           18.440500             73.595197            1                                                     blast
+           18.500000             79.530000            1                                                     hispa
+           19.299670             79.558272            1                                                    tungro
+           19.434289             79.578645            1                                                dead_heart
+           19.821617             79.552759            1                                                    tungro
+
+IMPORTANT:
+These coordinates are reported by OCR from the GPS overlay in the images.
+No coordinates were manually corrected.

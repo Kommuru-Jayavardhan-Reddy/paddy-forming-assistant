@@ -1,0 +1,30 @@
+STEP 5G — LINEAR INTERPOLATION REPORT
+============================================================
+
+Input CSV: /content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_timeseries_raw.csv
+Output CSV: /content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_timeseries.csv
+Output NPY: /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+
+Number of fields: 58
+Target time steps: 10
+Features per timestep: 3
+
+Final tensor shape: (58, 10, 3)
+NaN values: 0
+Infinite values: 0
+
+Features:
+1. NDVI
+2. NDRE
+3. GNDVI
+
+Interpolation method:
+Linear interpolation between first and last
+real Sentinel-2 observations for each field.
+
+Missing index values were interpolated before
+the final 10-step temporal interpolation.
+
+Original raw satellite values were preserved.
+
+STEP 5G COMPLETE
