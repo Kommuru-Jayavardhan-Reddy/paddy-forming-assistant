@@ -1,0 +1,52 @@
+======================================================================
+STEP 10B — SHAP BACKGROUND DATASET PREPARATION
+======================================================================
+
+[1/6] Checking required files...
+
+Satellite sequences:
+Path: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 5/models_5/bilstm_sequences.npy
+Exists: True
+
+Field mapping:
+Path: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 7/step7_verified_field_embedding_mapping.csv
+Exists: True
+
+Multimodal dataset:
+Path: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 7/text_and_csv_files_7/step7I_final_11class_multimodal_dataset.csv
+Exists: True
+
+[2/6] Loading data...
+Satellite shape: (58, 10, 3)
+Field mapping shape: (58, 7)
+Dataset shape: (640, 23)
+
+Mapping columns:
+['field_id', 'clean_field_id', 'latitude', 'longitude', 'sentinel2_image_count', 'embedding_index', 'sequence_index']
+
+Dataset columns:
+['image_embedding_index', 'image_name', 'image_path', 'latitude', 'longitude', 'status', 'inside_project_region', 'cluster', 'gps_field_id', 'nearest_satellite_field', 'distance_km', 'decision', 'satellite_embedding_index', 'satellite_embedding', 'image_embedding_dimension', 'disease_label', 'disease_class_index', 'image_embedding_file', 'satellite_embedding_file', 'satellite_embedding_dimension', 'paired_satellite_embedding_index', 'label_11class', 'split']
+
+[3/6] Validating satellite data...
+Satellite validation: PASSED
+Number of sequences: 58
+Timesteps: 10
+Features per timestep: 3
+
+[4/6] Validating field mapping...
+Field mapping validation: PASSED
+Mapped fields: 58
+
+[5/6] Preparing SHAP background samples...
+Background shape: (20, 10, 3)
+Selected indices: [3, 4, 7, 9, 18, 25, 26, 28, 30, 32, 37, 38, 39, 42, 44, 47, 48, 50, 53, 57]
+
+[6/6] Saving SHAP background...
+
+Background saved: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/shap_satellite_background.npy
+Background indices saved: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/shap_background_indices.npy
+Verified saved shape: (20, 10, 3)
+
+======================================================================
+STEP 10B COMPLETED SUCCESSFULLY
+======================================================================

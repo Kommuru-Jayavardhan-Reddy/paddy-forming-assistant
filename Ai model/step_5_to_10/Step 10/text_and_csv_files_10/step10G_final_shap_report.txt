@@ -1,0 +1,24 @@
+PADDY FARMING ASSISTANT
+STEP 10G — FINAL SHAP ANALYSIS REPORT
+=======================================================
+
+Analysis details
+------------------------------
+Validation samples analysed: 22
+Disease classes represented: 11/11
+Satellite features: NDVI, NDRE, GNDVI
+Timesteps per sequence: 10
+
+Overall feature importance
+------------------------------
+Feature  Mean_Absolute_SHAP
+  GNDVI            0.025964
+   NDRE            0.023012
+   NDVI            0.008813
+
+Highest mean absolute SHAP feature: GNDVI
+Mean absolute SHAP value: 0.025964
+
+Interpretation and limitations
+------------------------------
+These results summarize SHAP values for the selected balanced validation samples. Mean absolute SHAP values indicate attribution magnitude, not disease detection accuracy or causal influence. The analysis is preliminary and should not be presented as a definitive global importance estimate for the complete dataset.

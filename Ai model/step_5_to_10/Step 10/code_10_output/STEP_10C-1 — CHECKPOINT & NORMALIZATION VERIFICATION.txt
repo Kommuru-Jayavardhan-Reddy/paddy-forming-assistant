@@ -1,0 +1,46 @@
+======================================================================
+STEP 10C-1 — CHECKPOINT VERIFICATION
+======================================================================
+
+Checkpoint exists: True
+Background exists: True
+
+Checkpoint type: dict
+Checkpoint keys: ['epoch', 'model_state_dict', 'optimizer_state_dict', 'scheduler_state_dict', 'best_val_accuracy', 'best_val_f1', 'best_val_loss', 'class_names', 'num_classes', 'architecture', 'image_dim', 'satellite_input_dim', 'satellite_timesteps', 'projection_dim', 'num_heads', 'satellite_mean', 'satellite_std', 'label_smoothing', 'weight_decay', 'learning_rate', 'weighted_random_sampler']
+
+architecture:
+Controlled Temporal BiLSTM + Residual Cross Attention
+
+num_classes:
+11
+
+class_names:
+['bacterial_leaf_blight', 'bacterial_leaf_streak', 'bacterial_panicle_blight', 'blast', 'brown_spot', 'dead_heart', 'downy_mildew', 'hispa', 'leaf_scald', 'sheath_blight', 'tungro']
+
+image_dim:
+1792
+
+satellite_input_dim:
+3
+
+satellite_timesteps:
+10
+
+projection_dim:
+256
+
+num_heads:
+8
+
+satellite_mean:
+[0.49897781014442444, 0.3122017979621887, 0.48465609550476074]
+
+satellite_std:
+[0.19599050283432007, 0.14074069261550903, 0.149451345205307]
+
+Background shape: (20, 10, 3)
+Background dtype: float32
+Background finite: True
+
+STEP 10C-1 COMPLETED
+Checkpoint and background files verified.

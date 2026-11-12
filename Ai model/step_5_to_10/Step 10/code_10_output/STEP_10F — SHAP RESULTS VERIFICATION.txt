@@ -1,0 +1,43 @@
+======================================================================
+STEP 10F — SHAP RESULTS VERIFICATION
+======================================================================
+Summary CSV: EXISTS
+SHAP values: EXISTS
+Feature importance CSV: EXISTS
+
+Summary shape: (22, 9)
+SHAP shape: (22, 10, 3)
+Importance shape: (3, 2)
+
+PASS: SHAP dimensions and numerical values are valid.
+
+Disease class coverage:
+true_label
+0     2
+1     2
+2     2
+3     2
+4     2
+5     2
+6     2
+7     2
+8     2
+9     2
+10    2
+
+PASS: All 11 classes are represented.
+
+Recomputed feature importance:
+Satellite_Feature  Recomputed_Mean_Absolute_SHAP
+            GNDVI                       0.025964
+             NDRE                       0.023012
+             NDVI                       0.008813
+
+PASS: Saved feature importance matches SHAP arrays.
+
+Verification report saved:
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10F_shap_verification_report.txt
+
+======================================================================
+STEP 10F VERIFICATION COMPLETED
+======================================================================

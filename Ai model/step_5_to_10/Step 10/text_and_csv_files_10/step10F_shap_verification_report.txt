@@ -1,0 +1,12 @@
+STEP 10F — SHAP RESULTS VERIFICATION
+==================================================
+Samples analysed: 22
+SHAP array shape: (22, 10, 3)
+All values finite: True
+Classes represented: 11/11
+
+Feature importance:
+Satellite_Feature  Recomputed_Mean_Absolute_SHAP
+            GNDVI                       0.025964
+             NDRE                       0.023012
+             NDVI                       0.008813

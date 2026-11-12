@@ -1,0 +1,40 @@
+======================================================================
+STEP 10G — FINAL SHAP REPORT
+======================================================================
+Samples: 22
+SHAP shape: (22, 10, 3)
+
+
+
+
+======================================================================
+STEP 10G COMPLETED
+======================================================================
+
+Overall feature importance:
+Feature  Mean_Absolute_SHAP
+  GNDVI            0.025964
+   NDRE            0.023012
+   NDVI            0.008813
+
+Saved files:
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10G_final_feature_importance.png
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10G_timestep_feature_heatmap.png
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10G_classwise_feature_importance.png
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10G_final_feature_importance.csv
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10G_classwise_feature_importance.csv
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10G_final_shap_report.txt
+
+Disease-class-wise results:
+Class_ID	Sample_Count	NDVI	NDRE	GNDVI
+0	0	2	0.012125	0.018735	0.020464
+1	1	2	0.006931	0.017029	0.013212
+2	2	2	0.006076	0.020443	0.014835
+3	3	2	0.007790	0.021515	0.065210
+4	4	2	0.021723	0.075540	0.047528
+5	5	2	0.006540	0.020734	0.016917
+6	6	2	0.004490	0.014327	0.022514
+7	7	2	0.005003	0.016509	0.013279
+8	8	2	0.015573	0.014363	0.050090
+9	9	2	0.008730	0.020381	0.014493
+10	10	2	0.001969	0.013560	0.007062

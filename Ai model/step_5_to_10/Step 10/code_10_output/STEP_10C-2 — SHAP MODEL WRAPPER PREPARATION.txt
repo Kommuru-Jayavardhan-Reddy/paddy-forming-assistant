@@ -1,0 +1,56 @@
+======================================================================
+STEP 10C-2 — SHAP MODEL WRAPPER PREPARATION
+======================================================================
+
+[1/8] Checking required files...
+Checkpoint: True
+Model source: True
+SHAP background: True
+Image embeddings: True
+Dataset CSV: True
+Field mapping: True
+Satellite sequences: True
+
+[2/8] Loading checkpoint and data...
+Image embeddings: (640, 1792)
+Satellite sequences: (58, 10, 3)
+Background: (20, 10, 3)
+Dataset: (640, 23)
+Field mapping: (58, 7)
+
+[3/8] Validating inputs...
+Input and mapping validation: PASSED
+
+[4/8] Extracting model class...
+Model class: TemporalCrossAttentionModel
+Constructor: (self, image_dim=1792, satellite_input_dim=3, lstm_hidden=128, projection_dim=256, num_heads=8, num_classes=11)
+
+[5/8] Loading model checkpoint...
+Strict checkpoint loading: PASSED
+Device: cpu
+
+[6/8] Preparing normalization...
+Raw background: (20, 10, 3)
+Normalized background: (20, 10, 3)
+
+[7/8] Selecting image-satellite pair...
+Dataset row: 0
+Image embedding index: 0
+Satellite field: FIELD_01
+Satellite sequence index: 0
+True label index: 0
+True label name: bacterial_leaf_blight
+
+[8/8] Creating SHAP wrapper...
+
+Prediction: bacterial_leaf_blight
+Prediction index: 0
+Target class: bacterial_leaf_blight
+Target logit: 1.7391895055770874
+Wrapper output shape: (1,)
+Inference verification: PASSED
+
+======================================================================
+STEP 10C-2 COMPLETED SUCCESSFULLY
+Model wrapper is ready for SHAP calculation.
+======================================================================

@@ -1,0 +1,72 @@
+======================================================================
+STEP 10E — BALANCED VALIDATION SHAP ANALYSIS
+======================================================================
+
+Dataset shape: (640, 23)
+Image embeddings shape: (640, 1792)
+Satellite sequences shape: (58, 10, 3)
+
+Validation samples available: 128
+Valid validation samples: 128
+
+Balanced sample count: 22
+
+Selected samples per class:
+0     2
+1     2
+2     2
+3     2
+4     2
+5     2
+6     2
+7     2
+8     2
+9     2
+10    2
+Name: count, dtype: int64
+Balanced SHAP: 100%
+ 22/22 [00:05<00:00,  3.81it/s]
+
+
+======================================================================
+STEP 10E — BALANCED SHAP COMPLETED
+======================================================================
+Samples analysed: 22
+SHAP array shape: (22, 10, 3)
+
+Feature importance:
+Satellite_Feature  Mean_Absolute_SHAP
+            GNDVI            0.025964
+             NDRE            0.023012
+             NDVI            0.008813
+
+Saved files:
+Summary CSV: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10E_balanced_validation_shap_summary.csv
+SHAP values: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10E_balanced_validation_shap_values.npy
+Importance CSV: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10E_balanced_feature_importance.csv
+Feature importance plot: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/step10E_balanced_feature_importance.png
+
+Sample summary:
+sample_no	dataset_row_index	image_embedding_index	field_id	satellite_sequence_index	true_label	NDVI_mean_abs_SHAP	NDRE_mean_abs_SHAP	GNDVI_mean_abs_SHAP
+0	0	87	87	FIELD_05	4	0	0.003070	0.009570	0.009439
+1	1	130	130	FIELD_06	5	0	0.021179	0.027901	0.031488
+2	2	187	187	FIELD_03	2	1	0.007045	0.017011	0.013426
+3	3	191	191	FIELD_03	2	1	0.006816	0.017047	0.012997
+4	4	260	260	FIELD_03	2	2	0.008288	0.025090	0.016656
+5	5	261	261	FIELD_03	2	2	0.003865	0.015797	0.013013
+6	6	270	270	FIELD_01	0	3	0.005021	0.015359	0.046526
+7	7	274	274	FIELD_01	0	3	0.010559	0.027672	0.083894
+8	8	283	283	FIELD_01	0	4	0.022477	0.048195	0.041708
+9	9	304	304	FIELD_18	17	4	0.020968	0.102884	0.053348
+10	10	353	353	FIELD_03	2	5	0.006974	0.025774	0.022565
+11	11	365	365	FIELD_03	2	5	0.006107	0.015693	0.011269
+12	12	417	417	FIELD_21	20	6	0.001910	0.021487	0.037650
+13	13	420	420	FIELD_03	2	6	0.007070	0.007167	0.007379
+14	14	436	436	FIELD_25	24	7	0.002915	0.013726	0.012027
+15	15	437	437	FIELD_28	27	7	0.007090	0.019291	0.014532
+16	16	474	474	FIELD_01	0	8	0.014979	0.017098	0.057207
+17	17	475	475	FIELD_01	0	8	0.016167	0.011628	0.042973
+18	18	485	485	FIELD_03	2	9	0.007199	0.012606	0.008580
+19	19	578	578	FIELD_45	44	9	0.010260	0.028155	0.020406
+20	20	602	602	FIELD_56	55	10	0.002796	0.006246	0.003767
+21	21	621	621	FIELD_54	53	10	0.001143	0.020873	0.010357

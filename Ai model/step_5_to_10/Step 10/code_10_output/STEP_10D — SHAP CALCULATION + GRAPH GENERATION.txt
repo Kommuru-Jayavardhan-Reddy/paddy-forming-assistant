@@ -1,0 +1,43 @@
+======================================================================
+STEP 10D — SHAP CALCULATION AND VISUALIZATION
+======================================================================
+
+[1/5] Checking wrapper output...
+Output shape: (2, 1)
+
+[2/5] Creating GradientExplainer...
+GradientExplainer ready.
+
+Calculating SHAP values...
+SHAP shape: (10, 3)
+SHAP values are finite.
+
+[3/5] Saving SHAP results...
+Saved: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/shap_values_sample_0.npy
+Saved: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/shap_values_sample_0.csv
+
+[4/5] Creating feature importance graph...
+
+Saved: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/shap_feature_importance_sample_0.png
+
+[5/5] Creating time-step heatmap...
+
+Saved: /content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results/shap_satellite_heatmap_sample_0.png
+
+======================================================================
+STEP 10D COMPLETED SUCCESSFULLY
+======================================================================
+
+Output folder:
+/content/drive/MyDrive/final year project/AI_model/step_5_to_9/Step 8/SHAP_Results
+
+Files generated:
+shap_values_sample_0.npy: EXISTS
+shap_values_sample_0.csv: EXISTS
+shap_feature_importance_sample_0.png: EXISTS
+shap_satellite_heatmap_sample_0.png: EXISTS
+
+Mean absolute SHAP values:
+NDVI: 0.023456
+NDRE: 0.014972
+GNDVI: 0.043285
