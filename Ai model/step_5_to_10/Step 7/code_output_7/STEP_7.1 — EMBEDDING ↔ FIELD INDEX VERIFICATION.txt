@@ -1,0 +1,189 @@
+================================================================================
+STEP 7 — EMBEDDING ↔ FIELD INDEX VERIFICATION
+================================================================================
+
+[1] FINAL SATELLITE EMBEDDINGS
+--------------------------------------------------------------------------------
+File: /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_satellite_embeddings.npy
+Shape: (58, 256)
+dtype: float32
+
+[2] CLEAN FIELD DATA
+--------------------------------------------------------------------------------
+Rows: 58
+Columns: ['field_id', 'latitude', 'longitude', 'sentinel2_image_count', 'dates', 'coordinate_valid', 'region_status', 'sentinel_status', 'duplicate_group', 'duplicate_group_size', 'duplicate_status', 'validation_status', 'clean_field_id']
+
+Field IDs:
+['FIELD_01', 'FIELD_02', 'FIELD_03', 'FIELD_04', 'FIELD_05', 'FIELD_06', 'FIELD_07', 'FIELD_08', 'FIELD_09', 'FIELD_10', 'FIELD_11', 'FIELD_12', 'FIELD_13', 'FIELD_14', 'FIELD_15', 'FIELD_16', 'FIELD_17', 'FIELD_18', 'FIELD_19', 'FIELD_20', 'FIELD_21', 'FIELD_22', 'FIELD_23', 'FIELD_24', 'FIELD_25', 'FIELD_26', 'FIELD_27', 'FIELD_28', 'FIELD_29', 'FIELD_30', 'FIELD_31', 'FIELD_32', 'FIELD_33', 'FIELD_34', 'FIELD_35', 'FIELD_36', 'FIELD_37', 'FIELD_38', 'FIELD_39', 'FIELD_40', 'FIELD_41', 'FIELD_42', 'FIELD_43', 'FIELD_44', 'FIELD_45', 'FIELD_46', 'FIELD_47', 'FIELD_48', 'FIELD_49', 'FIELD_50', 'FIELD_51', 'FIELD_52', 'FIELD_53', 'FIELD_54', 'FIELD_55', 'FIELD_56', 'FIELD_57', 'FIELD_58']
+
+[3] FIELD ↔ EMBEDDING COUNT
+--------------------------------------------------------------------------------
+Number of fields: 58
+Number of embeddings: 58
+STATUS: COUNT MATCH ✅
+
+[4] BILSTM SEQUENCES
+--------------------------------------------------------------------------------
+File: /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+Shape: (58, 10, 3)
+dtype: float32
+
+[5] SENTINEL-2 TIME SERIES
+--------------------------------------------------------------------------------
+Rows: 580
+Columns:
+    field_id
+    time_step
+    date
+    NDVI
+    NDRE
+    GNDVI
+
+First 10 rows:
+field_id  time_step       date     NDVI     NDRE    GNDVI
+FIELD_01          1 2026-05-19 0.178231 0.099374 0.225035
+FIELD_01          2 2026-06-02 0.181788 0.113254 0.231426
+FIELD_01          3 2026-06-17 0.178335 0.106729 0.218503
+FIELD_01          4 2026-07-02 0.183571 0.112335 0.219692
+FIELD_01          5 2026-07-17 0.194874 0.128665 0.230644
+FIELD_01          6 2026-07-31 0.207844 0.135502 0.241799
+FIELD_01          7 2026-08-15 0.217486 0.141656 0.251023
+FIELD_01          8 2026-08-30 0.221776 0.146708 0.257143
+FIELD_01          9 2026-09-14 0.226067 0.151761 0.263262
+FIELD_01         10 2026-09-29 0.230357 0.156814 0.269381
+
+[6] SENTINEL-2 SELECTED DATES
+--------------------------------------------------------------------------------
+Rows: 719
+Columns:
+    field_id
+    date
+    cloud_percentage
+    image_id
+
+First 10 rows:
+field_id       date  cloud_percentage                                                     image_id
+FIELD_01 2026-05-19         14.259745 S2A_MSIL2A_20260519T051241_N0512_R019_T44PLV_20260519T101342
+FIELD_01 2026-05-22         13.869633 S2B_MSIL2A_20260522T050649_N0512_R019_T44PLV_20260522T085503
+FIELD_01 2026-06-06         19.969912 S2C_MSIL2A_20260606T050651_N0512_R019_T44PLV_20260606T100020
+FIELD_01 2026-06-28          1.769062 S2A_MSIL2A_20260628T051241_N0512_R019_T44PLV_20260628T101512
+FIELD_01 2026-07-11          9.542175 S2B_MSIL2A_20260711T050649_N0512_R019_T44PLV_20260711T085428
+FIELD_01 2026-08-10         15.393238 S2B_MSIL2A_20260810T050649_N0512_R019_T44PLV_20260810T085431
+FIELD_01 2026-09-29          5.479358 S2B_MSIL2A_20260929T050649_N0513_R019_T44PLV_20260929T091314
+FIELD_02 2026-05-19          6.963155 S2B_MSIL2A_20260519T045659_N0512_R119_T44PLV_20260519T084811
+FIELD_02 2026-05-22         13.869633 S2B_MSIL2A_20260522T050649_N0512_R019_T44PLV_20260522T085503
+FIELD_02 2026-05-24          1.427164 S2C_MSIL2A_20260524T045701_N0512_R119_T44PLV_20260524T095301
+
+[7] STEP 6 VERIFICATION SUMMARY
+--------------------------------------------------------------------------------
+STEP 6F — SATELLITE BRANCH FINAL HANDOFF VERIFICATION
+======================================================================
+
+Input satellite shape : (58, 10, 3)
+Final embedding shape : (58, 256)
+Number of sequences  : 58
+Embedding dimension  : 256
+NaN count            : 0
+Inf count            : 0
+Mean                 : -0.000000
+Std                  : 0.997270
+Min                  : -2.293755
+Max                  : 3.584401
+Input/output match   : True
+All embeddings 256-D : True
+Numerically stable   : True
+
+
+
+================================================================================
+[8] FIELD ORDER CHECK
+================================================================================
+
+First 20 field rows:
+field_id  latitude  longitude  sentinel2_image_count  clean_field_id
+FIELD_01 13.285588  79.296860                      7 CLEAN_FIELD_001
+FIELD_02 13.429626  79.581415                     15 CLEAN_FIELD_002
+FIELD_03 13.434257  79.578605                     15 CLEAN_FIELD_003
+FIELD_04 13.433872  79.581135                     15 CLEAN_FIELD_004
+FIELD_05 13.429553  79.579276                     15 CLEAN_FIELD_005
+FIELD_06 13.430798  79.552240                     15 CLEAN_FIELD_006
+FIELD_07 13.409358  79.675191                     12 CLEAN_FIELD_007
+FIELD_08 13.435335  79.592580                     15 CLEAN_FIELD_008
+FIELD_09 13.435335  79.692580                      8 CLEAN_FIELD_009
+FIELD_10 13.401756  79.568503                     15 CLEAN_FIELD_010
+FIELD_11 13.433905  79.578698                     15 CLEAN_FIELD_011
+FIELD_12 13.429371  79.568189                     15 CLEAN_FIELD_012
+FIELD_13 13.434728  79.578072                     15 CLEAN_FIELD_013
+FIELD_14 13.285600  79.206832                     10 CLEAN_FIELD_014
+FIELD_15 13.433916  79.578420                     15 CLEAN_FIELD_015
+FIELD_16 13.492913  79.578417                     26 CLEAN_FIELD_016
+FIELD_17 13.433019  79.578930                     15 CLEAN_FIELD_017
+FIELD_18 13.418302  79.572238                     15 CLEAN_FIELD_018
+FIELD_19 13.286559  79.296831                      7 CLEAN_FIELD_019
+FIELD_20 13.342800  79.578645                     15 CLEAN_FIELD_020
+
+================================================================================
+[9] TEMPORARY FIELD ↔ EMBEDDING INDEX
+================================================================================
+ embedding_index field_id  clean_field_id  latitude  longitude
+               0 FIELD_01 CLEAN_FIELD_001 13.285588  79.296860
+               1 FIELD_02 CLEAN_FIELD_002 13.429626  79.581415
+               2 FIELD_03 CLEAN_FIELD_003 13.434257  79.578605
+               3 FIELD_04 CLEAN_FIELD_004 13.433872  79.581135
+               4 FIELD_05 CLEAN_FIELD_005 13.429553  79.579276
+               5 FIELD_06 CLEAN_FIELD_006 13.430798  79.552240
+               6 FIELD_07 CLEAN_FIELD_007 13.409358  79.675191
+               7 FIELD_08 CLEAN_FIELD_008 13.435335  79.592580
+               8 FIELD_09 CLEAN_FIELD_009 13.435335  79.692580
+               9 FIELD_10 CLEAN_FIELD_010 13.401756  79.568503
+              10 FIELD_11 CLEAN_FIELD_011 13.433905  79.578698
+              11 FIELD_12 CLEAN_FIELD_012 13.429371  79.568189
+              12 FIELD_13 CLEAN_FIELD_013 13.434728  79.578072
+              13 FIELD_14 CLEAN_FIELD_014 13.285600  79.206832
+              14 FIELD_15 CLEAN_FIELD_015 13.433916  79.578420
+              15 FIELD_16 CLEAN_FIELD_016 13.492913  79.578417
+              16 FIELD_17 CLEAN_FIELD_017 13.433019  79.578930
+              17 FIELD_18 CLEAN_FIELD_018 13.418302  79.572238
+              18 FIELD_19 CLEAN_FIELD_019 13.286559  79.296831
+              19 FIELD_20 CLEAN_FIELD_020 13.342800  79.578645
+
+IMPORTANT:
+This is ONLY the current row-order hypothesis.
+It is NOT yet accepted as the true mapping.
+
+================================================================================
+[10] SEARCHING FOR EXPLICIT EMBEDDING INDEX
+================================================================================
+
+================================================================================
+CURRENT MAPPING STATUS
+================================================================================
+
+CONFIRMED:
+
+✓ 58 final satellite embeddings exist
+✓ Embedding dimension = 256
+✓ 58 clean field candidates exist
+✓ Each clean field has GPS coordinates
+✓ Image → field mapping exists through gps_spatial_clusters.csv
+✓ Sentinel-2 data exists
+
+NOT YET PROVEN:
+
+? embedding index → field_id
+
+DO NOT assume:
+
+embedding[0] = FIELD_01
+embedding[1] = FIELD_02
+...
+
+until Step 6 generation order is verified.
+
+NEXT STEP:
+Determine the exact order used when Step 6 created
+step6F_final_satellite_embeddings.npy.
+
+================================================================================
+VERIFICATION FINISHED
+================================================================================

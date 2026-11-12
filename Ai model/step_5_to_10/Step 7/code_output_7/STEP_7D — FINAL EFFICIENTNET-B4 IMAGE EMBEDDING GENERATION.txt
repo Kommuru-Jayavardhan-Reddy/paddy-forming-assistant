@@ -1,0 +1,177 @@
+================================================================================
+STEP_7D — FINAL IMAGE EMBEDDING GENERATION
+================================================================================
+
+[1] CHECKING INPUT FILES
+--------------------------------------------------------------------------------
+✓ EfficientNet-B4 checkpoint found
+✓ Image mapping CSV found
+
+[2] LOADING IMAGE MAPPING
+--------------------------------------------------------------------------------
+Original mapping records: 641
+✓ Required columns available
+
+[3] VERIFYING IMAGE FILES
+--------------------------------------------------------------------------------
+Total records: 641
+Existing image files: 640
+Missing image files: 1
+
+Missing image records:
+--------------------------------------------------------------------------------
+                                      image_name                                                                                                                              image_path nearest_satellite_field  satellite_embedding_index
+WhatsApp Image 2026-09-30 at 5.21.26 PM (3).jpeg /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_panicle_blight/WhatsApp Image 2026-09-30 at 5.21.26 PM (3).jpeg                FIELD_18                         17
+
+[4] RECTIFYING INVALID IMAGE RECORDS
+--------------------------------------------------------------------------------
+Removed missing records: 1
+Remaining valid records: 640
+
+[5] CHECKING DUPLICATE IMAGE NAMES
+--------------------------------------------------------------------------------
+Duplicate records among existing files: 0
+✓ No existing duplicate image names
+
+[6] FINAL IMAGE COUNT
+--------------------------------------------------------------------------------
+Final valid unique images: 640
+✓ 640 valid unique images confirmed
+
+[7] VERIFYING SATELLITE EMBEDDING INDICES
+--------------------------------------------------------------------------------
+Minimum satellite embedding index: 0
+Maximum satellite embedding index: 56
+✓ Satellite embedding indices valid
+
+[8] LOADING EFFICIENTNET-B4 PHASE-C
+--------------------------------------------------------------------------------
+Checkpoint epoch: 1
+Best validation accuracy: 0.9337270341207349
+Number of classes: 13
+
+✓ EfficientNet-B4 architecture created
+✓ Phase-C feature weights loaded
+
+[9] CREATING 1792-D FEATURE EXTRACTOR
+--------------------------------------------------------------------------------
+✓ Feature extractor created
+Device: cuda
+
+[10] IMAGE PREPROCESSING
+--------------------------------------------------------------------------------
+✓ Resize: 380 × 380
+✓ RGB conversion
+✓ ImageNet normalization
+
+✓ Dataset created
+Dataset size: 640
+
+[11] DATALOADER
+--------------------------------------------------------------------------------
+Batch size: 16
+Number of batches: 40
+Shuffle: False
+
+[12] GENERATING IMAGE EMBEDDINGS
+--------------------------------------------------------------------------------
+Processed:  16 / 640
+Processed:  32 / 640
+Processed:  48 / 640
+Processed:  64 / 640
+Processed:  80 / 640
+Processed:  96 / 640
+Processed: 112 / 640
+Processed: 128 / 640
+Processed: 144 / 640
+Processed: 160 / 640
+Processed: 176 / 640
+Processed: 192 / 640
+Processed: 208 / 640
+Processed: 224 / 640
+Processed: 240 / 640
+Processed: 256 / 640
+Processed: 272 / 640
+Processed: 288 / 640
+Processed: 304 / 640
+Processed: 320 / 640
+Processed: 336 / 640
+Processed: 352 / 640
+Processed: 368 / 640
+Processed: 384 / 640
+Processed: 400 / 640
+Processed: 416 / 640
+Processed: 432 / 640
+Processed: 448 / 640
+Processed: 464 / 640
+Processed: 480 / 640
+Processed: 496 / 640
+Processed: 512 / 640
+Processed: 528 / 640
+Processed: 544 / 640
+Processed: 560 / 640
+Processed: 576 / 640
+Processed: 592 / 640
+Processed: 608 / 640
+Processed: 624 / 640
+Processed: 640 / 640
+
+[13] COMBINING EMBEDDINGS
+--------------------------------------------------------------------------------
+Final embedding shape: (640, 1792)
+
+[14] SHAPE VALIDATION
+--------------------------------------------------------------------------------
+✓ Shape: (640, 1792)
+
+[15] NUMERICAL VALIDATION
+--------------------------------------------------------------------------------
+NaN values: 0
+Infinite values: 0
+✓ No NaN
+✓ No Inf
+
+[16] EMBEDDING STATISTICS
+--------------------------------------------------------------------------------
+Mean: 0.05688606575131416
+Std : 0.16366158425807953
+Min : -0.2226107120513916
+Max : 1.679375171661377
+
+[17] SAVING IMAGE EMBEDDINGS
+--------------------------------------------------------------------------------
+✓ Saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+
+[18] CREATING EMBEDDING INDEX
+--------------------------------------------------------------------------------
+✓ Saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embedding_index.csv
+
+✓ Verification report saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7D_image_embedding_verification.txt
+
+
+================================================================================
+STEP 7D — COMPLETE
+================================================================================
+
+✓ Original records              : 641
+✓ Missing invalid record removed: 1
+✓ Final valid unique images     : 640
+✓ EfficientNet-B4 Phase-C       : USED
+✓ Retraining                    : NO
+✓ Image embedding dimension     : 1792
+✓ Final embedding matrix        : (640, 1792)
+✓ NaN                           : 0
+✓ Inf                           : 0
+✓ Embedding index CSV           : CREATED
+✓ Verification report           : CREATED
+
+NEXT STEP:
+Verify the 640 image embeddings together with
+their disease labels and satellite embeddings.
+
+DO NOT START CROSS-ATTENTION TRAINING YET.
+
+================================================================================

@@ -1,0 +1,123 @@
+================================================================================
+STEP 7E — FINAL MULTIMODAL PAIR VERIFICATION
+================================================================================
+
+[1] CHECKING FILES
+--------------------------------------------------------------------------------
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embedding_index.csv
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_satellite_embeddings.npy
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_timeseries.csv
+✓ Exists
+
+[2] LOADING IMAGE EMBEDDINGS
+--------------------------------------------------------------------------------
+Image embedding shape: (640, 1792)
+✓ Image embeddings verified
+
+[3] LOADING IMAGE INDEX
+--------------------------------------------------------------------------------
+Image index records: 640
+
+Columns:
+['image_embedding_index', 'image_name', 'image_path', 'latitude', 'longitude', 'status', 'inside_project_region', 'cluster', 'gps_field_id', 'nearest_satellite_field', 'distance_km', 'decision', 'satellite_embedding_index', 'satellite_embedding', 'image_embedding_dimension']
+
+[4] IMAGE INDEX VALIDATION
+--------------------------------------------------------------------------------
+✓ 640 image records
+✓ Embedding indices 0–639
+✓ Index order valid
+
+[5] DISEASE LABEL VERIFICATION
+--------------------------------------------------------------------------------
+⚠ Disease label column was not found in the image embedding index.
+
+[6] LOADING SATELLITE EMBEDDINGS
+--------------------------------------------------------------------------------
+Satellite embedding shape: (58, 256)
+✓ Satellite embeddings verified
+
+[7] SATELLITE INDEX VALIDATION
+--------------------------------------------------------------------------------
+Minimum index: 0
+Maximum index: 56
+✓ All satellite indices valid
+
+[8] BUILDING MULTIMODAL PAIRS
+--------------------------------------------------------------------------------
+Paired satellite shape: (640, 256)
+✓ 640 image ↔ satellite pairs created
+
+[9] NUMERICAL VALIDATION
+--------------------------------------------------------------------------------
+Image NaN: 0
+Image Inf: 0
+Satellite NaN: 0
+Satellite Inf: 0
+✓ All embeddings numerically valid
+
+[10] SATELLITE FIELD DISTRIBUTION
+--------------------------------------------------------------------------------
+Field column: nearest_satellite_field
+
+Unique satellite fields: 36
+
+Field distribution:
+nearest_satellite_field
+FIELD_01     72
+FIELD_02     30
+FIELD_03    174
+FIELD_04      2
+FIELD_05     92
+FIELD_06     20
+FIELD_07      6
+FIELD_08     14
+FIELD_09      4
+FIELD_10      7
+FIELD_18     31
+FIELD_21     36
+FIELD_22      2
+FIELD_25      5
+FIELD_27      2
+FIELD_28      5
+FIELD_29      5
+FIELD_31      2
+FIELD_33      2
+FIELD_34      2
+FIELD_35      3
+FIELD_36      3
+FIELD_37      3
+FIELD_38      5
+FIELD_41      2
+FIELD_44     50
+FIELD_45      4
+FIELD_47      2
+FIELD_48      6
+FIELD_49      4
+FIELD_50      4
+FIELD_51      3
+FIELD_52      3
+FIELD_54     29
+FIELD_56      3
+FIELD_57      3
+
+✓ Saved paired satellite embeddings:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7E_paired_satellite_embeddings_640x256.npy
+
+================================================================================
+STEP 7E VERIFICATION RESULT
+================================================================================
+
+✓ Image embeddings        : (640, 1792)
+✓ Satellite embeddings    : (58, 256)
+✓ Paired satellite        : (640, 256)
+✓ Satellite indices       : VALID
+✓ NaN                     : 0
+✓ Inf                     : 0
+
+================================================================================

@@ -1,0 +1,355 @@
+================================================================================
+STEP 7L — TEMPORAL CROSS-ATTENTION MULTIMODAL TRAINING
+================================================================================
+
+[1] MOUNTING GOOGLE DRIVE
+--------------------------------------------------------------------------------
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+✓ Google Drive connected
+
+[2] RANDOM SEED
+--------------------------------------------------------------------------------
+Seed: 42
+
+[3] DEVICE
+--------------------------------------------------------------------------------
+Device: cuda
+GPU: Tesla T4
+
+[4] REQUIRED FILES
+--------------------------------------------------------------------------------
+✓ Dataset:
+   /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_final_11class_multimodal_dataset.csv
+✓ Image embeddings:
+   /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+✓ Train indices:
+   /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_train_indices.npy
+✓ Validation indices:
+   /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_val_indices.npy
+✓ Satellite temporal sequences:
+   /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+
+✓ All required files found
+
+[5] LOADING DATA
+--------------------------------------------------------------------------------
+Dataset shape: (640, 23)
+Image embeddings shape: (640, 1792)
+Train indices shape: (512,)
+Validation indices shape: (128,)
+Satellite sequences shape: (58, 10, 3)
+
+[6] BASIC VALIDATION
+--------------------------------------------------------------------------------
+✓ Dataset = 640
+✓ Image embeddings = (640,1792)
+✓ Satellite sequences = (58,10,3)
+✓ Train = 512
+✓ Validation = 128
+
+[7] NUMERICAL VALIDATION
+--------------------------------------------------------------------------------
+Image NaN: 0
+Image Inf: 0
+Satellite NaN: 0
+Satellite Inf: 0
+✓ No NaN values
+✓ No Inf values
+
+[8] TRAIN / VALIDATION SPLIT
+--------------------------------------------------------------------------------
+Train samples: 512
+Validation samples: 128
+Overlap: 0
+✓ No train/validation overlap
+
+[9] 11-CLASS LABEL VERIFICATION
+--------------------------------------------------------------------------------
+Unique labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+Class distribution:
+ 0 | bacterial_leaf_blight          | 149
+ 1 | bacterial_leaf_streak          | 60
+ 2 | bacterial_panicle_blight       | 61
+ 3 | blast                          | 11
+ 4 | brown_spot                     | 52
+ 5 | dead_heart                     | 38
+ 6 | downy_mildew                   | 62
+ 7 | hispa                          | 37
+ 8 | leaf_scald                     | 15
+ 9 | sheath_blight                  | 106
+10 | tungro                         | 49
+
+✓ All 11 classes verified
+
+[10] CORRECT SATELLITE TEMPORAL MAPPING
+--------------------------------------------------------------------------------
+
+IMPORTANT:
+
+satellite_embedding_index
+    = satellite FIELD index
+
+paired_satellite_embedding_index
+    = 640-image row index
+
+Therefore paired_satellite_embedding_index
+is NOT used for temporal satellite mapping.
+
+Satellite index min: 0
+Satellite index max: 56
+Unique satellite indices: 36
+✓ Satellite index range valid
+
+[11] FIELD NAME VALIDATION
+--------------------------------------------------------------------------------
+Field mapping mismatches: 0
+✓ satellite_embedding_index correctly maps to nearest_satellite_field
+
+[12] BUILDING IMAGE → TEMPORAL SATELLITE SEQUENCES
+--------------------------------------------------------------------------------
+Image temporal satellite shape: (640, 10, 3)
+
+✓ 640 images mapped
+✓ 10 satellite timesteps per image
+✓ 3 satellite features per timestep
+
+Features:
+  1. NDVI
+  2. NDRE
+  3. GNDVI
+
+[13] SAMPLE SATELLITE MAPPING
+--------------------------------------------------------------------------------
+Row 000 | Field=FIELD_01 | SatelliteIndex=0 | SequenceShape=(10, 3)
+Row 001 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 002 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 003 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 004 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 005 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 006 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 007 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 008 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+Row 009 | Field=FIELD_02 | SatelliteIndex=1 | SequenceShape=(10, 3)
+
+[14] BiLSTM CHECK
+--------------------------------------------------------------------------------
+
+No original Step 6 BiLSTM checkpoint was found.
+
+Therefore Step 7L will TRAIN a BiLSTM jointly
+with the temporal cross-attention model.
+
+Input:
+    10 timesteps × 3 features
+
+BiLSTM:
+    input_size  = 3
+    hidden_size = 128
+    bidirectional = True
+
+Output:
+    10 timesteps × 256
+
+This preserves the temporal satellite information.
+
+
+[15] CREATING PYTORCH DATASETS
+--------------------------------------------------------------------------------
+Train dataset: 512
+Validation dataset: 128
+Batch size: 32
+
+[16] INITIALIZING MODEL
+--------------------------------------------------------------------------------
+TemporalCrossAttentionModel(
+  (image_projection): Sequential(
+    (0): Linear(in_features=1792, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+  )
+  (satellite_lstm): LSTM(3, 128, num_layers=2, batch_first=True, dropout=0.2, bidirectional=True)
+  (satellite_projection): Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): ReLU()
+  )
+  (cross_attention): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+  )
+  (fusion): Sequential(
+    (0): Linear(in_features=512, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.3, inplace=False)
+  )
+  (classifier): Linear(in_features=256, out_features=11, bias=True)
+)
+
+Total parameters: 1454603
+Trainable parameters: 1454603
+
+[17] FORWARD PASS TEST
+--------------------------------------------------------------------------------
+Image input: torch.Size([2, 1792])
+Satellite input: torch.Size([2, 10, 3])
+Logits: torch.Size([2, 11])
+Attention: torch.Size([2, 1, 10])
+
+✓ Forward pass successful
+
+IMPORTANT:
+Attention shape = [2, 1, 10]
+
+This means:
+2 samples
+1 image query
+10 satellite timesteps
+
+This is the intended TEMPORAL cross-attention.
+
+
+[18] CLASS-BALANCED LOSS
+--------------------------------------------------------------------------------
+Class weights:
+ 0 | bacterial_leaf_blight          | 0.3911
+ 1 | bacterial_leaf_streak          | 0.9697
+ 2 | bacterial_panicle_blight       | 0.9499
+ 3 | blast                          | 5.1717
+ 4 | brown_spot                     | 1.1353
+ 5 | dead_heart                     | 1.5515
+ 6 | downy_mildew                   | 0.9309
+ 7 | hispa                          | 1.5515
+ 8 | leaf_scald                     | 3.8788
+ 9 | sheath_blight                  | 0.5476
+10 | tungro                         | 1.1935
+
+[19] TRAINING CONFIGURATION
+--------------------------------------------------------------------------------
+Epochs: 20
+Batch size: 32
+Learning rate: 0.001
+Weight decay: 0.0005
+Label smoothing: 0.05
+Early stopping: 5
+Gradient clipping: 1.0
+
+
+================================================================================
+STEP 7L TRAINING STARTED
+================================================================================
+Epoch 01/20 | Train Loss: 2.2511 | Train Acc: 34.38% | Val Loss: 1.8789 | Val Acc: 56.25% | LR: 0.001000
+  ★ BEST MODEL SAVED (Val Acc: 56.25%)
+Epoch 02/20 | Train Loss: 1.7183 | Train Acc: 54.69% | Val Loss: 1.5381 | Val Acc: 60.94% | LR: 0.001000
+  ★ BEST MODEL SAVED (Val Acc: 60.94%)
+Epoch 03/20 | Train Loss: 1.4293 | Train Acc: 63.87% | Val Loss: 1.3906 | Val Acc: 67.97% | LR: 0.001000
+  ★ BEST MODEL SAVED (Val Acc: 67.97%)
+Epoch 04/20 | Train Loss: 1.1969 | Train Acc: 72.85% | Val Loss: 1.2593 | Val Acc: 69.53% | LR: 0.001000
+  ★ BEST MODEL SAVED (Val Acc: 69.53%)
+Epoch 05/20 | Train Loss: 1.0374 | Train Acc: 77.34% | Val Loss: 1.2458 | Val Acc: 71.88% | LR: 0.001000
+  ★ BEST MODEL SAVED (Val Acc: 71.88%)
+Epoch 06/20 | Train Loss: 0.9425 | Train Acc: 79.49% | Val Loss: 1.2239 | Val Acc: 74.22% | LR: 0.001000
+  ★ BEST MODEL SAVED (Val Acc: 74.22%)
+Epoch 07/20 | Train Loss: 0.8776 | Train Acc: 81.84% | Val Loss: 1.2797 | Val Acc: 71.88% | LR: 0.001000
+Epoch 08/20 | Train Loss: 0.8033 | Train Acc: 84.38% | Val Loss: 1.2241 | Val Acc: 70.31% | LR: 0.001000
+Epoch 09/20 | Train Loss: 0.7935 | Train Acc: 83.98% | Val Loss: 1.2168 | Val Acc: 73.44% | LR: 0.001000
+Epoch 10/20 | Train Loss: 0.7295 | Train Acc: 84.96% | Val Loss: 1.2501 | Val Acc: 74.22% | LR: 0.001000
+Epoch 11/20 | Train Loss: 0.6788 | Train Acc: 86.13% | Val Loss: 1.2843 | Val Acc: 77.34% | LR: 0.001000
+  ★ BEST MODEL SAVED (Val Acc: 77.34%)
+Epoch 12/20 | Train Loss: 0.6624 | Train Acc: 89.26% | Val Loss: 1.2889 | Val Acc: 74.22% | LR: 0.000500
+Epoch 13/20 | Train Loss: 0.6078 | Train Acc: 88.87% | Val Loss: 1.2661 | Val Acc: 71.88% | LR: 0.000500
+Epoch 14/20 | Train Loss: 0.6066 | Train Acc: 88.87% | Val Loss: 1.2841 | Val Acc: 71.88% | LR: 0.000500
+Epoch 15/20 | Train Loss: 0.5888 | Train Acc: 90.04% | Val Loss: 1.2883 | Val Acc: 73.44% | LR: 0.000250
+Epoch 16/20 | Train Loss: 0.5742 | Train Acc: 89.84% | Val Loss: 1.2574 | Val Acc: 72.66% | LR: 0.000250
+
+Early stopping triggered.
+
+[20] LOADING BEST MODEL
+--------------------------------------------------------------------------------
+Best epoch: 11
+Best validation accuracy: 77.34%
+Best validation loss: 1.2843
+
+[21] FINAL VALIDATION EVALUATION
+--------------------------------------------------------------------------------
+Final best validation accuracy: 77.34%
+Attention shape: (128, 1, 10)
+
+[22] CLASSIFICATION REPORT
+--------------------------------------------------------------------------------
+                          precision    recall  f1-score   support
+
+   bacterial_leaf_blight       1.00      0.83      0.91        30
+   bacterial_leaf_streak       0.44      0.58      0.50        12
+bacterial_panicle_blight       0.33      0.08      0.13        12
+                   blast       1.00      0.50      0.67         2
+              brown_spot       0.60      0.82      0.69        11
+              dead_heart       0.67      0.75      0.71         8
+            downy_mildew       0.86      1.00      0.92        12
+                   hispa       0.88      1.00      0.93         7
+              leaf_scald       0.33      1.00      0.50         3
+           sheath_blight       1.00      1.00      1.00        21
+                  tungro       1.00      0.70      0.82        10
+
+                accuracy                           0.77       128
+               macro avg       0.74      0.75      0.71       128
+            weighted avg       0.79      0.77      0.76       128
+
+
+[23] CONFUSION MATRIX
+--------------------------------------------------------------------------------
+
+
+[24] GENERATING TRAINING GRAPHS
+--------------------------------------------------------------------------------
+
+
+
+Mean temporal attention: [0.09371874 0.09444414 0.09527376 0.09560121 0.09526993 0.09518088
+ 0.0962517  0.09948004 0.10691961 0.12785998]
+
+
+
+================================================================================
+STEP 7L COMPLETED
+================================================================================
+
+★ BEST VALIDATION ACCURACY: 77.34%
+★ BEST VALIDATION LOSS: 1.2843
+★ FINAL VALIDATION ACCURACY: 77.34%
+
+Saved files:
+--------------------------------------------------------------------------------
+Best model:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_temporal_cross_attention_best.pth
+
+Final model:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_temporal_cross_attention_final.pth
+
+Training history:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_training_history.csv
+
+Classification report:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_classification_report.txt
+
+Confusion matrix:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_confusion_matrix.png
+
+Loss graph:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_loss_curve.png
+
+Accuracy graph:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_accuracy_curve.png
+
+Temporal attention graph:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_temporal_attention.png
+
+Attention values:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_temporal_attention_values.csv
+
+Final report:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention/step7L_final_training_report.txt
+
+================================================================================
+ALL STEP 7L CHECKS PASSED
+================================================================================

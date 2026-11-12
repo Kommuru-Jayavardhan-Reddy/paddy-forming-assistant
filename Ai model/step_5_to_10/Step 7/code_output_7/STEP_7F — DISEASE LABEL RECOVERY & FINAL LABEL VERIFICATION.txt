@@ -1,0 +1,148 @@
+================================================================================
+STEP 7F — DISEASE LABEL RECOVERY & VERIFICATION
+================================================================================
+
+[1] CHECKING INPUT FILES
+--------------------------------------------------------------------------------
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embedding_index.csv
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7E_paired_satellite_embeddings_640x256.npy
+✓ Exists
+
+[2] LOADING IMAGE INDEX
+--------------------------------------------------------------------------------
+Records: 640
+✓ 640 image records loaded
+
+[3] LOADING EMBEDDINGS
+--------------------------------------------------------------------------------
+Image embeddings: (640, 1792)
+Satellite embeddings: (640, 256)
+✓ Embedding shapes verified
+
+[4] RECOVERING DISEASE LABELS
+--------------------------------------------------------------------------------
+Missing disease labels: 0
+✓ All 640 images have disease labels
+
+[5] VERIFYING DISEASE CLASS NAMES
+--------------------------------------------------------------------------------
+Classes found:
+   bacterial_leaf_blight
+   bacterial_leaf_streak
+   bacterial_panicle_blight
+   blast
+   brown_spot
+   dead_heart
+   downy_mildew
+   hispa
+   leaf_scald
+   sheath_blight
+   tungro
+
+✓ All disease labels belong to the expected 13 classes
+
+⚠ Classes with zero images:
+['leaf_smut', 'normal']
+
+[6] DISEASE DISTRIBUTION
+--------------------------------------------------------------------------------
+disease_label
+bacterial_leaf_blight       149
+bacterial_leaf_streak        60
+bacterial_panicle_blight     61
+blast                        11
+brown_spot                   52
+dead_heart                   38
+downy_mildew                 62
+hispa                        37
+leaf_scald                   15
+leaf_smut                     0
+normal                        0
+sheath_blight               106
+tungro                       49
+
+Total labelled images: 640
+
+[7] CREATING CLASS INDICES
+--------------------------------------------------------------------------------
+✓ Disease class indices created
+
+Class mapping:
+ 0 → bacterial_leaf_blight          : 149
+ 1 → bacterial_leaf_streak          : 60
+ 2 → bacterial_panicle_blight       : 61
+ 3 → blast                          : 11
+ 4 → brown_spot                     : 52
+ 5 → dead_heart                     : 38
+ 6 → downy_mildew                   : 62
+ 7 → hispa                          : 37
+ 8 → leaf_scald                     : 15
+ 9 → leaf_smut                      : 0
+10 → normal                         : 0
+11 → sheath_blight                  : 106
+12 → tungro                         : 49
+
+[8] VERIFYING IMAGE EMBEDDING INDEX
+--------------------------------------------------------------------------------
+✓ Image embedding indices = 0–639
+
+[9] VERIFYING SATELLITE FIELD MAPPING
+--------------------------------------------------------------------------------
+✓ Satellite field information present
+Minimum satellite index: 0
+Maximum satellite index: 56
+✓ Satellite indices valid
+
+[10] BUILDING FINAL MULTIMODAL DATASET
+--------------------------------------------------------------------------------
+✓ Multimodal metadata assembled
+
+[11] FINAL MULTIMODAL VALIDATION
+--------------------------------------------------------------------------------
+Image records            : PASS
+Image embeddings         : PASS
+Satellite embeddings     : PASS
+Image index              : PASS
+Disease labels           : PASS
+Disease class indices    : PASS
+Satellite field          : PASS
+Satellite indices        : PASS
+Image NaN                : PASS
+Image Inf                : PASS
+Satellite NaN            : PASS
+Satellite Inf            : PASS
+
+✓ ALL MULTIMODAL CHECKS PASSED
+
+[12] SAVING FINAL MULTIMODAL METADATA
+--------------------------------------------------------------------------------
+✓ Saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7F_final_multimodal_dataset_640.csv
+
+✓ Verification report saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7F_disease_label_verification.txt
+
+
+================================================================================
+STEP 7F — COMPLETE
+================================================================================
+
+✓ 640 images verified
+✓ Disease labels recovered
+✓ 13-class mapping verified
+✓ Disease class indices created
+✓ Image embeddings verified
+✓ Satellite embeddings verified
+✓ Image ↔ satellite mapping verified
+✓ NaN = 0
+✓ Inf = 0
+✓ Final multimodal metadata saved
+
+NEXT:
+Step 7G — FINAL MULTIMODAL DATASET CHECK
+Then Cross-Attention Fusion.
+
+================================================================================

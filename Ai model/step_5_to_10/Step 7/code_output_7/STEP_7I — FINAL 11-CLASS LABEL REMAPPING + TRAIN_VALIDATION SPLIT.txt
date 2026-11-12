@@ -1,0 +1,180 @@
+================================================================================
+STEP_7I — FINAL 11-CLASS LABEL REMAPPING + TRAIN/VALIDATION SPLIT
+================================================================================
+
+[1] CHECKING REQUIRED FILES
+--------------------------------------------------------------------------------
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7F_final_multimodal_dataset_640.csv
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7E_paired_satellite_embeddings_640x256.npy
+✓ Exists
+
+[2] LOADING DATA
+--------------------------------------------------------------------------------
+Dataset shape: (640, 21)
+Image embeddings: (640, 1792)
+Satellite embeddings: (640, 256)
+
+[3] BASIC DATA VALIDATION
+--------------------------------------------------------------------------------
+✓ Dataset = 640
+✓ Image embeddings = (640, 1792)
+✓ Satellite embeddings = (640, 256)
+
+[4] DEFINING FINAL 11 CLASSES
+--------------------------------------------------------------------------------
+ 0 → bacterial_leaf_blight
+ 1 → bacterial_leaf_streak
+ 2 → bacterial_panicle_blight
+ 3 → blast
+ 4 → brown_spot
+ 5 → dead_heart
+ 6 → downy_mildew
+ 7 → hispa
+ 8 → leaf_scald
+ 9 → sheath_blight
+10 → tungro
+
+[5] CHECKING DATASET LABELS
+--------------------------------------------------------------------------------
+Labels found in dataset:
+  bacterial_leaf_blight
+  bacterial_leaf_streak
+  bacterial_panicle_blight
+  blast
+  brown_spot
+  dead_heart
+  downy_mildew
+  hispa
+  leaf_scald
+  sheath_blight
+  tungro
+
+✓ All dataset labels belong to the final 11 classes
+
+[6] ZERO-SAMPLE CLASS CHECK
+--------------------------------------------------------------------------------
+bacterial_leaf_blight          : 149
+bacterial_leaf_streak          : 60
+bacterial_panicle_blight       : 61
+blast                          : 11
+brown_spot                     : 52
+dead_heart                     : 38
+downy_mildew                   : 62
+hispa                          : 37
+leaf_scald                     : 15
+sheath_blight                  : 106
+tungro                         : 49
+
+✓ All 11 classes contain samples
+
+[7] CREATING NUMERIC LABELS
+--------------------------------------------------------------------------------
+✓ Numeric labels created
+
+[8] VERIFYING LABEL RANGE
+--------------------------------------------------------------------------------
+Minimum label: 0
+Maximum label: 10
+✓ Labels correctly range from 0 to 10
+
+[9] FINAL CLASS DISTRIBUTION
+--------------------------------------------------------------------------------
+ 0 | bacterial_leaf_blight          | 149
+ 1 | bacterial_leaf_streak          |  60
+ 2 | bacterial_panicle_blight       |  61
+ 3 | blast                          |  11
+ 4 | brown_spot                     |  52
+ 5 | dead_heart                     |  38
+ 6 | downy_mildew                   |  62
+ 7 | hispa                          |  37
+ 8 | leaf_scald                     |  15
+ 9 | sheath_blight                  | 106
+10 | tungro                         |  49
+--------------------------------------------------------------------------------
+Total: 640
+
+[10] CREATING STRATIFIED TRAIN / VALIDATION SPLIT
+--------------------------------------------------------------------------------
+Total samples: 640
+Training samples: 512
+Validation samples: 128
+
+[11] VERIFYING TRAIN / VALIDATION SPLIT
+--------------------------------------------------------------------------------
+✓ No overlap between train and validation
+
+[12] TRAINING CLASS DISTRIBUTION
+--------------------------------------------------------------------------------
+ 0 | bacterial_leaf_blight          | 119
+ 1 | bacterial_leaf_streak          |  48
+ 2 | bacterial_panicle_blight       |  49
+ 3 | blast                          |   9
+ 4 | brown_spot                     |  41
+ 5 | dead_heart                     |  30
+ 6 | downy_mildew                   |  50
+ 7 | hispa                          |  30
+ 8 | leaf_scald                     |  12
+ 9 | sheath_blight                  |  85
+10 | tungro                         |  39
+
+[13] VALIDATION CLASS DISTRIBUTION
+--------------------------------------------------------------------------------
+ 0 | bacterial_leaf_blight          |  30
+ 1 | bacterial_leaf_streak          |  12
+ 2 | bacterial_panicle_blight       |  12
+ 3 | blast                          |   2
+ 4 | brown_spot                     |  11
+ 5 | dead_heart                     |   8
+ 6 | downy_mildew                   |  12
+ 7 | hispa                          |   7
+ 8 | leaf_scald                     |   3
+ 9 | sheath_blight                  |  21
+10 | tungro                         |  10
+
+[14] ADDING SPLIT INFORMATION
+--------------------------------------------------------------------------------
+split
+train         512
+validation    128
+Name: count, dtype: int64
+
+[15] FINAL MULTIMODAL CONSISTENCY CHECK
+--------------------------------------------------------------------------------
+✓ Dataset count = 640
+✓ Image embeddings = 640
+✓ Satellite embeddings = 640
+✓ Labels valid
+✓ No NaN
+✓ No Inf
+✓ Train/validation split valid
+
+[16] SAVING OUTPUT FILES
+--------------------------------------------------------------------------------
+
+================================================================================
+STEP 7I — COMPLETE
+================================================================================
+
+✓ Final classifier configuration: 11 classes
+✓ 640 multimodal records
+✓ Labels remapped to 0–10
+✓ Stratified train/validation split created
+✓ Training samples: 512
+✓ Validation samples: 128
+✓ No train/validation overlap
+✓ All 11 classes represented
+✓ No NaN / Inf detected
+
+Saved files:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_final_11class_multimodal_dataset.csv
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_train_indices.npy
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_val_indices.npy
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_final_11class_mapping.txt
+
+================================================================================
+DO NOT START TRAINING YET.
+Send me the complete STEP 7I output first.
+================================================================================

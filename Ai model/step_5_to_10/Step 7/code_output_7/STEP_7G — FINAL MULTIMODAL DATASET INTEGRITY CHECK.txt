@@ -1,0 +1,199 @@
+================================================================================
+STEP 7G — FINAL MULTIMODAL DATASET INTEGRITY CHECK
+================================================================================
+
+[1] CHECKING INPUT FILES
+--------------------------------------------------------------------------------
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7F_final_multimodal_dataset_640.csv
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+✓ Exists
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7E_paired_satellite_embeddings_640x256.npy
+✓ Exists
+
+[2] LOADING FINAL DATASET
+--------------------------------------------------------------------------------
+Dataset shape: (640, 21)
+Image embeddings: (640, 1792)
+Satellite embeddings: (640, 256)
+
+[3] RECORD COUNT CHECK
+--------------------------------------------------------------------------------
+✓ Dataset records = 640
+
+[4] EMBEDDING SHAPE CHECK
+--------------------------------------------------------------------------------
+✓ Image embeddings = (640, 1792)
+✓ Satellite embeddings = (640, 256)
+
+[5] IMAGE INDEX ALIGNMENT
+--------------------------------------------------------------------------------
+✓ Image embedding indices = 0–639
+
+[6] SATELLITE PAIR INDEX ALIGNMENT
+--------------------------------------------------------------------------------
+✓ Paired satellite indices = 0–639
+
+[7] IMAGE DUPLICATE CHECK
+--------------------------------------------------------------------------------
+Duplicate image names: 0
+✓ No duplicate image names
+
+[8] IMAGE FILE VALIDATION
+--------------------------------------------------------------------------------
+Missing image files: 0
+✓ All 640 image files exist
+
+[9] DISEASE LABEL VALIDATION
+--------------------------------------------------------------------------------
+✓ All disease labels valid
+
+[10] CLASS INDEX VALIDATION
+--------------------------------------------------------------------------------
+✓ Disease label ↔ class index mapping correct
+
+[11] SATELLITE FIELD VALIDATION
+--------------------------------------------------------------------------------
+Unique satellite fields: 36
+✓ All records have satellite fields
+
+[12] SATELLITE INDEX VALIDATION
+--------------------------------------------------------------------------------
+Minimum satellite index: 0
+Maximum satellite index: 56
+✓ Satellite embedding indices valid
+
+[13] EMBEDDING NUMERICAL VALIDATION
+--------------------------------------------------------------------------------
+Image NaN: 0
+Image Inf: 0
+Satellite NaN: 0
+Satellite Inf: 0
+✓ All embeddings numerically valid
+
+[14] IMAGE ↔ SATELLITE INDEX CONSISTENCY
+--------------------------------------------------------------------------------
+✓ 640 dataset rows
+✓ 640 image embeddings
+✓ 640 paired satellite embeddings
+
+[15] GPS → SATELLITE DISTANCE VALIDATION
+--------------------------------------------------------------------------------
+Missing distances: 0
+Maximum distance: 0.0306023856921508 km
+Mean distance: 0.011209546871360011 km
+✓ GPS-to-satellite distances valid
+
+[16] FINAL DISEASE DISTRIBUTION
+--------------------------------------------------------------------------------
+disease_label
+bacterial_leaf_blight       149
+bacterial_leaf_streak        60
+bacterial_panicle_blight     61
+blast                        11
+brown_spot                   52
+dead_heart                   38
+downy_mildew                 62
+hispa                        37
+leaf_scald                   15
+leaf_smut                     0
+normal                        0
+sheath_blight               106
+tungro                       49
+
+Total: 640
+
+Zero-sample classes: ['leaf_smut', 'normal']
+
+[17] FINAL SATELLITE FIELD DISTRIBUTION
+--------------------------------------------------------------------------------
+nearest_satellite_field
+FIELD_01     72
+FIELD_02     30
+FIELD_03    174
+FIELD_04      2
+FIELD_05     92
+FIELD_06     20
+FIELD_07      6
+FIELD_08     14
+FIELD_09      4
+FIELD_10      7
+FIELD_18     31
+FIELD_21     36
+FIELD_22      2
+FIELD_25      5
+FIELD_27      2
+FIELD_28      5
+FIELD_29      5
+FIELD_31      2
+FIELD_33      2
+FIELD_34      2
+FIELD_35      3
+FIELD_36      3
+FIELD_37      3
+FIELD_38      5
+FIELD_41      2
+FIELD_44     50
+FIELD_45      4
+FIELD_47      2
+FIELD_48      6
+FIELD_49      4
+FIELD_50      4
+FIELD_51      3
+FIELD_52      3
+FIELD_54     29
+FIELD_56      3
+FIELD_57      3
+
+Unique satellite fields: 36
+
+[18] FINAL CHECK SUMMARY
+--------------------------------------------------------------------------------
+640 dataset records           : PASS
+Image shape                   : PASS
+Satellite shape               : PASS
+Image indices                 : PASS
+Satellite pair indices        : PASS
+No duplicate images           : PASS
+All image files exist         : PASS
+Disease labels valid          : PASS
+Class indices valid           : PASS
+Satellite fields valid        : PASS
+Satellite indices valid       : PASS
+Image NaN = 0                 : PASS
+Image Inf = 0                 : PASS
+Satellite NaN = 0             : PASS
+Satellite Inf = 0             : PASS
+
+✓ Report saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7G_final_integrity_report.txt
+
+
+================================================================================
+STEP 7G — COMPLETE
+================================================================================
+
+✓ 640 image records
+✓ 640 image embeddings (1792-D)
+✓ 640 satellite embeddings (256-D)
+✓ No duplicate images
+✓ All image files exist
+✓ Disease labels valid
+✓ Disease class indices valid
+✓ Satellite fields valid
+✓ Satellite indices valid
+✓ No NaN
+✓ No Inf
+✓ Image ↔ satellite alignment valid
+
+IMPORTANT:
+leaf_smut = 0
+normal    = 0
+
+These two classes are present in the original 13-class
+model definition but have zero samples in this 640-image
+real-world multimodal dataset.
+
+Cross-Attention training has NOT been started.
+
+================================================================================

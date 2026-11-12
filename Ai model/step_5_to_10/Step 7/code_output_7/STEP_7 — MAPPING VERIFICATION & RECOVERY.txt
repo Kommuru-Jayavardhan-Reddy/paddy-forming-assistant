@@ -1,0 +1,555 @@
+================================================================================
+STEP 7 — IMAGE ↔ GPS ↔ FIELD ↔ SATELLITE MAPPING VERIFICATION
+================================================================================
+
+[1] DIRECTORIES
+--------------------------------------------------------------------------------
+Step 5: /content/drive/MyDrive/final year project/Real_world_test/Step 5
+Step 6: /content/drive/MyDrive/final year project/Real_world_test/Step 6
+
+================================================================================
+[2] SEARCHING FOR MAPPING-RELATED FILES
+================================================================================
+
+Total relevant files found: 16
+  1. /content/drive/MyDrive/final year project/Real_world_test/Step 5/Step_5B_Suspicious_GPS_Summary.txt
+  2. /content/drive/MyDrive/final year project/Real_world_test/Step 5/Step_5B_Suspicious_OCR_Text_Verification.txt
+  3. /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+  4. /content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+  5. /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+  6. /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_validation_report.csv
+  7. /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_cluster_summary.csv
+  8. /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_spatial_clusters.csv
+  9. /content/drive/MyDrive/final year project/Real_world_test/Step 5/image_gps_coordinates.csv
+ 10. /content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_availability.csv
+ 11. /content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_selected_dates.csv
+ 12. /content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_timeseries.csv
+ 13. /content/drive/MyDrive/final year project/Real_world_test/Step 5/sentinel2_timeseries_raw.csv
+ 14. /content/drive/MyDrive/final year project/Real_world_test/Step 5/suspicious_gps_summary.csv
+ 15. /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_satellite_embeddings.npy
+ 16. /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_verification_summary.txt
+
+================================================================================
+[3] IMPORTANT MAPPING FILES
+================================================================================
+  1. /content/drive/MyDrive/final year project/Real_world_test/Step 5/Step_5B_Suspicious_GPS_Summary.txt
+  2. /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+  3. /content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+  4. /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+  5. /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_validation_report.csv
+  6. /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_cluster_summary.csv
+  7. /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_spatial_clusters.csv
+  8. /content/drive/MyDrive/final year project/Real_world_test/Step 5/image_gps_coordinates.csv
+  9. /content/drive/MyDrive/final year project/Real_world_test/Step 5/suspicious_gps_summary.csv
+ 10. /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_satellite_embeddings.npy
+
+Mapping-related files: 10
+
+================================================================================
+[4] CSV STRUCTURE INSPECTION
+================================================================================
+
+--------------------------------------------------------------------------------
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+Rows: 58
+Columns:
+   - field_id
+   - latitude
+   - longitude
+   - sentinel2_image_count
+   - dates
+   - coordinate_valid
+   - region_status
+   - sentinel_status
+   - duplicate_group
+   - duplicate_group_size
+   - duplicate_status
+   - validation_status
+   - clean_field_id
+
+First 3 rows:
+field_id  latitude  longitude  sentinel2_image_count                                                                                                                                          dates  coordinate_valid       region_status sentinel_status  duplicate_group  duplicate_group_size     duplicate_status     validation_status  clean_field_id
+FIELD_01 13.285588  79.296860                      7                                                                   2026-05-19;2026-05-22;2026-06-06;2026-06-28;2026-07-11;2026-08-10;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                1                    56 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_001
+FIELD_02 13.429626  79.581415                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                2                     1         UNIQUE_FIELD                 CLEAN CLEAN_FIELD_002
+FIELD_03 13.434257  79.578605                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                3                    18 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_003
+
+--------------------------------------------------------------------------------
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+Rows: 58
+Columns:
+   - field_id
+   - latitude
+   - longitude
+
+First 3 rows:
+field_id  latitude  longitude
+FIELD_01 13.285588  79.296860
+FIELD_02 13.429626  79.581415
+FIELD_03 13.434257  79.578605
+
+--------------------------------------------------------------------------------
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_validation_report.csv
+Rows: 289
+Columns:
+   - field_id
+   - latitude
+   - longitude
+   - sentinel2_image_count
+   - dates
+   - coordinate_valid
+   - region_status
+   - sentinel_status
+   - duplicate_group
+   - duplicate_group_size
+   - duplicate_status
+   - validation_status
+
+First 3 rows:
+field_id  latitude  longitude  sentinel2_image_count                                                                                                                                          dates  coordinate_valid       region_status sentinel_status  duplicate_group  duplicate_group_size     duplicate_status     validation_status
+FIELD_01 13.285588  79.296860                      7                                                                   2026-05-19;2026-05-22;2026-06-06;2026-06-28;2026-07-11;2026-08-10;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                1                    56 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW
+FIELD_02 13.429626  79.581415                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                2                     1         UNIQUE_FIELD                 CLEAN
+FIELD_03 13.434257  79.578605                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                3                    18 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW
+
+--------------------------------------------------------------------------------
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_cluster_summary.csv
+Rows: 96
+Columns:
+   - field_id
+   - cluster_id
+   - image_count
+   - center_latitude
+   - center_longitude
+   - min_latitude
+   - max_latitude
+   - min_longitude
+   - max_longitude
+
+First 3 rows:
+field_id  cluster_id  image_count  center_latitude  center_longitude  min_latitude  max_latitude  min_longitude  max_longitude
+FIELD_03           2          174        13.434303         79.578326     13.433019     13.434728      79.578072      79.578940
+FIELD_08           7           92        13.429563         79.579270     13.429553     13.430000      79.579000      79.579276
+FIELD_01           0           72        13.285593         79.296835     13.285529     13.285616      79.296629      79.296889
+
+--------------------------------------------------------------------------------
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_spatial_clusters.csv
+Rows: 1035
+Columns:
+   - image_name
+   - image_path
+   - latitude
+   - longitude
+   - status
+   - cluster_id
+   - field_id
+
+First 3 rows:
+                           image_name                                                                                                                image_path  latitude  longitude    status  cluster_id field_id
+ Image1 2026-09-07 at 7.18.55 AM.jpeg  /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_leaf_blight/Image1 2026-09-07 at 7.18.55 AM.jpeg 13.285588  79.296860 GPS_FOUND           0 FIELD_01
+WhatsApp Image  2026-09-08 145534.png /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_leaf_blight/WhatsApp Image  2026-09-08 145534.png 13.429626  79.581415 GPS_FOUND           1 FIELD_02
+WhatsApp Image  2026-09-08 155104.png /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_leaf_blight/WhatsApp Image  2026-09-08 155104.png 13.429626  79.581415 GPS_FOUND           1 FIELD_02
+
+--------------------------------------------------------------------------------
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/image_gps_coordinates.csv
+Rows: 3069
+Columns:
+   - image_name
+   - image_path
+   - latitude
+   - longitude
+   - status
+
+First 3 rows:
+                           image_name                                                                                                                image_path  latitude  longitude        status
+           Bacterial_leaf_blight.jpeg            /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_leaf_blight/Bacterial_leaf_blight.jpeg       NaN        NaN GPS_NOT_FOUND
+ Image1 2026-09-07 at 7.18.55 AM.jpeg  /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_leaf_blight/Image1 2026-09-07 at 7.18.55 AM.jpeg 13.285588   79.29686     GPS_FOUND
+WhatsApp Image  2026-09-08 145144.png /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_leaf_blight/WhatsApp Image  2026-09-08 145144.png       NaN        NaN GPS_NOT_FOUND
+
+--------------------------------------------------------------------------------
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/suspicious_gps_summary.csv
+Rows: 380
+Columns:
+   - image_name
+   - image_path
+   - actual_ocr_latitude
+   - actual_ocr_longitude
+   - status
+   - disease_class
+
+First 3 rows:
+                                       image_name                                                                                                            image_path  actual_ocr_latitude  actual_ocr_longitude    status disease_class
+ WhatsApp Image 2026-10-01 at 1.01.40 PM (8).jpeg  /content/drive/MyDrive/final year project/Real_world_test/gps/blast/WhatsApp Image 2026-10-01 at 1.01.40 PM (8).jpeg            12.400800             73.595197 GPS_FOUND         blast
+WhatsApp Image 2026-10-01 at 1.01.40 PM (38).jpeg /content/drive/MyDrive/final year project/Real_world_test/gps/blast/WhatsApp Image 2026-10-01 at 1.01.40 PM (38).jpeg            12.480600             73.595190 GPS_FOUND         blast
+WhatsApp Image 2026-10-01 at 1.01.40 PM (59).jpeg /content/drive/MyDrive/final year project/Real_world_test/gps/blast/WhatsApp Image 2026-10-01 at 1.01.40 PM (59).jpeg            12.480801             79.595797 GPS_FOUND         blast
+
+================================================================================
+[5] MAPPING COLUMN DETECTION
+================================================================================
+
+FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+Potential mapping columns:
+    field_id
+    latitude
+    longitude
+    sentinel2_image_count
+    clean_field_id
+
+FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+Potential mapping columns:
+    field_id
+    latitude
+    longitude
+
+FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/field_validation_report.csv
+Potential mapping columns:
+    field_id
+    latitude
+    longitude
+    sentinel2_image_count
+
+FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_cluster_summary.csv
+Potential mapping columns:
+    field_id
+    image_count
+    center_latitude
+    center_longitude
+    min_latitude
+    max_latitude
+    min_longitude
+    max_longitude
+
+FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_spatial_clusters.csv
+Potential mapping columns:
+    image_name
+    image_path
+    latitude
+    longitude
+    field_id
+
+FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/image_gps_coordinates.csv
+Potential mapping columns:
+    image_name
+    image_path
+    latitude
+    longitude
+
+FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/suspicious_gps_summary.csv
+Potential mapping columns:
+    image_name
+    image_path
+    actual_ocr_latitude
+    actual_ocr_longitude
+
+================================================================================
+[6] SATELLITE EMBEDDING FILES
+================================================================================
+
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_satellite_embeddings.npy
+Shape: (58, 256)
+dtype: float32
+NaN: 0
+Inf: 0
+Number of embeddings: 58
+Embedding dimension: 256
+
+================================================================================
+[7] SEARCHING FOR 58 × 256 SATELLITE EMBEDDING
+================================================================================
+
+FOUND EXACT 58 × 256 FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_satellite_embeddings.npy
+Shape: (58, 256)
+
+Total exact 58 × 256 files: 1
+
+================================================================================
+[8] SEARCHING FOR 58-RECORD MAPPING FILES
+================================================================================
+
+FOUND 58-ROW FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+Columns: ['field_id', 'latitude', 'longitude', 'sentinel2_image_count', 'dates', 'coordinate_valid', 'region_status', 'sentinel_status', 'duplicate_group', 'duplicate_group_size', 'duplicate_status', 'validation_status', 'clean_field_id']
+
+Preview:
+field_id  latitude  longitude  sentinel2_image_count                                                                                                                                          dates  coordinate_valid       region_status sentinel_status  duplicate_group  duplicate_group_size     duplicate_status     validation_status  clean_field_id
+FIELD_01 13.285588  79.296860                      7                                                                   2026-05-19;2026-05-22;2026-06-06;2026-06-28;2026-07-11;2026-08-10;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                1                    56 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_001
+FIELD_02 13.429626  79.581415                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                2                     1         UNIQUE_FIELD                 CLEAN CLEAN_FIELD_002
+FIELD_03 13.434257  79.578605                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                3                    18 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_003
+FIELD_04 13.433872  79.581135                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                4                     1         UNIQUE_FIELD                 CLEAN CLEAN_FIELD_004
+FIELD_05 13.429553  79.579276                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                8                     1         UNIQUE_FIELD                 CLEAN CLEAN_FIELD_005
+FIELD_06 13.430798  79.552240                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2                9                     2 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_006
+FIELD_07 13.409358  79.675191                     12                       2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01              True INSIDE_STUDY_REGION   HAS_SENTINEL2               11                     2 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_007
+FIELD_08 13.435335  79.592580                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2               12                     2 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_008
+FIELD_09 13.435335  79.692580                      8                                                        2026-05-19;2026-05-24;2026-06-03;2026-06-05;2026-06-25;2026-06-28;2026-07-15;2026-09-01              True INSIDE_STUDY_REGION   HAS_SENTINEL2               13                     1         UNIQUE_FIELD                 CLEAN CLEAN_FIELD_009
+FIELD_10 13.401756  79.568503                     15 2026-05-19;2026-05-22;2026-05-24;2026-06-03;2026-06-05;2026-06-06;2026-06-25;2026-06-28;2026-07-11;2026-07-15;2026-08-10;2026-09-01;2026-09-29              True INSIDE_STUDY_REGION   HAS_SENTINEL2               20                     3 NEAR_DUPLICATE_GROUP NEAR_DUPLICATE_REVIEW CLEAN_FIELD_010
+
+FOUND 58-ROW FILE:
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+Columns: ['field_id', 'latitude', 'longitude']
+
+Preview:
+field_id  latitude  longitude
+FIELD_01 13.285588  79.296860
+FIELD_02 13.429626  79.581415
+FIELD_03 13.434257  79.578605
+FIELD_04 13.433872  79.581135
+FIELD_05 13.429553  79.579276
+FIELD_06 13.430798  79.552240
+FIELD_07 13.409358  79.675191
+FIELD_08 13.435335  79.592580
+FIELD_09 13.435335  79.692580
+FIELD_10 13.401756  79.568503
+
+================================================================================
+[9] SEARCHING FOR 127-RECORD FILES
+================================================================================
+
+================================================================================
+[10] FIELD DISTRIBUTION
+================================================================================
+
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+FIELD COLUMN: field_id
+field_id
+FIELD_01    1
+FIELD_02    1
+FIELD_03    1
+FIELD_04    1
+FIELD_05    1
+FIELD_06    1
+FIELD_07    1
+FIELD_08    1
+FIELD_09    1
+FIELD_10    1
+FIELD_11    1
+FIELD_12    1
+FIELD_13    1
+FIELD_14    1
+FIELD_15    1
+FIELD_16    1
+FIELD_17    1
+FIELD_18    1
+FIELD_19    1
+FIELD_20    1
+FIELD_21    1
+FIELD_22    1
+FIELD_23    1
+FIELD_24    1
+FIELD_25    1
+FIELD_26    1
+FIELD_27    1
+FIELD_28    1
+FIELD_29    1
+FIELD_30    1
+
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/clean_field_candidates_renamed.csv
+FIELD COLUMN: clean_field_id
+clean_field_id
+CLEAN_FIELD_001    1
+CLEAN_FIELD_002    1
+CLEAN_FIELD_003    1
+CLEAN_FIELD_004    1
+CLEAN_FIELD_005    1
+CLEAN_FIELD_006    1
+CLEAN_FIELD_007    1
+CLEAN_FIELD_008    1
+CLEAN_FIELD_009    1
+CLEAN_FIELD_010    1
+CLEAN_FIELD_011    1
+CLEAN_FIELD_012    1
+CLEAN_FIELD_013    1
+CLEAN_FIELD_014    1
+CLEAN_FIELD_015    1
+CLEAN_FIELD_016    1
+CLEAN_FIELD_017    1
+CLEAN_FIELD_018    1
+CLEAN_FIELD_019    1
+CLEAN_FIELD_020    1
+CLEAN_FIELD_021    1
+CLEAN_FIELD_022    1
+CLEAN_FIELD_023    1
+CLEAN_FIELD_024    1
+CLEAN_FIELD_025    1
+CLEAN_FIELD_026    1
+CLEAN_FIELD_027    1
+CLEAN_FIELD_028    1
+CLEAN_FIELD_029    1
+CLEAN_FIELD_030    1
+
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_locations.csv
+FIELD COLUMN: field_id
+field_id
+FIELD_01    1
+FIELD_02    1
+FIELD_03    1
+FIELD_04    1
+FIELD_05    1
+FIELD_06    1
+FIELD_07    1
+FIELD_08    1
+FIELD_09    1
+FIELD_10    1
+FIELD_11    1
+FIELD_12    1
+FIELD_13    1
+FIELD_14    1
+FIELD_15    1
+FIELD_16    1
+FIELD_17    1
+FIELD_18    1
+FIELD_19    1
+FIELD_20    1
+FIELD_21    1
+FIELD_22    1
+FIELD_23    1
+FIELD_24    1
+FIELD_25    1
+FIELD_26    1
+FIELD_27    1
+FIELD_28    1
+FIELD_29    1
+FIELD_30    1
+
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/field_validation_report.csv
+FIELD COLUMN: field_id
+field_id
+FIELD_289    1
+FIELD_273    1
+FIELD_272    1
+FIELD_271    1
+FIELD_270    1
+FIELD_269    1
+FIELD_268    1
+FIELD_267    1
+FIELD_266    1
+FIELD_265    1
+FIELD_264    1
+FIELD_263    1
+FIELD_262    1
+FIELD_261    1
+FIELD_260    1
+FIELD_259    1
+FIELD_258    1
+FIELD_33     1
+FIELD_32     1
+FIELD_31     1
+FIELD_30     1
+FIELD_29     1
+FIELD_28     1
+FIELD_27     1
+FIELD_26     1
+FIELD_25     1
+FIELD_24     1
+FIELD_23     1
+FIELD_22     1
+FIELD_21     1
+
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_cluster_summary.csv
+FIELD COLUMN: field_id
+field_id
+FIELD_03    1
+FIELD_08    1
+FIELD_01    1
+FIELD_10    1
+FIELD_85    1
+FIELD_53    1
+FIELD_54    1
+FIELD_30    1
+FIELD_02    1
+FIELD_93    1
+FIELD_09    1
+FIELD_25    1
+FIELD_20    1
+FIELD_84    1
+FIELD_12    1
+FIELD_16    1
+FIELD_36    1
+FIELD_95    1
+FIELD_35    1
+FIELD_19    1
+FIELD_31    1
+FIELD_37    1
+FIELD_88    1
+FIELD_11    1
+FIELD_34    1
+FIELD_45    1
+FIELD_56    1
+FIELD_69    1
+FIELD_70    1
+FIELD_67    1
+
+FILE: /content/drive/MyDrive/final year project/Real_world_test/Step 5/gps_spatial_clusters.csv
+FIELD COLUMN: field_id
+field_id
+FIELD_03    174
+FIELD_08     92
+FIELD_01     72
+FIELD_10     65
+NOISE        54
+FIELD_85     50
+FIELD_53     41
+FIELD_54     36
+FIELD_30     32
+FIELD_02     30
+FIELD_93     29
+FIELD_09     20
+FIELD_25     19
+FIELD_20     17
+FIELD_84     17
+FIELD_12     14
+FIELD_16     13
+FIELD_36     10
+FIELD_95      8
+FIELD_35      8
+FIELD_19      7
+FIELD_31      7
+FIELD_37      7
+FIELD_88      6
+FIELD_11      6
+FIELD_34      5
+FIELD_45      5
+FIELD_56      5
+FIELD_69      5
+FIELD_70      5
+
+================================================================================
+[11] SATELLITE SEQUENCE INFORMATION
+================================================================================
+
+================================================================================
+MAPPING INVESTIGATION SUMMARY
+================================================================================
+
+Total files scanned: 16
+CSV files: 7
+Mapping-related files: 10
+58-row CSV files: 2
+127-row CSV files: 0
+58 × 256 embedding files: 1
+
+================================================================================
+IMPORTANT
+================================================================================
+
+DO NOT CREATE STEP 7 PAIRS YET.
+
+First verify:
+
+1. Which 58 images are the final images?
+2. Which GPS coordinate belongs to each image?
+3. Which FINAL_FIELD belongs to each image?
+4. Which satellite sequence belongs to each field?
+5. Which embedding index belongs to each satellite sequence?
+
+Only after these five relationships are confirmed,
+we will generate the final Step 7 mapping CSV.
+
+================================================================================
+MAPPING VERIFICATION COMPLETED
+================================================================================

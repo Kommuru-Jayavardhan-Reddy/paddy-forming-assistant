@@ -1,0 +1,187 @@
+==========================================================================================
+STEP 7 — FINAL CROSS-ATTENTION VERIFICATION
+==========================================================================================
+
+[1] REQUIRED FILES
+------------------------------------------------------------------------------------------
+✓ Dataset
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_final_11class_multimodal_dataset.csv
+✓ Image embeddings
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+✓ Train indices
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_train_indices.npy
+✓ Validation indices
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_val_indices.npy
+✓ Satellite sequences
+  /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+✓ Verified field mapping
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_verified_field_embedding_mapping.csv
+✓ Best checkpoint
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_best.pth
+✓ Final checkpoint
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_final.pth
+
+[2] LOADING DATA
+------------------------------------------------------------------------------------------
+Dataset shape: (640, 23)
+Image embeddings: (640, 1792)
+Train indices: (512,)
+Validation indices: (128,)
+Satellite sequences: (58, 10, 3)
+Field mapping: (58, 7)
+
+[3] SHAPE VERIFICATION
+------------------------------------------------------------------------------------------
+✓ dataset_640
+✓ image_640x1792
+✓ train_512
+✓ val_128
+✓ satellite_58x10x3
+
+[4] NUMERICAL VALIDATION
+------------------------------------------------------------------------------------------
+Image NaN: 0
+Image Inf: 0
+Satellite NaN: 0
+Satellite Inf: 0
+
+[5] TRAIN / VALIDATION SPLIT
+------------------------------------------------------------------------------------------
+Train samples: 512
+Validation samples: 128
+Overlap: 0
+✓ No train/validation overlap
+
+[6] CLASS VERIFICATION
+------------------------------------------------------------------------------------------
+Number of classes: 11
+ 0 | bacterial_leaf_blight
+ 1 | bacterial_leaf_streak
+ 2 | bacterial_panicle_blight
+ 3 | blast
+ 4 | brown_spot
+ 5 | dead_heart
+ 6 | downy_mildew
+ 7 | hispa
+ 8 | leaf_scald
+ 9 | sheath_blight
+10 | tungro
+
+[7] SATELLITE MAPPING
+------------------------------------------------------------------------------------------
+Mapping rows: 58
+Columns:
+['field_id', 'clean_field_id', 'latitude', 'longitude', 'sentinel2_image_count', 'embedding_index', 'sequence_index']
+Required mapping columns: PASS
+Unique embedding indices: 58
+Embedding index min: 0
+Embedding index max: 57
+
+[8] SATELLITE TEMPORAL EXPANSION
+------------------------------------------------------------------------------------------
+Dataset satellite index column: satellite_embedding_index
+Index min: 0
+Index max: 56
+Valid range: True
+Expanded satellite shape: (640, 10, 3)
+✓ 640 images mapped to 10×3 satellite sequences
+
+[9] MODEL ARCHITECTURE VERIFICATION
+------------------------------------------------------------------------------------------
+TemporalCrossAttentionModel(
+  (image_projection): Sequential(
+    (0): Linear(in_features=1792, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.2, inplace=False)
+  )
+  (satellite_lstm): LSTM(3, 128, num_layers=2, batch_first=True, dropout=0.2, bidirectional=True)
+  (satellite_projection): Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.15, inplace=False)
+  )
+  (cross_attention): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+  )
+  (attention_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+  (fusion): Sequential(
+    (0): Linear(in_features=512, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.4, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): GELU(approximate='none')
+    (6): Dropout(p=0.25, inplace=False)
+  )
+  (classifier): Linear(in_features=128, out_features=11, bias=True)
+)
+
+Total parameters: 1487115
+
+[10] FORWARD PASS
+------------------------------------------------------------------------------------------
+Image input: torch.Size([2, 1792])
+Satellite input: torch.Size([2, 10, 3])
+Logits: torch.Size([2, 11])
+Attention: torch.Size([2, 1, 10])
+
+[11] CROSS-ATTENTION CHECK
+------------------------------------------------------------------------------------------
+Attention sum per sample:
+[[1.        ]
+ [0.99999994]]
+Attention probabilities: PASS
+
+[12] BEST CHECKPOINT
+------------------------------------------------------------------------------------------
+✓ Checkpoint loaded
+Checkpoint keys: ['epoch', 'model_state_dict', 'optimizer_state_dict', 'scheduler_state_dict', 'best_val_accuracy', 'best_val_f1', 'best_val_loss', 'class_names', 'num_classes', 'architecture', 'image_dim', 'satellite_input_dim', 'satellite_timesteps', 'projection_dim', 'num_heads', 'satellite_mean', 'satellite_std', 'label_smoothing', 'weight_decay', 'learning_rate', 'weighted_random_sampler']
+Best epoch: 11
+Best validation accuracy: 80.47%
+
+[13] 80% TARGET CHECK
+------------------------------------------------------------------------------------------
+Best validation accuracy: 80.47%
+✓ 80% TARGET ACHIEVED
+
+[14] STEP 7 ARCHITECTURE REQUIREMENTS
+------------------------------------------------------------------------------------------
+✓ Image embedding = 1792
+✓ Image projection = 1792 → 256
+✓ Satellite input = 10 × 3
+✓ BiLSTM hidden = 128
+✓ Bidirectional LSTM output = 256
+✓ MultiheadAttention = 8 heads
+✓ Attention dimension = 256
+✓ Fusion input = 512
+✓ Classifier output = 11
+
+
+==========================================================================================
+STEP 7 FINAL VERIFICATION SUMMARY
+==========================================================================================
+
+Total checks: 27
+Passed: 27
+Failed: 0
+
+✓ ALL AUTOMATED STEP 7 CHECKS PASSED
+
+==========================================================================================
+PROJECT STATUS
+==========================================================================================
+✓ STEP 7 PRACTICAL IMPLEMENTATION: COMPLETED
+✓ CROSS-ATTENTION: WORKING
+✓ IMAGE + SATELLITE FUSION: WORKING
+✓ SATELLITE MAPPING: VERIFIED
+✓ TRAIN/VALIDATION LEAKAGE: NONE
+✓ 80% ACCURACY TARGET: ACHIEVED
+
+Verification report saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/STEP7_FINAL_VERIFICATION.json
+
+==========================================================================================
+STEP 7 VERIFICATION COMPLETED
+==========================================================================================

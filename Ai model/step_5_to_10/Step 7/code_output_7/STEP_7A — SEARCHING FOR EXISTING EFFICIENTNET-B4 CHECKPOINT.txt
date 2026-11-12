@@ -1,0 +1,67 @@
+================================================================================
+STEP 7A — SEARCHING FOR EXISTING EFFICIENTNET-B4 CHECKPOINT
+================================================================================
+
+✓ Google Drive is mounted.
+
+Searching Drive...
+--------------------------------------------------------------------------------
+
+================================================================================
+CHECKPOINT SEARCH RESULTS
+================================================================================
+
+✓ Checkpoint files found: 4
+
+[1]
+File : /content/drive/MyDrive/final year project/models/dl/efficientnet_b4_setup_v1.pth
+Size : 71.20 MB
+--------------------------------------------------------------------------------
+[2]
+File : /content/drive/MyDrive/final year project/models/dl/efficientnet_b4_phaseA_best.pth
+Size : 71.21 MB
+--------------------------------------------------------------------------------
+[3]
+File : /content/drive/MyDrive/final year project/models/dl/efficientnet_b4_phaseB_best.pth
+Size : 71.21 MB
+--------------------------------------------------------------------------------
+[4]
+File : /content/drive/MyDrive/final year project/models/dl/efficientnet_b4_phaseC_best.pth
+Size : 212.51 MB
+--------------------------------------------------------------------------------
+
+================================================================================
+LIKELY PHASE-C CHECKPOINTS
+================================================================================
+
+✓ Phase-C-like checkpoint(s): 1
+
+[1] /content/drive/MyDrive/final year project/models/dl/efficientnet_b4_phaseC_best.pth
+    Size: 212.51 MB
+
+================================================================================
+CURRENT STATUS
+================================================================================
+
+Satellite branch:
+    STEP 6
+    ✓ COMPLETE
+    ✓ 58 × 256 embeddings verified
+    ✓ FIELD_01 → embedding[0]
+    ✓ FIELD_58 → embedding[57]
+
+Image branch:
+    ✓ Existing EfficientNet-B4 model should be reused
+    ⏳ Checkpoint location verification in progress
+
+Multimodal training:
+    ❌ NOT STARTED
+
+IMPORTANT:
+    Do not train anything in this step.
+    Do not regenerate satellite embeddings.
+    Do not modify GPS mapping.
+
+================================================================================
+STEP 7A CHECKPOINT SEARCH FINISHED
+================================================================================

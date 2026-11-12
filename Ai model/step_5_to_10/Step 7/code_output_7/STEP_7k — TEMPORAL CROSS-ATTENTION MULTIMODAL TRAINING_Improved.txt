@@ -1,0 +1,330 @@
+================================================================================
+STEP 7K — CONTROLLED IMPROVEMENT
+================================================================================
+
+[1] MOUNTING GOOGLE DRIVE
+--------------------------------------------------------------------------------
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+✓ Google Drive connected
+
+[2] RANDOM SEED
+--------------------------------------------------------------------------------
+Seed: 42
+
+[3] DEVICE
+--------------------------------------------------------------------------------
+Device: cuda
+GPU: Tesla T4
+
+Output directory:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81
+
+[4] REQUIRED FILES
+--------------------------------------------------------------------------------
+✓ Dataset
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_final_11class_multimodal_dataset.csv
+✓ Image embeddings
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+✓ Train indices
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_train_indices.npy
+✓ Validation indices
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_val_indices.npy
+✓ Satellite sequences
+  /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+
+✓ All required files found
+
+[5] LOADING DATA
+--------------------------------------------------------------------------------
+Dataset shape: (640, 23)
+Image embeddings: (640, 1792)
+Train indices: (512,)
+Validation indices: (128,)
+Satellite sequences: (58, 10, 3)
+
+[6] BASIC VALIDATION
+--------------------------------------------------------------------------------
+✓ Dataset = 640
+✓ Image embeddings = (640,1792)
+✓ Satellite sequences = (58,10,3)
+✓ Train = 512
+✓ Validation = 128
+
+[7] NUMERICAL VALIDATION
+--------------------------------------------------------------------------------
+Image NaN: 0
+Image Inf: 0
+Satellite NaN: 0
+Satellite Inf: 0
+✓ No NaN values
+✓ No Inf values
+
+[8] TRAIN / VALIDATION SPLIT
+--------------------------------------------------------------------------------
+Train samples: 512
+Validation samples: 128
+Overlap: 0
+✓ No train/validation overlap
+
+[9] CLASS DISTRIBUTION
+--------------------------------------------------------------------------------
+ 0 | bacterial_leaf_blight          | 149
+ 1 | bacterial_leaf_streak          | 60
+ 2 | bacterial_panicle_blight       | 61
+ 3 | blast                          | 11
+ 4 | brown_spot                     | 52
+ 5 | dead_heart                     | 38
+ 6 | downy_mildew                   | 62
+ 7 | hispa                          | 37
+ 8 | leaf_scald                     | 15
+ 9 | sheath_blight                  | 106
+10 | tungro                         | 49
+
+[10] SATELLITE TEMPORAL MAPPING
+--------------------------------------------------------------------------------
+Satellite index min: 0
+Satellite index max: 56
+Unique satellite indices: 36
+Field mapping mismatches: 0
+✓ Satellite field mapping correct
+Mapped satellite shape: (640, 10, 3)
+✓ 640 images mapped
+✓ 10 timesteps
+✓ 3 features
+✓ NDVI + NDRE + GNDVI
+
+[11] SATELLITE NORMALIZATION
+--------------------------------------------------------------------------------
+Training satellite mean: [0.4989778 0.3122018 0.4846561]
+Training satellite std: [0.1959905  0.1407407  0.14945135]
+✓ Train-only normalization applied
+
+[12] DATASETS
+--------------------------------------------------------------------------------
+Train dataset: 512
+Validation dataset: 128
+
+[13] MILD CLASS BALANCING
+--------------------------------------------------------------------------------
+ 0 | bacterial_leaf_blight          | 0.5219
+ 1 | bacterial_leaf_streak          | 0.8217
+ 2 | bacterial_panicle_blight       | 0.8133
+ 3 | blast                          | 1.8977
+ 4 | brown_spot                     | 0.8891
+ 5 | dead_heart                     | 1.0394
+ 6 | downy_mildew                   | 0.8051
+ 7 | hispa                          | 1.0394
+ 8 | leaf_scald                     | 1.6434
+ 9 | sheath_blight                  | 0.6175
+10 | tungro                         | 0.9116
+
+[14] DATA LOADERS
+--------------------------------------------------------------------------------
+✓ WeightedRandomSampler removed
+✓ Training loader: shuffle=True
+✓ Mild class weights retained
+✓ Validation loader unchanged
+
+[15] INITIALIZING MODEL
+--------------------------------------------------------------------------------
+TemporalCrossAttentionModel(
+  (image_projection): Sequential(
+    (0): Linear(in_features=1792, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.2, inplace=False)
+  )
+  (satellite_lstm): LSTM(3, 128, num_layers=2, batch_first=True, dropout=0.2, bidirectional=True)
+  (satellite_projection): Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.15, inplace=False)
+  )
+  (cross_attention): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+  )
+  (attention_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+  (fusion): Sequential(
+    (0): Linear(in_features=512, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.4, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): GELU(approximate='none')
+    (6): Dropout(p=0.25, inplace=False)
+  )
+  (classifier): Linear(in_features=128, out_features=11, bias=True)
+)
+
+Total parameters: 1487115
+Trainable parameters: 1487115
+
+[16] FORWARD PASS TEST
+--------------------------------------------------------------------------------
+Image input: torch.Size([2, 1792])
+Satellite input: torch.Size([2, 10, 3])
+Logits: torch.Size([2, 11])
+Attention: torch.Size([2, 1, 10])
+✓ Forward pass successful
+
+[17] TRAINING CONFIGURATION
+--------------------------------------------------------------------------------
+Epochs: 50
+Batch size: 32
+Learning rate: 0.0003
+Weight decay: 0.0005
+Label smoothing: 0.01
+Class balancing: sqrt balanced weights
+WeightedRandomSampler: DISABLED
+Scheduler: CosineAnnealingLR
+Early stopping: 12
+Gradient clipping: 1.0
+
+
+================================================================================
+STEP 7L CONTROLLED TRAINING STARTED
+================================================================================
+Epoch 01/50 | Train Loss: 2.2493 | Train Acc: 27.54% | Train F1: 18.42% | Val Loss: 1.9003 | Val Acc: 49.22% | Val F1: 30.40% | LR: 0.0002997
+  ★ BEST MODEL SAVED | Val Acc: 49.22% | Macro-F1: 30.40%
+Epoch 02/50 | Train Loss: 1.8490 | Train Acc: 50.78% | Train F1: 39.39% | Val Loss: 1.5476 | Val Acc: 59.38% | Val F1: 44.13% | LR: 0.0002988
+  ★ BEST MODEL SAVED | Val Acc: 59.38% | Macro-F1: 44.13%
+Epoch 03/50 | Train Loss: 1.5057 | Train Acc: 60.94% | Train F1: 52.17% | Val Loss: 1.2712 | Val Acc: 59.38% | Val F1: 48.10% | LR: 0.0002974
+  ★ BEST MODEL SAVED | Val Acc: 59.38% | Macro-F1: 48.10%
+Epoch 04/50 | Train Loss: 1.2426 | Train Acc: 69.73% | Train F1: 61.92% | Val Loss: 1.0471 | Val Acc: 74.22% | Val F1: 63.36% | LR: 0.0002953
+  ★ BEST MODEL SAVED | Val Acc: 74.22% | Macro-F1: 63.36%
+Epoch 05/50 | Train Loss: 1.0308 | Train Acc: 74.02% | Train F1: 67.03% | Val Loss: 0.8959 | Val Acc: 74.22% | Val F1: 61.90% | LR: 0.0002927
+  No improvement (1/12)
+Epoch 06/50 | Train Loss: 0.8547 | Train Acc: 77.93% | Train F1: 67.22% | Val Loss: 0.8015 | Val Acc: 74.22% | Val F1: 63.90% | LR: 0.0002895
+  ★ BEST MODEL SAVED | Val Acc: 74.22% | Macro-F1: 63.90%
+Epoch 07/50 | Train Loss: 0.7362 | Train Acc: 81.05% | Train F1: 73.37% | Val Loss: 0.7627 | Val Acc: 75.78% | Val F1: 64.44% | LR: 0.0002858
+  ★ BEST MODEL SAVED | Val Acc: 75.78% | Macro-F1: 64.44%
+Epoch 08/50 | Train Loss: 0.6477 | Train Acc: 82.42% | Train F1: 77.67% | Val Loss: 0.7039 | Val Acc: 75.78% | Val F1: 71.69% | LR: 0.0002815
+  ★ BEST MODEL SAVED | Val Acc: 75.78% | Macro-F1: 71.69%
+Epoch 09/50 | Train Loss: 0.5900 | Train Acc: 83.40% | Train F1: 79.12% | Val Loss: 0.6941 | Val Acc: 77.34% | Val F1: 66.34% | LR: 0.0002767
+  ★ BEST MODEL SAVED | Val Acc: 77.34% | Macro-F1: 66.34%
+Epoch 10/50 | Train Loss: 0.5469 | Train Acc: 83.20% | Train F1: 78.25% | Val Loss: 0.6653 | Val Acc: 75.78% | Val F1: 69.62% | LR: 0.0002714
+  No improvement (1/12)
+Epoch 11/50 | Train Loss: 0.5336 | Train Acc: 83.40% | Train F1: 80.40% | Val Loss: 0.6768 | Val Acc: 80.47% | Val F1: 68.97% | LR: 0.0002657
+  ★ BEST MODEL SAVED | Val Acc: 80.47% | Macro-F1: 68.97%
+Epoch 12/50 | Train Loss: 0.4328 | Train Acc: 87.89% | Train F1: 85.44% | Val Loss: 0.6945 | Val Acc: 77.34% | Val F1: 66.70% | LR: 0.0002595
+  No improvement (1/12)
+Epoch 13/50 | Train Loss: 0.4191 | Train Acc: 88.09% | Train F1: 86.88% | Val Loss: 0.6916 | Val Acc: 78.91% | Val F1: 68.61% | LR: 0.0002528
+  No improvement (2/12)
+Epoch 14/50 | Train Loss: 0.3852 | Train Acc: 88.87% | Train F1: 87.62% | Val Loss: 0.7641 | Val Acc: 75.00% | Val F1: 66.08% | LR: 0.0002458
+  No improvement (3/12)
+Epoch 15/50 | Train Loss: 0.3580 | Train Acc: 87.89% | Train F1: 87.14% | Val Loss: 0.7053 | Val Acc: 75.00% | Val F1: 66.04% | LR: 0.0002384
+  No improvement (4/12)
+Epoch 16/50 | Train Loss: 0.3448 | Train Acc: 87.89% | Train F1: 88.64% | Val Loss: 0.7453 | Val Acc: 75.00% | Val F1: 64.41% | LR: 0.0002306
+  No improvement (5/12)
+Epoch 17/50 | Train Loss: 0.3191 | Train Acc: 90.43% | Train F1: 91.16% | Val Loss: 0.7689 | Val Acc: 76.56% | Val F1: 66.64% | LR: 0.0002225
+  No improvement (6/12)
+Epoch 18/50 | Train Loss: 0.2825 | Train Acc: 91.21% | Train F1: 92.01% | Val Loss: 0.7469 | Val Acc: 75.78% | Val F1: 65.40% | LR: 0.0002142
+  No improvement (7/12)
+Epoch 19/50 | Train Loss: 0.3196 | Train Acc: 89.45% | Train F1: 90.92% | Val Loss: 0.7211 | Val Acc: 78.12% | Val F1: 74.04% | LR: 0.0002055
+  No improvement (8/12)
+Epoch 20/50 | Train Loss: 0.2892 | Train Acc: 89.84% | Train F1: 90.70% | Val Loss: 0.7412 | Val Acc: 76.56% | Val F1: 71.90% | LR: 0.0001967
+  No improvement (9/12)
+Epoch 21/50 | Train Loss: 0.2806 | Train Acc: 90.04% | Train F1: 91.33% | Val Loss: 0.7512 | Val Acc: 75.00% | Val F1: 65.36% | LR: 0.0001877
+  No improvement (10/12)
+Epoch 22/50 | Train Loss: 0.2819 | Train Acc: 90.04% | Train F1: 91.36% | Val Loss: 0.7465 | Val Acc: 77.34% | Val F1: 68.08% | LR: 0.0001785
+  No improvement (11/12)
+Epoch 23/50 | Train Loss: 0.2638 | Train Acc: 90.23% | Train F1: 91.54% | Val Loss: 0.8048 | Val Acc: 75.00% | Val F1: 62.90% | LR: 0.0001692
+  No improvement (12/12)
+
+Early stopping triggered.
+
+✓ Final model saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_final.pth
+✓ Training history saved
+
+[18] LOADING BEST MODEL
+--------------------------------------------------------------------------------
+Best epoch: 11
+Best validation accuracy: 80.47%
+Best validation Macro-F1: 68.97%
+Best validation loss: 0.6768
+
+[19] FINAL VALIDATION EVALUATION
+--------------------------------------------------------------------------------
+
+Correct predictions: 103/128
+Incorrect predictions: 25/128
+Final validation accuracy: 80.47%
+Final validation Macro-F1: 68.97%
+Best validation accuracy: 80.47%
+Best validation Macro-F1: 68.97%
+Attention shape: (128, 1, 10)
+
+[20] TARGET CHECK
+--------------------------------------------------------------------------------
+✓ ABOVE 80% ACHIEVED
+Validation accuracy = 80.47%
+81% target needs at least 104/128 correct predictions.
+
+[21] CLASSIFICATION REPORT
+--------------------------------------------------------------------------------
+                          precision    recall  f1-score   support
+
+   bacterial_leaf_blight     0.9286    0.8667    0.8966        30
+   bacterial_leaf_streak     0.0000    0.0000    0.0000        12
+bacterial_panicle_blight     0.4211    0.6667    0.5161        12
+                   blast     0.0000    0.0000    0.0000         2
+              brown_spot     0.8333    0.9091    0.8696        11
+              dead_heart     0.7000    0.8750    0.7778         8
+            downy_mildew     0.9231    1.0000    0.9600        12
+                   hispa     1.0000    1.0000    1.0000         7
+              leaf_scald     0.5000    1.0000    0.6667         3
+           sheath_blight     1.0000    1.0000    1.0000        21
+                  tungro     0.9000    0.9000    0.9000        10
+
+                accuracy                         0.8047       128
+               macro avg     0.6551    0.7470    0.6897       128
+            weighted avg     0.7598    0.8047    0.7765       128
+
+
+[22] CONFUSION MATRIX
+--------------------------------------------------------------------------------
+
+
+[23] TRAINING GRAPHS
+--------------------------------------------------------------------------------
+
+
+
+
+[24] MEAN TEMPORAL ATTENTION
+--------------------------------------------------------------------------------
+[0.10145679 0.09359435 0.08534293 0.08150201 0.08393191 0.09290363
+ 0.10357399 0.1133349  0.12033325 0.12402627]
+Attention sum: 1.0
+
+
+
+================================================================================
+STEP 7L CONTROLLED IMPROVEMENT COMPLETED
+================================================================================
+
+★ BEST VALIDATION ACCURACY: 80.47%
+★ BEST VALIDATION MACRO-F1: 68.97%
+★ FINAL VALIDATION ACCURACY: 80.47%
+★ FINAL VALIDATION MACRO-F1: 68.97%
+
+★ CORRECT: 103/128
+★ INCORRECT: 25/128
+
+Output folder:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81
+
+Best model:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_best.pth
+
+Classification report:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_classification_report.txt
+
+Confusion matrix:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_confusion_matrix.png
+
+================================================================================
+ALL STEP 7L CONTROLLED CHECKS PASSED
+================================================================================
