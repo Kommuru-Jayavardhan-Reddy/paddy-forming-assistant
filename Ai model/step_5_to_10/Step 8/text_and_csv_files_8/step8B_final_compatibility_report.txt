@@ -1,0 +1,65 @@
+
+================================================================================
+STEP 8B — FINAL COMPATIBILITY REPORT
+================================================================================
+
+DATA
+--------------------------------------------------------------------------------
+Image embeddings        : (640, 1792)
+Satellite sequences     : (58, 10, 3)
+Final mapping           : (640, 13)
+
+CHECKPOINT
+--------------------------------------------------------------------------------
+Path                    : /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention_Improved/step7L_improved_best.pth
+Epoch                   : 6
+Best validation accuracy: 0.796875
+Best validation F1      : 0.7333212064977371
+Best validation loss    : 0.9113276898860931
+Classes                 : 11
+
+ARCHITECTURE
+--------------------------------------------------------------------------------
+Image input             : 1792
+Image projection        : 256
+Satellite input         : 3
+Satellite timesteps     : 10
+BiLSTM                  : 2-layer bidirectional
+BiLSTM hidden           : 128
+BiLSTM output           : 256
+Satellite projection    : 256
+Cross attention         : 8 heads
+Attention dimension     : 256
+Fusion input            : 512
+Fusion output           : 128
+Classifier              : 128 -> 11
+
+ALIGNMENT
+--------------------------------------------------------------------------------
+Images                  : 640
+Mapping rows             : 640
+Satellite sequences      : 58
+Minimum satellite index  : 0
+Maximum satellite index  : 56
+
+FORWARD TEST
+--------------------------------------------------------------------------------
+Batch                   : 16
+Logits shape             : (16, 11)
+Attention shape          : (16, 1, 10)
+
+STATUS
+--------------------------------------------------------------------------------
+File validation          : COMPLETE
+Numerical validation     : COMPLETE
+Mapping rectification    : COMPLETE
+640 ↔ 640 alignment      : COMPLETE
+Checkpoint discovery     : COMPLETE
+Checkpoint loading       : COMPLETE
+Forward pass             : COMPLETE
+Attention validation     : COMPLETE
+
+NEXT STEP
+--------------------------------------------------------------------------------
+STEP 8B TEMPORAL ATTENTION EXTRACTION
+================================================================================
