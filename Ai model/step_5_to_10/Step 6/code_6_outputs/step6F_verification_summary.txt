@@ -1,0 +1,17 @@
+STEP 6F — SATELLITE BRANCH FINAL HANDOFF VERIFICATION
+======================================================================
+
+Input satellite shape : (58, 10, 3)
+Final embedding shape : (58, 256)
+Number of sequences  : 58
+Embedding dimension  : 256
+NaN count            : 0
+Inf count            : 0
+Mean                 : -0.000000
+Std                  : 0.997270
+Min                  : -2.293755
+Max                  : 3.584401
+Input/output match   : True
+All embeddings 256-D : True
+Numerically stable   : True
+

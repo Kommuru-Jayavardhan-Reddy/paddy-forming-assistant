@@ -1,0 +1,153 @@
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+======================================================================
+STEP 6A — SATELLITE SEQUENCE INPUT VERIFICATION
+======================================================================
+
+Searching for: bilstm_sequences.npy
+
+✅ Found 1 file(s):
+1. /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+
+----------------------------------------------------------------------
+SELECTED FILE
+----------------------------------------------------------------------
+/content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+
+✅ File exists
+
+----------------------------------------------------------------------
+LOADING SATELLITE SEQUENCES
+----------------------------------------------------------------------
+
+✅ Satellite sequence file loaded
+Shape : (58, 10, 3)
+Dtype : float32
+
+----------------------------------------------------------------------
+DIMENSION VERIFICATION
+----------------------------------------------------------------------
+✅ Input is 3-dimensional
+
+Actual input structure:
+Number of sequences : 58
+Sequence length     : 10
+Number of features  : 3
+
+----------------------------------------------------------------------
+BiLSTM INPUT FORMAT
+----------------------------------------------------------------------
+
+Expected:
+[batch, sequence_length, features]
+
+Required:
+sequence_length = 10
+features        = 3
+batch           = variable
+
+Shape validation:
+Batch dimension    : ✅ PASS
+Sequence length=10 : ✅ PASS
+Features=3         : ✅ PASS
+
+----------------------------------------------------------------------
+DATA QUALITY VERIFICATION
+----------------------------------------------------------------------
+NaN count : 0
+Inf count : 0
+NaN check : ✅ PASS
+Inf check : ✅ PASS
+
+----------------------------------------------------------------------
+FEATURE ORDER
+----------------------------------------------------------------------
+Feature 1 → NDVI
+Feature 2 → NDRE
+Feature 3 → GNDVI
+
+----------------------------------------------------------------------
+FEATURE-WISE STATISTICS
+----------------------------------------------------------------------
+
+NDVI
+  Minimum : 0.078748
+  Maximum : 0.876560
+  Mean    : 0.500565
+  Std     : 0.162113
+
+NDRE
+  Minimum : 0.034700
+  Maximum : 0.658419
+  Mean    : 0.308147
+  Std     : 0.115722
+
+GNDVI
+  Minimum : 0.008107
+  Maximum : 0.756565
+  Mean    : 0.501416
+  Std     : 0.114641
+
+----------------------------------------------------------------------
+OVERALL STATISTICS
+----------------------------------------------------------------------
+Minimum : 0.008107
+Maximum : 0.876560
+Mean    : 0.436709
+Std     : 0.160839
+
+----------------------------------------------------------------------
+DATA VARIATION CHECK
+----------------------------------------------------------------------
+✅ Data contains meaningful variation
+
+----------------------------------------------------------------------
+FEATURE RANGE CHECK
+----------------------------------------------------------------------
+NDVI range : 0.078748 → 0.876560
+NDRE range : 0.034700 → 0.658419
+GNDVI range: 0.008107 → 0.756565
+
+----------------------------------------------------------------------
+SAMPLE SEQUENCE — FIRST FIELD
+----------------------------------------------------------------------
+
+Timestep     NDVI          NDRE          GNDVI
+-------------------------------------------------------
+1           0.178231      0.099374      0.225035      
+2           0.181788      0.113254      0.231426      
+3           0.178335      0.106729      0.218503      
+4           0.183571      0.112335      0.219692      
+5           0.194874      0.128665      0.230644      
+6           0.207844      0.135502      0.241799      
+7           0.217486      0.141656      0.251023      
+8           0.221776      0.146708      0.257143      
+9           0.226067      0.151761      0.263262      
+10          0.230357      0.156814      0.269381      
+
+======================================================================
+STEP 6A — FINAL RESULT
+======================================================================
+
+Validation summary:
+3D Input            : ✅ PASS
+Batch Dimension     : ✅ PASS
+Sequence Length=10  : ✅ PASS
+Features=3          : ✅ PASS
+No NaN              : ✅ PASS
+No Inf              : ✅ PASS
+Data Variation      : ✅ PASS
+
+======================================================================
+✅ STEP 6A PASSED
+======================================================================
+
+Satellite input is READY for Step 6B.
+
+Actual input:
+X_sat = [58, 10, 3]
+
+BiLSTM will receive:
+[batch=58, sequence_length=10, features=3]
+
+Expected BiLSTM embedding:
+[batch, 256]

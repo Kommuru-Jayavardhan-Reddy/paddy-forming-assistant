@@ -1,0 +1,111 @@
+======================================================================
+STEP 6D — PROJECTION + LAYERNORM
+======================================================================
+
+Input combined representation:
+Shape: torch.Size([58, 256])
+✅ Input representation = [58, 256]
+
+----------------------------------------------------------------------
+INPUT DATA QUALITY
+----------------------------------------------------------------------
+NaN count: 0
+Inf count: 0
+✅ Input contains no NaN / Inf
+
+----------------------------------------------------------------------
+LINEAR PROJECTION
+----------------------------------------------------------------------
+
+Linear layer:
+256 → 256
+
+After Linear projection:
+Shape: torch.Size([58, 256])
+Expected: (58, 256)
+Status  : ✅ PASS
+
+Projection NaN count: 0
+Projection Inf count: 0
+✅ Projection contains no NaN / Inf
+
+----------------------------------------------------------------------
+LAYER NORMALIZATION
+----------------------------------------------------------------------
+
+LayerNorm dimension:
+256
+
+After LayerNorm:
+Shape: torch.Size([58, 256])
+Expected: (58, 256)
+Status  : ✅ PASS
+
+----------------------------------------------------------------------
+FINAL EMBEDDING DATA QUALITY
+----------------------------------------------------------------------
+NaN count: 0
+Inf count: 0
+✅ Final embedding contains no NaN / Inf
+
+----------------------------------------------------------------------
+FINAL SATELLITE EMBEDDING STATISTICS
+----------------------------------------------------------------------
+Minimum : -2.293755
+Maximum : 3.584401
+Mean    : -0.000000
+Std     : 0.997270
+
+----------------------------------------------------------------------
+LAYERNORM BEHAVIOR VERIFICATION
+----------------------------------------------------------------------
+Maximum absolute sample mean : 0.0000000233
+Maximum sample std error     : 0.0027639270
+
+Mean normalization:
+Status : ✅ PASS
+
+Standard deviation normalization:
+Status : ℹ️ INFORMATIONAL
+LayerNorm std deviation from 1.0: 0.0027639270
+ℹ️ This value is reported for analysis and is not treated as a model failure.
+
+----------------------------------------------------------------------
+LAYERNORM CONFIGURATION
+----------------------------------------------------------------------
+Normalized shape: (256,)
+Epsilon: 1e-05
+Expected normalized shape: (256,)
+✅ LayerNorm configuration correct
+
+======================================================================
+STEP 6D — FINAL RESULT
+======================================================================
+
+✅ STEP 6D PASSED
+
+Verified pipeline:
+Combined hidden     : [58, 256]
+Linear projection   : [58, 256]
+LayerNorm output    : [58, 256]
+
+----------------------------------------------------------------------
+VERIFICATION SUMMARY
+----------------------------------------------------------------------
+✅ Input shape verified
+✅ Linear projection 256 → 256 verified
+✅ LayerNorm(256) verified
+✅ Output shape verified
+✅ No NaN values
+✅ No Inf values
+✅ Mean normalization verified
+✅ LayerNorm configuration verified
+
+ℹ️ Standard deviation check was reported for reference only.
+
+Final satellite embedding:
+satellite_embedding = [58, 256]
+
+✅ Satellite branch projection and normalization are ready.
+
+➡️ Ready for STEP 6E.

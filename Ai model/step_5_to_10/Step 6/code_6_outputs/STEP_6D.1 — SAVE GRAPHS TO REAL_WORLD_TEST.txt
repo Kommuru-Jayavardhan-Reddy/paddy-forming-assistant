@@ -1,0 +1,23 @@
+Step 6 folder:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6D_before_layernorm_distribution.png
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6D_after_layernorm_distribution.png
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6D_before_vs_after_layernorm.png
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 6/step6D_mean_std_comparison.png
+
+============================================================
+STEP 6D GRAPHS SAVED SUCCESSFULLY
+============================================================
+
+Folder:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6
+
+Files:
+ - step6D_after_layernorm_distribution.png
+ - step6D_before_layernorm_distribution.png
+ - step6D_before_vs_after_layernorm.png
+ - step6D_mean_std_comparison.png

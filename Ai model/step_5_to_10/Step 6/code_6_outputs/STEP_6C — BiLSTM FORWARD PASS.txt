@@ -1,0 +1,88 @@
+======================================================================
+STEP 6C — BiLSTM FORWARD PASS
+======================================================================
+
+Input tensor shape:
+torch.Size([58, 10, 3])
+
+----------------------------------------------------------------------
+INPUT DIMENSIONS
+----------------------------------------------------------------------
+Batch size      : 58
+Sequence length : 10
+Input features  : 3
+
+✅ Input format verified
+✅ Input = [58, 10, 3]
+
+----------------------------------------------------------------------
+LSTM OUTPUT SHAPES
+----------------------------------------------------------------------
+LSTM output : torch.Size([58, 10, 256])
+Hidden      : torch.Size([4, 58, 128])
+Cell        : torch.Size([4, 58, 128])
+
+Expected shapes:
+LSTM output : (58, 10, 256)
+Hidden      : (4, 58, 128)
+Cell        : (4, 58, 128)
+
+Shape verification:
+LSTM output : ✅ PASS
+Hidden      : ✅ PASS
+Cell        : ✅ PASS
+
+----------------------------------------------------------------------
+FINAL FORWARD HIDDEN STATE
+----------------------------------------------------------------------
+Forward hidden shape: torch.Size([58, 128])
+Expected: (58, 128)
+Status   : ✅ PASS
+
+----------------------------------------------------------------------
+FINAL BACKWARD HIDDEN STATE
+----------------------------------------------------------------------
+Backward hidden shape: torch.Size([58, 128])
+Expected: (58, 128)
+Status   : ✅ PASS
+
+----------------------------------------------------------------------
+CONCATENATED REPRESENTATION
+----------------------------------------------------------------------
+Combined shape: torch.Size([58, 256])
+Expected: (58, 256)
+Status   : ✅ PASS
+
+----------------------------------------------------------------------
+HIDDEN STATE DATA QUALITY
+----------------------------------------------------------------------
+NaN count: 0
+Inf count: 0
+✅ No NaN / Inf in combined representation
+
+----------------------------------------------------------------------
+COMBINED HIDDEN STATE STATISTICS
+----------------------------------------------------------------------
+Minimum : -0.091579
+Maximum : 0.094315
+Mean    : -0.000698
+Std     : 0.035757
+
+======================================================================
+STEP 6C — FINAL RESULT
+======================================================================
+
+✅ STEP 6C PASSED
+
+Verified architecture flow:
+Input             : [58, 10, 3]
+LSTM output       : [58, 10, 256]
+Forward hidden    : [58, 128]
+Backward hidden   : [58, 128]
+Combined           : [58, 256]
+
+✅ Forward and backward final states verified.
+✅ 256-dimensional combined representation verified.
+✅ No NaN / Inf detected.
+
+Ready for STEP 6D.

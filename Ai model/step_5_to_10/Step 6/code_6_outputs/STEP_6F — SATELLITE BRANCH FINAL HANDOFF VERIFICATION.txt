@@ -1,0 +1,91 @@
+===========================================================================
+STEP 6F — SATELLITE BRANCH FINAL HANDOFF VERIFICATION
+===========================================================================
+
+Output folder:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6
+
+---------------------------------------------------------------------------
+1. SATELLITE INPUT CHECK
+---------------------------------------------------------------------------
+X_sat shape: (58, 10, 3)
+Expected format: (N, 10, 3)
+Input shape correct: True
+
+---------------------------------------------------------------------------
+2. FINAL EMBEDDING CHECK
+---------------------------------------------------------------------------
+Satellite embedding shape: (58, 256)
+Expected format: (58, 256)
+Embedding shape correct: True
+
+---------------------------------------------------------------------------
+3. INPUT / OUTPUT COUNT CHECK
+---------------------------------------------------------------------------
+Input sequences : 58
+Output embeddings: 58
+Count matches    : True
+
+---------------------------------------------------------------------------
+4. NUMERICAL STABILITY CHECK
+---------------------------------------------------------------------------
+NaN count: 0
+Inf count: 0
+Numerically stable: True
+
+---------------------------------------------------------------------------
+5. FINAL EMBEDDING STATISTICS
+---------------------------------------------------------------------------
+Mean : -0.000000
+Std  : 0.997270
+Min  : -2.293755
+Max  : 3.584401
+
+---------------------------------------------------------------------------
+6. PER-SEQUENCE 256-D CHECK
+---------------------------------------------------------------------------
+Every satellite sequence has 256 dimensions: True
+
+Embedding norm statistics:
+Minimum norm: 15.955777
+Maximum norm: 15.956991
+Mean norm: 15.956326
+
+
+Graph saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_embedding_norm.png
+
+Final embeddings saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6F_final_satellite_embeddings.npy
+
+===========================================================================
+STEP 6F — FINAL RESULT
+===========================================================================
+✅ Satellite input verified
+✅ Temporal sequence length = 10
+✅ Satellite features = 3
+✅ Input/output sequence count matches
+✅ Final embedding dimension = 256
+✅ All embeddings are 256-D
+✅ No NaN values
+✅ No Inf values
+✅ Final embedding graph saved
+✅ Final embeddings saved
+✅ Verification summary saved
+✅ STEP 6F PASSED
+✅ STEP 6 — SATELLITE BiLSTM BRANCH COMPLETED
+
+===========================================================================
+STEP 6 OUTPUT FILES
+===========================================================================
+📁 step6D_after_layernorm_distribution.png
+📁 step6D_before_layernorm_distribution.png
+📁 step6D_before_vs_after_layernorm.png
+📁 step6D_mean_std_comparison.png
+📁 step6E_embedding_magnitude.png
+📁 step6E_embedding_mean_per_sequence.png
+📁 step6E_embedding_std_per_sequence.png
+📁 step6E_final_embedding_distribution.png
+📁 step6F_final_embedding_norm.png
+📁 step6F_final_satellite_embeddings.npy
+📁 step6F_verification_summary.txt

@@ -1,0 +1,130 @@
+======================================================================
+STEP_6E.1 — FINAL SATELLITE BRANCH VERIFICATION
+======================================================================
+
+Step 6 output folder:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6
+
+Final satellite embedding:
+Shape: (58, 256)
+
+Number of satellite sequences: 58
+Embedding dimension: 256
+
+Expected shape:
+(58, 256)
+Shape correct: True
+
+NaN count: 0
+Inf count: 0
+
+Embedding statistics:
+Mean : -5.138331427012588e-10
+Std  : 0.9973039031028748
+Min  : -2.293754816055298
+Max  : 3.5844006538391113
+
+Embedding verification:
+Sequence 01: (256,) ✅
+Sequence 02: (256,) ✅
+Sequence 03: (256,) ✅
+Sequence 04: (256,) ✅
+Sequence 05: (256,) ✅
+Sequence 06: (256,) ✅
+Sequence 07: (256,) ✅
+Sequence 08: (256,) ✅
+Sequence 09: (256,) ✅
+Sequence 10: (256,) ✅
+Sequence 11: (256,) ✅
+Sequence 12: (256,) ✅
+Sequence 13: (256,) ✅
+Sequence 14: (256,) ✅
+Sequence 15: (256,) ✅
+Sequence 16: (256,) ✅
+Sequence 17: (256,) ✅
+Sequence 18: (256,) ✅
+Sequence 19: (256,) ✅
+Sequence 20: (256,) ✅
+Sequence 21: (256,) ✅
+Sequence 22: (256,) ✅
+Sequence 23: (256,) ✅
+Sequence 24: (256,) ✅
+Sequence 25: (256,) ✅
+Sequence 26: (256,) ✅
+Sequence 27: (256,) ✅
+Sequence 28: (256,) ✅
+Sequence 29: (256,) ✅
+Sequence 30: (256,) ✅
+Sequence 31: (256,) ✅
+Sequence 32: (256,) ✅
+Sequence 33: (256,) ✅
+Sequence 34: (256,) ✅
+Sequence 35: (256,) ✅
+Sequence 36: (256,) ✅
+Sequence 37: (256,) ✅
+Sequence 38: (256,) ✅
+Sequence 39: (256,) ✅
+Sequence 40: (256,) ✅
+Sequence 41: (256,) ✅
+Sequence 42: (256,) ✅
+Sequence 43: (256,) ✅
+Sequence 44: (256,) ✅
+Sequence 45: (256,) ✅
+Sequence 46: (256,) ✅
+Sequence 47: (256,) ✅
+Sequence 48: (256,) ✅
+Sequence 49: (256,) ✅
+Sequence 50: (256,) ✅
+Sequence 51: (256,) ✅
+Sequence 52: (256,) ✅
+Sequence 53: (256,) ✅
+Sequence 54: (256,) ✅
+Sequence 55: (256,) ✅
+Sequence 56: (256,) ✅
+Sequence 57: (256,) ✅
+Sequence 58: (256,) ✅
+
+Sample count verification:
+Input sequences : 58
+Output embeddings: 58
+Count matches   : True
+
+
+Graph 1 saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6E_final_embedding_distribution.png
+
+Graph 2 saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6E_embedding_mean_per_sequence.png
+
+Graph 3 saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6E_embedding_std_per_sequence.png
+
+Graph 4 saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 6/step6E_embedding_magnitude.png
+
+======================================================================
+STEP 6E — FINAL RESULT
+======================================================================
+✅ Satellite sequences processed: 58
+✅ Each sequence has one 256-dimensional embedding
+✅ Final satellite embedding shape: (58, 256)
+✅ No NaN values
+✅ No Inf values
+✅ Input/output sample count matches
+✅ Satellite temporal information compressed
+✅ Final satellite branch verified
+✅ Step 6E graphs generated
+✅ STEP 6E PASSED
+✅ STEP 6 — SATELLITE BiLSTM BRANCH COMPLETED
+
+======================================================================
+STEP 6 GRAPH FILES
+======================================================================
+📊 step6D_after_layernorm_distribution.png
+📊 step6D_before_layernorm_distribution.png
+📊 step6D_before_vs_after_layernorm.png
+📊 step6D_mean_std_comparison.png
+📊 step6E_embedding_magnitude.png
+📊 step6E_embedding_mean_per_sequence.png
+📊 step6E_embedding_std_per_sequence.png
+📊 step6E_final_embedding_distribution.png
