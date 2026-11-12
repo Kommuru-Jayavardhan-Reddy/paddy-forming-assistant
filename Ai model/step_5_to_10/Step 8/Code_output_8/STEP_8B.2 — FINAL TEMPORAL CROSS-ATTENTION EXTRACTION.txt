@@ -1,0 +1,207 @@
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+====================================================================================================
+STEP 8B — FINAL TEMPORAL CROSS-ATTENTION EXTRACTION
+====================================================================================================
+
+Output directory:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention
+
+[1] REQUIRED FILES
+----------------------------------------------------------------------------------------------------
+COMPLETE  Image embeddings
+          /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+COMPLETE  Satellite sequences
+          /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+COMPLETE  Rectified mapping
+          /content/drive/MyDrive/final year project/Real_world_test/Step 7/step8B_final_rectified_640_mapping.csv
+COMPLETE  Checkpoint
+          /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention_Improved/step7L_improved_best.pth
+
+[2] LOADING DATA
+----------------------------------------------------------------------------------------------------
+Image embeddings: (640, 1792)
+Satellite sequences: (58, 10, 3)
+Mapping: (640, 13)
+
+[3] INPUT VALIDATION
+----------------------------------------------------------------------------------------------------
+Image embeddings : 640 × 1792 COMPLETE
+Satellite data   : 58 × 10 × 3 COMPLETE
+Mapping          : 640 rows COMPLETE
+NaN/Inf check    : COMPLETE
+Satellite index range: 0 to 56
+
+[4] BUILDING ALIGNED SATELLITE INPUT
+----------------------------------------------------------------------------------------------------
+Aligned satellite shape: (640, 10, 3)
+640 image ↔ satellite sequence alignment COMPLETE
+
+[5] DEVICE
+----------------------------------------------------------------------------------------------------
+Device: cuda
+GPU: Tesla T4
+
+[6] LOADING VERIFIED CHECKPOINT
+----------------------------------------------------------------------------------------------------
+Checkpoint: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention_Improved/step7L_improved_best.pth
+Epoch: 6
+Best validation accuracy: 0.796875
+Best validation F1: 0.7333212064977371
+
+[7] LOADING MODEL
+----------------------------------------------------------------------------------------------------
+strict=True checkpoint loading COMPLETE
+
+Class names:
+ 0 -> bacterial_leaf_blight
+ 1 -> bacterial_leaf_streak
+ 2 -> bacterial_panicle_blight
+ 3 -> blast
+ 4 -> brown_spot
+ 5 -> dead_heart
+ 6 -> downy_mildew
+ 7 -> hispa
+ 8 -> leaf_scald
+ 9 -> sheath_blight
+10 -> tungro
+
+[8] EXTRACTING TEMPORAL ATTENTION
+----------------------------------------------------------------------------------------------------
+Processed   32/640
+Processed   64/640
+Processed   96/640
+Processed  128/640
+Processed  160/640
+Processed  192/640
+Processed  224/640
+Processed  256/640
+Processed  288/640
+Processed  320/640
+Processed  352/640
+Processed  384/640
+Processed  416/640
+Processed  448/640
+Processed  480/640
+Processed  512/640
+Processed  544/640
+Processed  576/640
+Processed  608/640
+Processed  640/640
+
+Attention extraction finished.
+Logits shape: (640, 11)
+Attention raw shape: (640, 1, 10)
+
+[9] ATTENTION NUMERICAL VALIDATION
+----------------------------------------------------------------------------------------------------
+NaN: 0
+Inf: 0
+Minimum row sum: 0.9999999
+Maximum row sum: 1.0000001
+All 640 attention rows sum to 1 COMPLETE
+
+[10] TEMPORAL METRICS
+----------------------------------------------------------------------------------------------------
+
+[11] BUILDING IMAGE-LEVEL SUMMARY
+----------------------------------------------------------------------------------------------------
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_image_temporal_summary.csv
+
+[12] BUILDING 640 × 10 ATTENTION TABLE
+----------------------------------------------------------------------------------------------------
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_final_640x10_temporal_attention.csv
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_final_predictions_640.csv
+
+[13] TIMESTEP SUMMARY
+----------------------------------------------------------------------------------------------------
+ timestep  mean_attention  std_attention  median_attention  minimum_attention  maximum_attention  dominant_count  dominant_percentage
+        1        0.100752       0.026193          0.090606           0.070289           0.178549             178             27.81250
+        2        0.096696       0.012316          0.093357           0.079668           0.132336               0              0.00000
+        3        0.095513       0.004610          0.095223           0.085750           0.106316               1              0.15625
+        4        0.095750       0.003201          0.096182           0.085908           0.103129               0              0.00000
+        5        0.096774       0.004816          0.097631           0.082671           0.105137               0              0.00000
+        6        0.098278       0.006097          0.100549           0.081169           0.107366               3              0.46875
+        7        0.100050       0.006946          0.102587           0.081383           0.110016               6              0.93750
+        8        0.102142       0.007666          0.104372           0.081962           0.112917              45              7.03125
+        9        0.104752       0.008837          0.106516           0.082644           0.119708              46              7.18750
+       10        0.109293       0.011212          0.109301           0.085542           0.132703             361             56.40625
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_timestep_attention_summary.csv
+
+[14] FIELD-WISE TEMPORAL SUMMARY
+----------------------------------------------------------------------------------------------------
+satellite_field  image_count  mean_confidence  mean_attention_entropy  dominant_timestep  mean_attention_t1  mean_attention_t2  mean_attention_t3  mean_attention_t4  mean_attention_t5  mean_attention_t6  mean_attention_t7  mean_attention_t8  mean_attention_t9  mean_attention_t10
+       FIELD_03          174         0.458305                2.298295                 10           0.098790           0.095631           0.095316           0.095929           0.097225           0.099109           0.100975           0.102732           0.104842            0.109452
+       FIELD_05           92         0.679323                2.291917                 10           0.078409           0.083216           0.088486           0.093295           0.097765           0.101971           0.106012           0.110355           0.115756            0.124735
+       FIELD_01           72         0.223084                2.301021                  8           0.089344           0.093813           0.097136           0.099571           0.101369           0.102688           0.103652           0.104291           0.104474            0.103662
+       FIELD_44           50         0.469566                2.299298                 10           0.095364           0.094979           0.094461           0.094604           0.095391           0.096855           0.099365           0.103333           0.108767            0.116881
+       FIELD_21           36         0.384458                2.273840                  1           0.165696           0.127299           0.101907           0.090595           0.085860           0.084167           0.084025           0.084726           0.085797            0.089926
+       FIELD_18           31         0.348916                2.300112                 10           0.092554           0.094444           0.096503           0.098268           0.099727           0.100937           0.102100           0.103366           0.104902            0.107199
+       FIELD_02           30         0.358698                2.300101                 10           0.093023           0.093901           0.095616           0.097265           0.098941           0.100669           0.102476           0.104352           0.105917            0.107841
+       FIELD_54           29         0.719475                2.296221                  9           0.076969           0.086145           0.093037           0.098064           0.101859           0.104922           0.107544           0.109783           0.111247            0.110431
+       FIELD_06           20         0.261630                2.299498                  1           0.110802           0.104566           0.101275           0.099268           0.098137           0.097465           0.097095           0.096932           0.096892            0.097568
+       FIELD_08           14         0.285562                2.288327                  1           0.143725           0.109710           0.095014           0.087948           0.085503           0.086017           0.088505           0.092809           0.099421            0.111349
+       FIELD_10            7         0.276599                2.299141                  1           0.111453           0.103945           0.099934           0.097684           0.096806           0.096565           0.096768           0.097371           0.098428            0.101048
+       FIELD_07            6         0.287352                2.289033                  1           0.143205           0.113784           0.099148           0.091476           0.087862           0.086819           0.087956           0.090745           0.095457            0.103548
+       FIELD_48            6         0.457748                2.298052                 10           0.085408           0.090151           0.093609           0.096051           0.098003           0.099905           0.102201           0.105466           0.110466            0.118739
+       FIELD_38            5         0.487779                2.298947                 10           0.108685           0.101524           0.098379           0.096767           0.096161           0.096223           0.096968           0.098527           0.101064            0.105702
+       FIELD_29            5         0.626423                2.294162                  1           0.133254           0.113654           0.103548           0.097468           0.093858           0.091629           0.090509           0.090435           0.091314            0.094332
+       FIELD_25            5         0.646837                2.291026                  1           0.140775           0.114838           0.102705           0.095893           0.092025           0.090061           0.089389           0.089769           0.090686            0.093860
+       FIELD_28            5         0.600054                2.294053                  1           0.133229           0.113057           0.103367           0.097304           0.094111           0.091922           0.090649           0.090317           0.091146            0.094900
+       FIELD_45            4         0.523127                2.299415                 10           0.094973           0.094371           0.094586           0.094982           0.095865           0.097035           0.099056           0.102537           0.108195            0.118400
+       FIELD_09            4         0.490524                2.283234                  1           0.154674           0.117018           0.099509           0.090425           0.085812           0.084391           0.084910           0.087374           0.092558            0.103329
+       FIELD_49            4         0.542948                2.299690                 10           0.091300           0.093319           0.094829           0.095909           0.097021           0.098478           0.100516           0.103591           0.108449            0.116588
+       FIELD_50            4         0.469460                2.299724                 10           0.090607           0.092848           0.094710           0.096133           0.097589           0.099281           0.101324           0.104056           0.108336            0.115116
+       FIELD_57            3         0.624050                2.300167                  8           0.086706           0.092209           0.096688           0.099988           0.102323           0.103933           0.104962           0.105398           0.104954            0.102839
+       FIELD_51            3         0.550328                2.301241                 10           0.097647           0.096886           0.096682           0.096641           0.096979           0.097743           0.099107           0.101380           0.105162            0.111773
+       FIELD_37            3         0.574240                2.287274                  1           0.147143           0.118244           0.103923           0.095509           0.090309           0.087460           0.086682           0.087856           0.089254            0.093619
+       FIELD_56            3         0.652732                2.296886                  9           0.078653           0.086380           0.092868           0.098007           0.101967           0.104975           0.107354           0.109288           0.110503            0.110006
+       FIELD_52            3         0.473798                2.300729                 10           0.098182           0.097187           0.096239           0.096221           0.096482           0.097209           0.098423           0.100915           0.105420            0.113720
+       FIELD_36            3         0.607582                2.291028                  1           0.141295           0.114304           0.102724           0.096205           0.092027           0.089261           0.088140           0.088801           0.090964            0.096281
+       FIELD_35            3         0.566090                2.298052                  1           0.119490           0.105322           0.098861           0.095440           0.093865           0.093764           0.094613           0.096271           0.098821            0.103551
+       FIELD_04            2         0.667382                2.297688                 10           0.091694           0.091435           0.092177           0.093092           0.094660           0.096932           0.100033           0.104531           0.111491            0.123954
+       FIELD_34            2         0.476442                2.293177                  1           0.137398           0.113492           0.101621           0.094976           0.091542           0.090424           0.090517           0.091343           0.092606            0.096083
+       FIELD_31            2         0.624539                2.292167                  1           0.138444           0.114600           0.103216           0.096807           0.093456           0.091105           0.089835           0.089545           0.090085            0.092908
+       FIELD_27            2         0.412329                2.287763                  1           0.145415           0.118633           0.105418           0.096137           0.091186           0.088463           0.087312           0.087468           0.088293            0.091674
+       FIELD_22            2         0.278168                2.288413                  1           0.144046           0.115537           0.101162           0.093373           0.089626           0.088009           0.087928           0.089256           0.092215            0.098849
+       FIELD_33            2         0.576324                2.294837                  1           0.132422           0.111873           0.101746           0.096020           0.092921           0.091594           0.091426           0.092143           0.093414            0.096440
+       FIELD_47            2         0.471990                2.299460                 10           0.089220           0.092120           0.094476           0.096192           0.097665           0.099166           0.101160           0.104189           0.108912            0.116900
+       FIELD_41            2         0.609531                2.292904                  1           0.134756           0.114942           0.104534           0.098184           0.094147           0.091698           0.090339           0.089870           0.089902            0.091627
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_field_temporal_attention_summary.csv
+
+[15] CREATING MEAN TEMPORAL ATTENTION PLOT
+----------------------------------------------------------------------------------------------------
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_mean_temporal_attention.png
+
+[16] CREATING ATTENTION HEATMAP
+----------------------------------------------------------------------------------------------------
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_temporal_attention_heatmap_640x10.png
+
+[17] CREATING FIELD-WISE TEMPORAL PLOTS
+----------------------------------------------------------------------------------------------------
+Field-wise plots created: 36
+
+[18] FINAL VALIDATION
+----------------------------------------------------------------------------------------------------
+640 image records             : COMPLETE
+10 temporal attention values  : COMPLETE
+Predictions                   : COMPLETE
+Attention normalization       : COMPLETE
+Field summaries               : COMPLETE
+Plots                         : COMPLETE
+
+
+====================================================================================================
+STEP 8B — FINAL TEMPORAL ATTENTION EXTRACTION COMPLETE
+====================================================================================================
+Images processed: 640
+Attention matrix: (640, 10)
+Prediction matrix: (640, 11)
+Number of satellite fields represented: 36
+
+MAIN OUTPUT:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step8B_Final_Temporal_Attention/step8B_final_640x10_temporal_attention.csv
+
+STATUS: STEP 8B COMPLETE
+====================================================================================================

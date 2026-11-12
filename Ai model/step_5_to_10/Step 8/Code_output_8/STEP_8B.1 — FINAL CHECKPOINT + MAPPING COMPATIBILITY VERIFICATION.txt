@@ -1,0 +1,160 @@
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+====================================================================================================
+STEP 8B — FINAL CHECKPOINT + MAPPING COMPATIBILITY
+====================================================================================================
+
+[1] SEARCHING FOR CHECKPOINT
+----------------------------------------------------------------------------------------------------
+Checkpoint found:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention_Improved/step7L_improved_best.pth
+
+[2] REQUIRED FILES
+----------------------------------------------------------------------------------------------------
+COMPLETE  Image embeddings
+          /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+COMPLETE  Satellite sequences
+          /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+COMPLETE  Mapping
+          /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_field_satellite_mapping.csv
+COMPLETE  Checkpoint
+          /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Temporal_CrossAttention_Improved/step7L_improved_best.pth
+
+[3] LOADING DATA
+----------------------------------------------------------------------------------------------------
+Image embeddings   : (640, 1792)
+Satellite sequences: (58, 10, 3)
+Mapping            : (641, 13)
+
+[4] NUMERICAL VALIDATION
+----------------------------------------------------------------------------------------------------
+Image embeddings NaN/Inf : 0
+Satellite NaN/Inf        : 0
+
+[5] SHAPE VALIDATION
+----------------------------------------------------------------------------------------------------
+Image embeddings : (640, 1792) COMPLETE
+Satellite data   : (58, 10, 3) COMPLETE
+
+[6] MAPPING VALIDATION
+----------------------------------------------------------------------------------------------------
+Valid mapping rows: 641
+
+[7] DUPLICATE IMAGE RECTIFICATION
+----------------------------------------------------------------------------------------------------
+Duplicate rows detected: 2
+
+Duplicate entries:
+                                      image_name                                                                                                                              image_path  satellite_embedding_index nearest_satellite_field
+WhatsApp Image 2026-09-30 at 5.21.26 PM (3).jpeg /content/drive/MyDrive/final year project/Real_world_test/gps/bacterial_panicle_blight/WhatsApp Image 2026-09-30 at 5.21.26 PM (3).jpeg                         17                FIELD_18
+WhatsApp Image 2026-09-30 at 5.21.26 PM (3).jpeg               /content/drive/MyDrive/final year project/Real_world_test/gps/brown_spot/WhatsApp Image 2026-09-30 at 5.21.26 PM (3).jpeg                         17                FIELD_18
+Final mapping rows: 640
+
+[8] FINAL 640 ↔ 640 ALIGNMENT
+----------------------------------------------------------------------------------------------------
+Image embeddings : 640
+Mapping rows      : 640
+640 ↔ 640 ALIGNMENT COMPLETE
+
+Satellite index range: 0 to 56
+Aligned satellite shape: (640, 10, 3)
+
+[9] DEVICE
+----------------------------------------------------------------------------------------------------
+Device: cuda
+GPU: Tesla T4
+
+[10] LOADING CHECKPOINT
+----------------------------------------------------------------------------------------------------
+Epoch: 6
+Best validation accuracy: 0.796875
+Best validation F1: 0.7333212064977371
+Best validation loss: 0.9113276898860931
+Classes: 11
+
+[11] ACTUAL CHECKPOINT ARCHITECTURE
+----------------------------------------------------------------------------------------------------
+image_projection.0.weight                               (256, 1792)
+image_projection.0.bias                                 (256,)
+image_projection.1.weight                               (256,)
+image_projection.1.bias                                 (256,)
+satellite_lstm.weight_ih_l0                             (512, 3)
+satellite_lstm.weight_hh_l0                             (512, 128)
+satellite_lstm.bias_ih_l0                               (512,)
+satellite_lstm.bias_hh_l0                               (512,)
+satellite_lstm.weight_ih_l0_reverse                     (512, 3)
+satellite_lstm.weight_hh_l0_reverse                     (512, 128)
+satellite_lstm.bias_ih_l0_reverse                       (512,)
+satellite_lstm.bias_hh_l0_reverse                       (512,)
+satellite_lstm.weight_ih_l1                             (512, 256)
+satellite_lstm.weight_hh_l1                             (512, 128)
+satellite_lstm.bias_ih_l1                               (512,)
+satellite_lstm.bias_hh_l1                               (512,)
+satellite_lstm.weight_ih_l1_reverse                     (512, 256)
+satellite_lstm.weight_hh_l1_reverse                     (512, 128)
+satellite_lstm.bias_ih_l1_reverse                       (512,)
+satellite_lstm.bias_hh_l1_reverse                       (512,)
+satellite_projection.0.weight                           (256, 256)
+satellite_projection.0.bias                             (256,)
+satellite_projection.1.weight                           (256,)
+satellite_projection.1.bias                             (256,)
+cross_attention.in_proj_weight                          (768, 256)
+cross_attention.in_proj_bias                            (768,)
+cross_attention.out_proj.weight                         (256, 256)
+cross_attention.out_proj.bias                           (256,)
+attention_norm.weight                                   (256,)
+attention_norm.bias                                     (256,)
+fusion.0.weight                                         (256, 512)
+fusion.0.bias                                           (256,)
+fusion.1.weight                                         (256,)
+fusion.1.bias                                           (256,)
+fusion.4.weight                                         (128, 256)
+fusion.4.bias                                           (128,)
+classifier.weight                                       (11, 128)
+classifier.bias                                         (11,)
+
+[12] CREATING ACTUAL MODEL
+----------------------------------------------------------------------------------------------------
+
+[13] LOADING CHECKPOINT WEIGHTS
+----------------------------------------------------------------------------------------------------
+strict=True checkpoint loading COMPLETE
+
+[14] FORWARD PASS TEST
+----------------------------------------------------------------------------------------------------
+Image input: (16, 1792)
+Satellite input: (16, 10, 3)
+Logits: (16, 11)
+Attention: (16, 1, 10)
+
+[15] OUTPUT VALIDATION
+----------------------------------------------------------------------------------------------------
+Logits NaN: 0
+Logits Inf: 0
+Attention NaN: 0
+Attention Inf: 0
+
+[16] ATTENTION VALIDATION
+----------------------------------------------------------------------------------------------------
+Attention shape: (16, 1, 10)
+Minimum attention sum: 0.99999994
+Maximum attention sum: 1.0000001
+Attention weights normalization COMPLETE
+
+Saved rectified mapping:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step8B_final_rectified_640_mapping.csv
+Report saved:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step8B_final_compatibility_report.txt
+
+
+====================================================================================================
+STEP 8B — FINAL STATUS
+====================================================================================================
+Checkpoint: step7L_improved_best.pth
+Image embeddings: (640, 1792)
+Satellite sequences: (58, 10, 3)
+Final mapping: (640, 13)
+Logits: (16, 11)
+Attention: (16, 1, 10)
+
+STATUS: STEP 8B COMPATIBILITY VERIFICATION COMPLETE
+====================================================================================================

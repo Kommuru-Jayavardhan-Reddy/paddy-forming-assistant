@@ -1,0 +1,152 @@
+==========================================================================================
+STEP_8A.3: BATCH GRAD-CAM
+==========================================================================================
+
+[1] COLLECTING TEST IMAGES
+------------------------------------------------------------------------------------------
+Total images found: 3057
+Dataset count verified: 3057
+
+[2] MODEL CHECK
+------------------------------------------------------------------------------------------
+Device: cuda
+GPU: Tesla T4
+Target layer: Conv2dNormActivation(
+  (0): Conv2d(448, 1792, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (1): BatchNorm2d(1792, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (2): SiLU(inplace=True)
+)
+
+[3] INITIALIZING GRAD-CAM
+------------------------------------------------------------------------------------------
+Grad-CAM initialized successfully.
+
+[4] CREATING OUTPUT DIRECTORIES
+------------------------------------------------------------------------------------------
+Class-wise output directories ready.
+
+[5] STARTING BATCH GRAD-CAM
+------------------------------------------------------------------------------------------
+Total images: 3057
+
+[   1/3057]   0.03% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_streak        | Conf= 26.70% | ETA=  41.9 min
+[  50/3057]   1.64% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 61.10% | ETA=  16.5 min
+[ 100/3057]   3.27% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 92.47% | ETA=  10.9 min
+[ 150/3057]   4.91% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 95.01% | ETA=   9.4 min
+[ 200/3057]   6.54% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 85.39% | ETA=   8.3 min
+[ 250/3057]   8.18% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 86.10% | ETA=   7.6 min
+[ 300/3057]   9.81% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 53.90% | ETA=   7.5 min
+[ 350/3057]  11.45% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 64.96% | ETA=   7.1 min
+[ 400/3057]  13.08% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 86.50% | ETA=   6.8 min
+[ 450/3057]  14.72% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 92.48% | ETA=   6.5 min
+[ 500/3057]  16.36% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 91.00% | ETA=   6.2 min
+[ 550/3057]  17.99% | GT=bacterial_leaf_blight        | Pred=bacterial_leaf_blight        | Conf= 31.25% | ETA=   6.1 min
+[ 600/3057]  19.63% | GT=bacterial_leaf_blight        | Pred=sheath_blight                | Conf= 27.67% | ETA=   5.9 min
+[ 650/3057]  21.26% | GT=bacterial_leaf_streak        | Pred=blast                        | Conf= 26.05% | ETA=   6.6 min
+[ 700/3057]  22.90% | GT=bacterial_panicle_blight     | Pred=bacterial_panicle_blight     | Conf= 37.91% | ETA=   8.5 min
+[ 750/3057]  24.53% | GT=blast                        | Pred=blast                        | Conf= 73.37% | ETA=   9.8 min
+[ 800/3057]  26.17% | GT=blast                        | Pred=blast                        | Conf= 81.03% | ETA=  11.0 min
+[ 850/3057]  27.81% | GT=blast                        | Pred=bacterial_panicle_blight     | Conf= 35.03% | ETA=  11.9 min
+[ 900/3057]  29.44% | GT=blast                        | Pred=blast                        | Conf= 81.02% | ETA=  12.7 min
+[ 950/3057]  31.08% | GT=blast                        | Pred=blast                        | Conf= 90.52% | ETA=  13.1 min
+[1000/3057]  32.71% | GT=blast                        | Pred=bacterial_leaf_blight        | Conf= 25.13% | ETA=  13.7 min
+[1050/3057]  34.35% | GT=blast                        | Pred=blast                        | Conf= 56.69% | ETA=  14.0 min
+[1100/3057]  35.98% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 50.11% | ETA=  14.3 min
+[1150/3057]  37.62% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 39.47% | ETA=  14.5 min
+[1200/3057]  39.25% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 34.37% | ETA=  14.5 min
+[1250/3057]  40.89% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 57.60% | ETA=  14.6 min
+[1300/3057]  42.53% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 53.57% | ETA=  14.7 min
+[1350/3057]  44.16% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 37.89% | ETA=  14.5 min
+[1400/3057]  45.80% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 75.60% | ETA=  14.5 min
+[1450/3057]  47.43% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 47.51% | ETA=  14.4 min
+[1500/3057]  49.07% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 54.76% | ETA=  14.2 min
+[1550/3057]  50.70% | GT=brown_spot                   | Pred=brown_spot                   | Conf= 51.93% | ETA=  13.9 min
+[1600/3057]  52.34% | GT=dead_heart                   | Pred=dead_heart                   | Conf= 49.49% | ETA=  13.7 min
+[1650/3057]  53.97% | GT=dead_heart                   | Pred=bacterial_panicle_blight     | Conf= 70.03% | ETA=  13.5 min
+[1700/3057]  55.61% | GT=dead_heart                   | Pred=dead_heart                   | Conf= 92.96% | ETA=  13.2 min
+[1750/3057]  57.25% | GT=dead_heart                   | Pred=dead_heart                   | Conf= 64.38% | ETA=  12.9 min
+[1800/3057]  58.88% | GT=dead_heart                   | Pred=dead_heart                   | Conf= 85.46% | ETA=  12.5 min
+[1850/3057]  60.52% | GT=downy_mildew                 | Pred=downy_mildew                 | Conf= 41.83% | ETA=  12.2 min
+[1900/3057]  62.15% | GT=hispa                        | Pred=hispa                        | Conf= 71.74% | ETA=  11.8 min
+[1950/3057]  63.79% | GT=hispa                        | Pred=hispa                        | Conf= 95.80% | ETA=  11.4 min
+[2000/3057]  65.42% | GT=hispa                        | Pred=hispa                        | Conf= 87.68% | ETA=  10.9 min
+[2050/3057]  67.06% | GT=hispa                        | Pred=normal                       | Conf= 57.42% | ETA=  10.5 min
+[2100/3057]  68.69% | GT=hispa                        | Pred=hispa                        | Conf= 86.88% | ETA=  10.1 min
+[2150/3057]  70.33% | GT=leaf_scald                   | Pred=leaf_scald                   | Conf= 58.69% | ETA=   9.6 min
+[2200/3057]  71.97% | GT=leaf_scald                   | Pred=leaf_scald                   | Conf= 37.74% | ETA=   9.2 min
+[2250/3057]  73.60% | GT=normal                       | Pred=normal                       | Conf= 95.71% | ETA=   8.7 min
+[2300/3057]  75.24% | GT=normal                       | Pred=normal                       | Conf= 60.78% | ETA=   8.2 min
+[2350/3057]  76.87% | GT=normal                       | Pred=normal                       | Conf= 54.48% | ETA=   7.7 min
+[2400/3057]  78.51% | GT=normal                       | Pred=normal                       | Conf= 65.70% | ETA=   7.2 min
+[2450/3057]  80.14% | GT=normal                       | Pred=normal                       | Conf= 90.00% | ETA=   6.7 min
+[2500/3057]  81.78% | GT=normal                       | Pred=normal                       | Conf= 55.21% | ETA=   6.2 min
+[2550/3057]  83.42% | GT=normal                       | Pred=normal                       | Conf= 81.57% | ETA=   5.7 min
+[2600/3057]  85.05% | GT=normal                       | Pred=normal                       | Conf= 54.33% | ETA=   5.2 min
+[2650/3057]  86.69% | GT=sheath_blight                | Pred=sheath_blight                | Conf= 69.84% | ETA=   4.6 min
+[2700/3057]  88.32% | GT=tungro                       | Pred=tungro                       | Conf= 52.86% | ETA=   4.1 min
+[2750/3057]  89.96% | GT=tungro                       | Pred=tungro                       | Conf= 77.36% | ETA=   3.5 min
+[2800/3057]  91.59% | GT=tungro                       | Pred=tungro                       | Conf= 45.46% | ETA=   2.9 min
+[2850/3057]  93.23% | GT=tungro                       | Pred=tungro                       | Conf= 88.78% | ETA=   2.4 min
+[2900/3057]  94.86% | GT=tungro                       | Pred=tungro                       | Conf= 92.47% | ETA=   1.8 min
+[2950/3057]  96.50% | GT=tungro                       | Pred=tungro                       | Conf= 54.76% | ETA=   1.2 min
+[3000/3057]  98.14% | GT=tungro                       | Pred=tungro                       | Conf= 75.70% | ETA=   0.7 min
+[3050/3057]  99.77% | GT=tungro                       | Pred=tungro                       | Conf= 79.42% | ETA=   0.1 min
+[3057/3057] 100.00% | GT=tungro                       | Pred=tungro                       | Conf= 90.73% | ETA=   0.0 min
+
+[6] SAVING RESULTS
+------------------------------------------------------------------------------------------
+Prediction CSV saved:
+/content/drive/MyDrive/final year project/results/step8A_gradcam/step8A_gradcam_predictions.csv
+Failed-image CSV saved:
+/content/drive/MyDrive/final year project/results/step8A_gradcam/step8A_gradcam_failed_images.csv
+
+[7] FINAL STATISTICS
+------------------------------------------------------------------------------------------
+Total images      : 3057
+Successfully done : 3057
+Failed images     : 0
+Success percentage: 100.00%
+Total time        : 35.71 minutes
+
+[8] BATCH PREDICTION CHECK
+------------------------------------------------------------------------------------------
+Correct predictions: 2663
+Incorrect predictions: 394
+Accuracy on processed images: 87.11%
+
+[9] OUTPUT FILE VERIFICATION
+------------------------------------------------------------------------------------------
+Expected successful outputs: 3057
+Existing PNG outputs: 3057
+Missing PNG outputs: 0
+
+[10] CLASS-WISE SUMMARY
+------------------------------------------------------------------------------------------
+bacterial_leaf_blight          | Samples= 630 | Correct= 572 | Accuracy= 90.79% | Mean Conf= 72.71%
+bacterial_leaf_streak          | Samples=  57 | Correct=  34 | Accuracy= 59.65% | Mean Conf= 45.83%
+bacterial_panicle_blight       | Samples=  52 | Correct=  49 | Accuracy= 94.23% | Mean Conf= 61.92%
+blast                          | Samples= 356 | Correct= 297 | Accuracy= 83.43% | Mean Conf= 62.07%
+brown_spot                     | Samples= 491 | Correct= 446 | Accuracy= 90.84% | Mean Conf= 63.34%
+dead_heart                     | Samples= 216 | Correct= 175 | Accuracy= 81.02% | Mean Conf= 63.38%
+downy_mildew                   | Samples=  94 | Correct=  48 | Accuracy= 51.06% | Mean Conf= 39.97%
+hispa                          | Samples= 240 | Correct= 180 | Accuracy= 75.00% | Mean Conf= 54.44%
+leaf_scald                     | Samples=  94 | Correct=  88 | Accuracy= 93.62% | Mean Conf= 52.07%
+leaf_smut                      | Samples=   6 | Correct=   2 | Accuracy= 33.33% | Mean Conf= 41.13%
+normal                         | Samples= 368 | Correct= 352 | Accuracy= 95.65% | Mean Conf= 72.67%
+sheath_blight                  | Samples=  95 | Correct=  82 | Accuracy= 86.32% | Mean Conf= 62.01%
+tungro                         | Samples= 358 | Correct= 338 | Accuracy= 94.41% | Mean Conf= 74.19%
+
+==========================================================================================
+STEP 8A — PHASE 3 COMPLETE
+==========================================================================================
+All test images processed successfully.
+All Grad-CAM PNG outputs verified.
+Failed images: 0
+STEP 8A BATCH GRAD-CAM: COMPLETE
+
+Main CSV:
+/content/drive/MyDrive/final year project/results/step8A_gradcam/step8A_gradcam_predictions.csv
+
+Failed CSV:
+/content/drive/MyDrive/final year project/results/step8A_gradcam/step8A_gradcam_failed_images.csv
+==========================================================================================

@@ -1,0 +1,119 @@
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.5/44.5 kB 3.5 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+  Building wheel for grad-cam (pyproject.toml) ... done
+==========================================================================================
+STEP 8A — GRAD-CAM IMAGE BRANCH
+==========================================================================================
+
+[1] DEVICE
+------------------------------------------------------------------------------------------
+Device: cuda
+GPU: Tesla T4
+
+[2] REQUIRED FILES
+------------------------------------------------------------------------------------------
+Checkpoint:
+/content/drive/MyDrive/final year project/models/dl/efficientnet_b4_phaseC_best.pth
+Exists: True
+
+Test directory:
+/content/drive/MyDrive/final year project/Dataset_Split/test
+Exists: True
+
+Output directory:
+/content/drive/MyDrive/final year project/results/step8A_gradcam
+Exists: True
+
+[3] LOADING CHECKPOINT
+------------------------------------------------------------------------------------------
+Checkpoint type: dict
+Checkpoint keys:
+  epoch
+  model_state_dict
+  optimizer_state_dict
+  scheduler_state_dict
+  best_val_accuracy
+  classes
+  num_classes
+  model
+  phase
+
+Best validation accuracy: 0.9337270341207349
+Epoch: 1
+Number of classes: 13
+Classes:
+['bacterial_leaf_blight', 'bacterial_leaf_streak', 'bacterial_panicle_blight', 'blast', 'brown_spot', 'dead_heart', 'downy_mildew', 'hispa', 'leaf_scald', 'leaf_smut', 'normal', 'sheath_blight', 'tungro']
+
+[4] CLASS VERIFICATION
+------------------------------------------------------------------------------------------
+Number of classes: 13
+ 0 -> bacterial_leaf_blight
+ 1 -> bacterial_leaf_streak
+ 2 -> bacterial_panicle_blight
+ 3 -> blast
+ 4 -> brown_spot
+ 5 -> dead_heart
+ 6 -> downy_mildew
+ 7 -> hispa
+ 8 -> leaf_scald
+ 9 -> leaf_smut
+10 -> normal
+11 -> sheath_blight
+12 -> tungro
+
+[5] BUILDING EFFICIENTNET-B4
+------------------------------------------------------------------------------------------
+Sequential(
+  (0): Linear(in_features=1792, out_features=512, bias=True)
+  (1): ReLU()
+  (2): Dropout(p=0.4, inplace=False)
+  (3): Linear(in_features=512, out_features=13, bias=True)
+)
+
+[6] LOADING MODEL WEIGHTS
+------------------------------------------------------------------------------------------
+Missing keys: 0
+Unexpected keys: 0
+
+Model loaded successfully.
+
+[7] GRAD-CAM TARGET LAYER
+------------------------------------------------------------------------------------------
+Target layer:
+Conv2dNormActivation(
+  (0): Conv2d(448, 1792, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  (1): BatchNorm2d(1792, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (2): SiLU(inplace=True)
+)
+
+[8] TEST DATASET CHECK
+------------------------------------------------------------------------------------------
+bacterial_leaf_blight         : 630
+bacterial_leaf_streak         : 57
+bacterial_panicle_blight      : 52
+blast                         : 356
+brown_spot                    : 491
+dead_heart                    : 216
+downy_mildew                  : 94
+hispa                         : 240
+leaf_scald                    : 94
+leaf_smut                     : 6
+normal                        : 368
+sheath_blight                 : 95
+tungro                        : 358
+------------------------------------------------------------------------------------------
+Total test images: 3057
+
+[9] STEP 8A VERIFICATION SUMMARY
+------------------------------------------------------------------------------------------
+EfficientNet-B4: READY
+Checkpoint: READY
+13 classes: READY
+Target layer: model.features[-1]
+Test dataset: READY
+Grad-CAM output directory: READY
+
+STEP 8A PHASE 1 VERIFICATION COMPLETE
+==========================================================================================
