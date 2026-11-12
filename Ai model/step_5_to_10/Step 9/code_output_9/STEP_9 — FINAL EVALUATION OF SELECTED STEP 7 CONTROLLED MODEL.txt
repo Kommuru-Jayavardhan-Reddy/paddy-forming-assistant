@@ -1,0 +1,318 @@
+Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
+==========================================================================================
+STEP 9 — FINAL MULTIMODAL MODEL EVALUATION
+==========================================================================================
+
+[1] DEVICE
+------------------------------------------------------------------------------------------
+Device: cpu
+
+[2] REQUIRED FILES
+------------------------------------------------------------------------------------------
+✓ Image embeddings
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+  Size: 4.38 MB
+✓ Satellite sequences
+  /content/drive/MyDrive/final year project/Real_world_test/Step 5/bilstm_sequences.npy
+  Size: 0.01 MB
+✓ Rectified mapping
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step8B_final_rectified_640_mapping.csv
+  Size: 3.37 MB
+✓ Dataset
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_final_11class_multimodal_dataset.csv
+  Size: 3.45 MB
+✓ Train indices
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_train_indices.npy
+  Size: 0.00 MB
+✓ Validation indices
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/step7I_val_indices.npy
+  Size: 0.00 MB
+✓ FINAL CONTROLLED CHECKPOINT
+  /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_best.pth
+  Size: 17.06 MB
+
+[3] LOADING DATA
+------------------------------------------------------------------------------------------
+Image embeddings shape: (640, 1792)
+Satellite sequences shape: (58, 10, 3)
+Mapping shape: (640, 13)
+Dataset shape: (640, 23)
+Train indices: (512,)
+Validation indices: (128,)
+
+[4] DATA VALIDATION
+------------------------------------------------------------------------------------------
+Image NaN: 0
+Image Inf: 0
+Satellite NaN: 0
+Satellite Inf: 0
+✓ Image data valid
+✓ Satellite data valid
+✓ 640 image samples
+✓ 58 satellite fields
+✓ 10 timesteps × 3 features
+
+[5] TRAIN / VALIDATION SPLIT
+------------------------------------------------------------------------------------------
+Train samples: 512
+Validation samples: 128
+Overlap: 0
+✓ No train/validation overlap
+
+[6] LABEL DETECTION
+------------------------------------------------------------------------------------------
+Label source: disease_label
+
+[7] LABEL VALIDATION
+------------------------------------------------------------------------------------------
+Total labeled samples: 640
+Classes present: 11
+ 0 | bacterial_leaf_blight
+ 1 | bacterial_leaf_streak
+ 2 | bacterial_panicle_blight
+ 3 | blast
+ 4 | brown_spot
+ 5 | dead_heart
+ 6 | downy_mildew
+ 7 | hispa
+ 8 | leaf_scald
+ 9 | sheath_blight
+10 | tungro
+
+[8] SATELLITE MAPPING
+------------------------------------------------------------------------------------------
+Satellite index column: satellite_embedding_index
+Satellite index min: 0
+Satellite index max: 56
+✓ All satellite indices valid
+
+[9] TEMPORAL SATELLITE EXPANSION
+------------------------------------------------------------------------------------------
+Expanded satellite shape: (640, 10, 3)
+✓ 640 images mapped to 10×3 temporal satellite sequences
+
+[10] MODEL ARCHITECTURE
+------------------------------------------------------------------------------------------
+TemporalCrossAttentionModel(
+  (image_projection): Sequential(
+    (0): Linear(in_features=1792, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.2, inplace=False)
+  )
+  (satellite_lstm): LSTM(3, 128, num_layers=2, batch_first=True, dropout=0.2, bidirectional=True)
+  (satellite_projection): Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.15, inplace=False)
+  )
+  (cross_attention): MultiheadAttention(
+    (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+  )
+  (attention_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+  (fusion): Sequential(
+    (0): Linear(in_features=512, out_features=256, bias=True)
+    (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (2): GELU(approximate='none')
+    (3): Dropout(p=0.4, inplace=False)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): GELU(approximate='none')
+    (6): Dropout(p=0.25, inplace=False)
+  )
+  (classifier): Linear(in_features=128, out_features=11, bias=True)
+)
+
+Total parameters: 1487115
+
+[11] LOADING FINAL CONTROLLED CHECKPOINT
+------------------------------------------------------------------------------------------
+Checkpoint: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_best.pth
+✓ Checkpoint loaded
+Checkpoint epoch: 11
+Checkpoint best validation accuracy: 0.8046875
+Checkpoint best validation F1: 0.6896991289301586
+Checkpoint architecture: Controlled Temporal BiLSTM + Residual Cross Attention
+Missing keys: []
+Unexpected keys: []
+✓ Exact model parameters loaded
+
+[12] RUNNING FINAL INFERENCE
+------------------------------------------------------------------------------------------
+Logits shape: (640, 11)
+Predictions shape: (640,)
+Probabilities shape: (640, 11)
+Confidence shape: (640,)
+Attention shape: (640, 10)
+
+[13] NUMERICAL VALIDATION
+------------------------------------------------------------------------------------------
+Logits NaN: 0
+Logits Inf: 0
+Probability NaN: 0
+Probability Inf: 0
+Attention NaN: 0
+Attention Inf: 0
+Attention row sum min: 0.9999999
+Attention row sum max: 1.0000001
+✓ Numerical validation passed
+
+[14] OVERALL PERFORMANCE
+------------------------------------------------------------------------------------------
+Accuracy           : 0.8297 (82.97%)
+Macro Precision    : 0.8535
+Macro Recall       : 0.7514
+Macro F1           : 0.7485
+Weighted Precision : 0.8526
+Weighted Recall    : 0.8297
+Weighted F1        : 0.8144
+
+[15] CLASSIFICATION REPORT
+------------------------------------------------------------------------------------------
+                          precision    recall  f1-score   support
+
+   bacterial_leaf_blight     0.9281    0.8658    0.8958       149
+   bacterial_leaf_streak     0.7895    0.2500    0.3797        60
+bacterial_panicle_blight     0.5510    0.8852    0.6792        61
+                   blast     1.0000    0.1818    0.3077        11
+              brown_spot     0.8889    0.7692    0.8247        52
+              dead_heart     0.7500    0.9474    0.8372        38
+            downy_mildew     0.7308    0.9194    0.8143        62
+                   hispa     0.9024    1.0000    0.9487        37
+              leaf_scald     1.0000    0.4667    0.6364        15
+           sheath_blight     0.9907    1.0000    0.9953       106
+                  tungro     0.8571    0.9796    0.9143        49
+
+                accuracy                         0.8297       640
+               macro avg     0.8535    0.7514    0.7485       640
+            weighted avg     0.8526    0.8297    0.8144       640
+
+
+[16] CONFUSION MATRIX
+------------------------------------------------------------------------------------------
+                          bacterial_leaf_blight  bacterial_leaf_streak  bacterial_panicle_blight  blast  brown_spot  dead_heart  downy_mildew  hispa  leaf_scald  sheath_blight  tungro
+bacterial_leaf_blight                       129                      1                         3      0           2           0            14      0           0              0       0
+bacterial_leaf_streak                         2                     15                        39      0           1           0             0      0           0              0       3
+bacterial_panicle_blight                      2                      1                        54      0           2           2             0      0           0              0       0
+blast                                         0                      1                         0      2           0           1             6      0           0              0       1
+brown_spot                                    0                      0                         2      0          40           9             0      0           0              1       0
+dead_heart                                    1                      0                         0      0           0          36             1      0           0              0       0
+downy_mildew                                  1                      0                         0      0           0           0            57      4           0              0       0
+hispa                                         0                      0                         0      0           0           0             0     37           0              0       0
+leaf_scald                                    3                      1                         0      0           0           0             0      0           7              0       4
+sheath_blight                                 0                      0                         0      0           0           0             0      0           0            106       0
+tungro                                        1                      0                         0      0           0           0             0      0           0              0      48
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_confusion_matrix.csv
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_classwise_metrics.csv
+
+[17] SAVING ALL PREDICTIONS
+------------------------------------------------------------------------------------------
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_all_640_predictions.csv
+Correct predictions: 531
+Wrong predictions: 109
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_correct_predictions.csv
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_wrong_predictions.csv
+
+[18] CONFIDENCE ANALYSIS
+------------------------------------------------------------------------------------------
+Overall mean confidence : 0.8194
+Correct mean confidence  : 0.8739
+Wrong mean confidence    : 0.5536
+Minimum confidence      : 0.1989
+Maximum confidence      : 0.9926
+
+[19] TEMPORAL ATTENTION
+------------------------------------------------------------------------------------------
+Mean temporal attention:
+Timestep 01: 0.091658
+Timestep 02: 0.087319
+Timestep 03: 0.085221
+Timestep 04: 0.084995
+Timestep 05: 0.086625
+Timestep 06: 0.090572
+Timestep 07: 0.097352
+Timestep 08: 0.107681
+Timestep 09: 0.122531
+Timestep 10: 0.146045
+
+Attention sum: 1.0000001
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_temporal_attention.csv
+
+[20] TOP MISCLASSIFICATION PAIRS
+------------------------------------------------------------------------------------------
+              true_class          predicted_class  count
+   bacterial_leaf_streak bacterial_panicle_blight     39
+   bacterial_leaf_blight             downy_mildew     14
+              brown_spot               dead_heart      9
+                   blast             downy_mildew      6
+              leaf_scald                   tungro      4
+            downy_mildew                    hispa      4
+              leaf_scald    bacterial_leaf_blight      3
+   bacterial_leaf_streak                   tungro      3
+   bacterial_leaf_blight bacterial_panicle_blight      3
+bacterial_panicle_blight               brown_spot      2
+   bacterial_leaf_blight               brown_spot      2
+   bacterial_leaf_streak    bacterial_leaf_blight      2
+              brown_spot bacterial_panicle_blight      2
+bacterial_panicle_blight               dead_heart      2
+bacterial_panicle_blight    bacterial_leaf_blight      2
+bacterial_panicle_blight    bacterial_leaf_streak      1
+   bacterial_leaf_streak               brown_spot      1
+   bacterial_leaf_blight    bacterial_leaf_streak      1
+                   blast               dead_heart      1
+              brown_spot            sheath_blight      1
+
+Saved: /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_top_misclassification_pairs.csv
+
+[21] 80% TARGET CHECK
+------------------------------------------------------------------------------------------
+✓ FINAL EVALUATION IS ABOVE 80%
+Final 640-sample accuracy: 82.97%
+
+[22] INTERPRETATION
+------------------------------------------------------------------------------------------
+IMPORTANT:
+This evaluation uses the EXACT Step 7 Controlled checkpoint:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_best.pth
+
+This is different from the previously evaluated 'step7L_improved_best.pth'.
+
+The 80.47% Step 7 validation result remains the official held-out validation result.
+
+This Step 9 run evaluates all 640 available samples and should NOT be directly compared with the 128-sample validation accuracy.
+
+
+==========================================================================================
+STEP 9 — FINAL CONTROLLED MODEL EVALUATION COMPLETE
+==========================================================================================
+
+Checkpoint:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step7L_Controlled_81/step7L_controlled_best.pth
+
+Final 640-sample Accuracy : 82.97%
+Macro F1                  : 0.7485
+Weighted F1               : 0.8144
+Correct                   : 531 / 640
+Wrong                     : 109 / 640
+
+Step 7 held-out validation accuracy:
+80.47%
+
+✓ STEP 9 EVALUATION COMPLETE
+
+Output directory:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation
+
+Main output files:
+1. /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_final_controlled_evaluation_report.txt
+2. /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_confusion_matrix.csv
+3. /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_classwise_metrics.csv
+4. /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_all_640_predictions.csv
+5. /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_wrong_predictions.csv
+6. /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_temporal_attention.csv
+7. /content/drive/MyDrive/final year project/Real_world_test/Step 7/Step9_Final_Controlled_Evaluation/step9_controlled_top_misclassification_pairs.csv
+
+==========================================================================================
+DONE
+==========================================================================================
