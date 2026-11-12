@@ -1,0 +1,91 @@
+
+STEP 7D — FINAL IMAGE EMBEDDING VERIFICATION
+==============================================
+
+INPUT
+-----
+
+EfficientNet checkpoint:
+/content/drive/MyDrive/final year project/models/dl/efficientnet_b4_phaseC_best.pth
+
+Mapping file:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_field_satellite_mapping.csv
+
+
+IMAGE VALIDATION
+----------------
+
+Original mapping records:
+641
+
+Missing image records removed:
+1
+
+Final valid unique images:
+640
+
+
+MODEL
+-----
+
+Architecture:
+EfficientNet-B4
+
+Checkpoint:
+Phase-C
+
+Number of classes:
+13
+
+Feature dimension:
+1792
+
+Training performed during Step 7D:
+NO
+
+
+EMBEDDINGS
+----------
+
+Shape:
+(640, 1792)
+
+dtype:
+float32
+
+NaN:
+0
+
+Inf:
+0
+
+Mean:
+0.05688606575131416
+
+Std:
+0.16366158425807953
+
+Minimum:
+-0.2226107120513916
+
+Maximum:
+1.679375171661377
+
+
+OUTPUT
+------
+
+Embedding file:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embeddings_1792.npy
+
+Index file:
+/content/drive/MyDrive/final year project/Real_world_test/Step 7/step7_FINAL_image_embedding_index.csv
+
+
+STATUS
+------
+
+PASS
+
+640 valid unique images successfully converted
+to 1792-dimensional EfficientNet-B4 embeddings.

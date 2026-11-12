@@ -1,0 +1,17 @@
+                          precision    recall  f1-score   support
+
+   bacterial_leaf_blight     0.9286    0.8667    0.8966        30
+   bacterial_leaf_streak     0.0000    0.0000    0.0000        12
+bacterial_panicle_blight     0.4211    0.6667    0.5161        12
+                   blast     0.0000    0.0000    0.0000         2
+              brown_spot     0.8333    0.9091    0.8696        11
+              dead_heart     0.7000    0.8750    0.7778         8
+            downy_mildew     0.9231    1.0000    0.9600        12
+                   hispa     1.0000    1.0000    1.0000         7
+              leaf_scald     0.5000    1.0000    0.6667         3
+           sheath_blight     1.0000    1.0000    1.0000        21
+                  tungro     0.9000    0.9000    0.9000        10
+
+                accuracy                         0.8047       128
+               macro avg     0.6551    0.7470    0.6897       128
+            weighted avg     0.7598    0.8047    0.7765       128

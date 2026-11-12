@@ -1,0 +1,80 @@
+
+STEP 7F — DISEASE LABEL VERIFICATION
+======================================
+
+FINAL DATASET
+-------------
+
+Total images:
+640
+
+Image embedding dimension:
+1792
+
+Satellite embedding dimension:
+256
+
+Disease classes:
+13
+
+
+DISEASE CLASSES
+---------------
+
+ 0 | bacterial_leaf_blight          | 149 images
+ 1 | bacterial_leaf_streak          | 60 images
+ 2 | bacterial_panicle_blight       | 61 images
+ 3 | blast                          | 11 images
+ 4 | brown_spot                     | 52 images
+ 5 | dead_heart                     | 38 images
+ 6 | downy_mildew                   | 62 images
+ 7 | hispa                          | 37 images
+ 8 | leaf_scald                     | 15 images
+ 9 | leaf_smut                      | 0 images
+10 | normal                         | 0 images
+11 | sheath_blight                  | 106 images
+12 | tungro                         | 49 images
+
+
+EMBEDDINGS
+----------
+
+Image embeddings:
+(640, 1792)
+
+Satellite embeddings:
+(640, 256)
+
+Image NaN:
+0
+
+Image Inf:
+0
+
+Satellite NaN:
+0
+
+Satellite Inf:
+0
+
+
+SATELLITE FIELDS
+----------------
+
+Unique satellite fields:
+36
+
+Minimum satellite index:
+0
+
+Maximum satellite index:
+56
+
+
+STATUS
+------
+
+PASS
+
+All 640 image records have valid disease labels
+and valid satellite mappings.

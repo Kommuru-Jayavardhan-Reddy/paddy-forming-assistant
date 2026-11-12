@@ -1,0 +1,40 @@
+================================================================================
+STEP 7L — TEMPORAL CROSS-ATTENTION MULTIMODAL TRAINING
+================================================================================
+
+DATASET
+--------------------------------------------------------------------------------
+Total images: 640
+Train images: 512
+Validation images: 128
+Image embedding: (640,1792)
+Satellite sequence: (58,10,3)
+Mapped satellite sequence: (640,10,3)
+
+ARCHITECTURE
+--------------------------------------------------------------------------------
+Image: EfficientNet-B4 embeddings, 1792-D
+Image projection: 1792 -> 256
+Satellite input: NDVI + NDRE + GNDVI
+Satellite timesteps: 10
+BiLSTM hidden size: 128
+BiLSTM output: 256 per timestep
+Cross-attention embed dimension: 256
+Cross-attention heads: 8
+Attention query: image
+Attention key/value: 10 satellite timesteps
+Attention output: 256
+Fusion: 512 -> 256
+Classifier: 256 -> 11
+
+IMPORTANT MAPPING
+--------------------------------------------------------------------------------
+satellite_embedding_index was used for temporal mapping.
+paired_satellite_embedding_index was NOT used for temporal mapping.
+paired_satellite_embedding_index represents the 640-image row index.
+
+RESULTS
+--------------------------------------------------------------------------------
+Best validation accuracy: 77.34%
+Best validation loss: 1.2843
+Final evaluation accuracy: 77.34%

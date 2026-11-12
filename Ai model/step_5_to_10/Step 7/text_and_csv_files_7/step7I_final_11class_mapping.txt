@@ -1,0 +1,26 @@
+STEP 7I — FINAL 11-CLASS LABEL MAPPING
+======================================================================
+
+Final classifier configuration: 11 classes
+Dataset size: 640
+Training samples: 512
+Validation samples: 128
+
+CLASS MAPPING
+----------------------------------------------------------------------
+ 0 -> bacterial_leaf_blight          total=149 train=119 val= 30
+ 1 -> bacterial_leaf_streak          total= 60 train= 48 val= 12
+ 2 -> bacterial_panicle_blight       total= 61 train= 49 val= 12
+ 3 -> blast                          total= 11 train=  9 val=  2
+ 4 -> brown_spot                     total= 52 train= 41 val= 11
+ 5 -> dead_heart                     total= 38 train= 30 val=  8
+ 6 -> downy_mildew                   total= 62 train= 50 val= 12
+ 7 -> hispa                          total= 37 train= 30 val=  7
+ 8 -> leaf_scald                     total= 15 train= 12 val=  3
+ 9 -> sheath_blight                  total=106 train= 85 val= 21
+10 -> tungro                         total= 49 train= 39 val= 10
+
+Split configuration:
+Validation ratio: 20%
+Random seed: 42
+Stratified split: YES

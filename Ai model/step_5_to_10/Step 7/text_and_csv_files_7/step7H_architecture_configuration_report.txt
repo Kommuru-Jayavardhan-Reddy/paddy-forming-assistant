@@ -1,0 +1,97 @@
+
+STEP 7H — ARCHITECTURE & CLASSIFIER CONFIGURATION
+===================================================
+
+DATASET
+-------
+
+Total samples:
+640
+
+Image embedding:
+640 × 1792
+
+Satellite embedding:
+640 × 256
+
+
+PROJECT CLASSES
+---------------
+
+Total:
+13
+
+Present:
+11
+
+Zero samples:
+2
+
+Zero-sample classes:
+['leaf_smut', 'normal']
+
+
+CHECKPOINT
+----------
+
+Checkpoint classes:
+13
+
+Checkpoint class list:
+['bacterial_leaf_blight', 'bacterial_leaf_streak', 'bacterial_panicle_blight', 'blast', 'brown_spot', 'dead_heart', 'downy_mildew', 'hispa', 'leaf_scald', 'leaf_smut', 'normal', 'sheath_blight', 'tungro']
+
+
+ARCHITECTURE
+------------
+
+Image input:
+1792
+
+Projection:
+1792 → 256
+
+Satellite dimension:
+256
+
+Attention dimension:
+256
+
+Attention heads:
+8
+
+Attention dropout:
+0.1
+
+Concatenation:
+256 + 256 = 512
+
+Fusion:
+512 → 256
+
+Fusion dropout:
+0.3
+
+
+CLASSIFIER OPTIONS
+------------------
+
+Document:
+10
+
+Present dataset:
+11
+
+Original checkpoint:
+13
+
+
+STATUS
+------
+
+ARCHITECTURE DIMENSIONS:
+PASS
+
+CLASSIFIER CONFIGURATION:
+REQUIRES EXPLICIT DECISION
+
+NO TRAINING PERFORMED.

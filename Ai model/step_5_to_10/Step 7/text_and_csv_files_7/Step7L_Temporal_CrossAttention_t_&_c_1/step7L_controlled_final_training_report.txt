@@ -1,0 +1,35 @@
+================================================================================
+STEP 7L — CONTROLLED IMPROVEMENT
+================================================================================
+
+DATASET
+--------------------------------------------------------------------------------
+Total images: 640
+Train images: 512
+Validation images: 128
+Image embedding: (640,1792)
+Satellite sequence: (58,10,3)
+Mapped sequence: (640,10,3)
+
+CONTROLLED TRAINING CHANGES
+--------------------------------------------------------------------------------
+Train-only satellite normalization
+Moderated sqrt class weights
+WeightedRandomSampler: disabled
+Shuffle training batches: enabled
+Learning rate: 0.0003
+Weight decay: 0.0005
+Label smoothing: 0.01
+CosineAnnealingLR
+Maximum epochs: 50
+Early stopping patience: 12
+
+RESULTS
+--------------------------------------------------------------------------------
+Best validation accuracy: 80.47%
+Best validation Macro-F1: 68.97%
+Best validation loss: 0.6768
+Final validation accuracy: 80.47%
+Final validation Macro-F1: 68.97%
+Correct validation predictions: 103/128
+Incorrect validation predictions: 25/128

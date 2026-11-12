@@ -1,0 +1,70 @@
+
+STEP 7G — FINAL MULTIMODAL DATASET INTEGRITY REPORT
+====================================================
+
+Dataset records:
+640
+
+Image embeddings:
+(640, 1792)
+
+Satellite embeddings:
+(640, 256)
+
+Duplicate image names:
+0
+
+Missing image files:
+0
+
+Unique satellite fields:
+36
+
+Minimum satellite embedding index:
+0
+
+Maximum satellite embedding index:
+56
+
+Image NaN:
+0
+
+Image Inf:
+0
+
+Satellite NaN:
+0
+
+Satellite Inf:
+0
+
+
+DISEASE DISTRIBUTION
+--------------------
+
+disease_label
+bacterial_leaf_blight       149
+bacterial_leaf_streak        60
+bacterial_panicle_blight     61
+blast                        11
+brown_spot                   52
+dead_heart                   38
+downy_mildew                 62
+hispa                        37
+leaf_scald                   15
+leaf_smut                     0
+normal                        0
+sheath_blight               106
+tungro                       49
+
+
+ZERO-SAMPLE CLASSES
+-------------------
+
+['leaf_smut', 'normal']
+
+
+FINAL STATUS
+------------
+
+ALL INTEGRITY CHECKS PASSED.
