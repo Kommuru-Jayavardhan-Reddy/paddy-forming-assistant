@@ -1,0 +1,60 @@
+
+============================================================
+STEP 3C: FULL CLASSICAL FEATURE EXTRACTION
+============================================================
+
+Execution Time:
+2026-09-19 16:27:04
+
+Feature Configuration
+---------------------
+Image Size: 64 x 64
+
+HSV:
+64 H + 64 S + 64 V = 192
+
+LBP:
+P = 24
+R = 3
+Uniform LBP = 26
+
+HOG:
+Orientations = 9
+Pixels per Cell = (8, 8)
+Cells per Block = (2, 2)
+
+Expected Total Features:
+1982
+
+Actual Shapes
+-------------
+Train      : (14210, 1982)
+Validation : (3053, 1982)
+Test       : (3057, 1982)
+
+Valid Images
+------------
+Train      : 14210
+Validation : 3053
+Test       : 3057
+
+Saved Features
+--------------
+/content/drive/MyDrive/final year project/features/X_train_ml_v1.npy
+/content/drive/MyDrive/final year project/features/X_val_ml_v1.npy
+/content/drive/MyDrive/final year project/features/X_test_ml_v1.npy
+
+Saved Path Lists
+----------------
+/content/drive/MyDrive/final year project/features/train_valid_paths_v1.csv
+/content/drive/MyDrive/final year project/features/val_valid_paths_v1.csv
+/content/drive/MyDrive/final year project/features/test_valid_paths_v1.csv
+
+Actual ML Model Saved:
+NO
+
+Reason:
+STEP 3C only performs feature extraction.
+XGBoost training comes next.
+
+============================================================

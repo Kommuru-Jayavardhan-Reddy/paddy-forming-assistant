@@ -1,0 +1,39 @@
+{
+    "train_samples": 14219,
+    "validation_samples": 3042,
+    "test_samples": 3059,
+    "train_batches": 445,
+    "validation_batches": 96,
+    "test_batches": 96,
+    "batch_size": 32,
+    "num_workers": 2,
+    "image_size": [
+        224,
+        224
+    ],
+    "normalization_mean": [
+        0.485,
+        0.456,
+        0.406
+    ],
+    "normalization_std": [
+        0.229,
+        0.224,
+        0.225
+    ],
+    "classes": [
+        "bacterial_leaf_blight",
+        "bacterial_leaf_streak",
+        "bacterial_panicle_blight",
+        "blast",
+        "brown_spot",
+        "dead_heart",
+        "downy_mildew",
+        "hispa",
+        "leaf_scald",
+        "leaf_smut",
+        "normal",
+        "sheath_blight",
+        "tungro"
+    ]
+}

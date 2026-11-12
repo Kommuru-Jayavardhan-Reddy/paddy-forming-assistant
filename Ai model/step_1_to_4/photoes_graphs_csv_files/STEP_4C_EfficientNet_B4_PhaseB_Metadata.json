@@ -1,0 +1,43 @@
+{
+    "step": "4C",
+    "phase": "Phase B",
+    "architecture": "EfficientNet-B4",
+    "backbone": "Unfrozen",
+    "num_classes": 13,
+    "classes": [
+        "bacterial_leaf_blight",
+        "bacterial_leaf_streak",
+        "bacterial_panicle_blight",
+        "blast",
+        "brown_spot",
+        "dead_heart",
+        "downy_mildew",
+        "hispa",
+        "leaf_scald",
+        "leaf_smut",
+        "normal",
+        "sheath_blight",
+        "tungro"
+    ],
+    "train_samples": 14219,
+    "validation_samples": 3042,
+    "epochs": 5,
+    "learning_rates": {
+        "early_backbone": 1e-05,
+        "last_backbone_blocks": 0.0001,
+        "classifier": 0.0001
+    },
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "loss": "CrossEntropyLoss",
+    "label_smoothing": 0.1,
+    "scheduler": "CosineAnnealingLR",
+    "best_epoch": 4,
+    "best_validation_accuracy": 0.8448389217619987,
+    "training_time_minutes": 18.801308107376098,
+    "gpu": "Tesla T4",
+    "model_path": "/content/gdrive/MyDrive/final year project/models/dl/efficientnet_b4_phaseB_best.pth",
+    "history_path": "/content/gdrive/MyDrive/final year project/results/STEP_4C_EfficientNet_B4_PhaseB_History.csv",
+    "report_path": "/content/gdrive/MyDrive/final year project/results/STEP_4C_EfficientNet_B4_PhaseB_Report.txt",
+    "created_at": "2026-09-20 11:01:47.784790"
+}

@@ -1,0 +1,28 @@
+STEP 4B - EFFICIENTNET-B4 PHASE A TRAINING
+======================================================================
+
+Architecture      : EfficientNet-B4
+Phase             : Phase A
+Backbone          : Frozen
+Epochs            : 5
+Learning Rate     : 3e-4
+Optimizer         : AdamW
+Loss              : CrossEntropyLoss
+Label Smoothing   : 0.1
+Train Samples     : 14219
+Validation Samples: 3042
+Best Epoch        : 5
+Best Val Accuracy : 0.715976
+Training Time     : 10.50 minutes
+GPU               : Tesla T4
+Completed At      : 2026-09-20 10:37:24.766962
+
+======================================================================
+EPOCH HISTORY
+======================================================================
+
+Epoch 1 | Train Loss: 1.7479 | Train Acc: 0.5066 | Val Loss: 1.4664 | Val Acc: 0.6157 | LR: 0.000300
+Epoch 2 | Train Loss: 1.4301 | Train Acc: 0.6330 | Val Loss: 1.3377 | Val Acc: 0.6755 | LR: 0.000271
+Epoch 3 | Train Loss: 1.3568 | Train Acc: 0.6627 | Val Loss: 1.2839 | Val Acc: 0.6986 | LR: 0.000196
+Epoch 4 | Train Loss: 1.3088 | Train Acc: 0.6850 | Val Loss: 1.2567 | Val Acc: 0.7091 | LR: 0.000104
+Epoch 5 | Train Loss: 1.2822 | Train Acc: 0.7005 | Val Loss: 1.2442 | Val Acc: 0.7160 | LR: 0.000029

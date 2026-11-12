@@ -1,0 +1,8 @@
+STEP 2A: PYTORCH ENVIRONMENT
+============================================================
+PyTorch version     : 2.11.0+cpu
+Torchvision version : 0.26.0+cpu
+CUDA available      : False
+GPU                 : Not available
+CUDA version        : Not available
+============================================================

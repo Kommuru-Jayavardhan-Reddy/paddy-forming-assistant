@@ -1,0 +1,14 @@
+Class,Original_Count,Split_Count,Status
+bacterial_leaf_blight,4179,4179,PASS
+bacterial_leaf_streak,380,380,PASS
+bacterial_panicle_blight,337,337,PASS
+blast,2372,2372,PASS
+brown_spot,3251,3251,PASS
+dead_heart,1442,1442,PASS
+downy_mildew,635,635,PASS
+hispa,1594,1594,PASS
+leaf_scald,629,629,PASS
+leaf_smut,40,40,PASS
+normal,2433,2433,PASS
+sheath_blight,632,632,PASS
+tungro,2396,2396,PASS

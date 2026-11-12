@@ -1,0 +1,30 @@
+{
+    "model": "EfficientNet-B4",
+    "phase": "Phase-C",
+    "epochs": 30,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.1,
+    "best_epoch": 28,
+    "best_validation_accuracy": 0.9360236220472441,
+    "training_time_minutes": 84.58056015968323,
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "classes": [
+        "bacterial_leaf_blight",
+        "bacterial_leaf_streak",
+        "bacterial_panicle_blight",
+        "blast",
+        "brown_spot",
+        "dead_heart",
+        "downy_mildew",
+        "hispa",
+        "leaf_scald",
+        "leaf_smut",
+        "normal",
+        "sheath_blight",
+        "tungro"
+    ],
+    "train_images": 14220,
+    "validation_images": 3048
+}

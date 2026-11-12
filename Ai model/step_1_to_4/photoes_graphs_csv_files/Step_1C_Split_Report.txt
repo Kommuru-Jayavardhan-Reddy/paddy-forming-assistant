@@ -1,0 +1,20 @@
+===========================================================================
+STEP 1C — DATASET SPLIT REPORT
+===========================================================================
+
+Total Images: 20,320
+Number of Classes: 13
+
+Split Ratio:
+Train: 70%
+Validation: 15%
+Test: 15%
+
+Train Images: 14,210
+Validation Images: 3,053
+Test Images: 3,057
+
+Cross-Class Duplicates: 0
+Duplicate groups kept within one split: YES
+Original images modified: NO
+Original dataset deleted: NO

@@ -1,0 +1,21 @@
+STEP 2B: IMAGE PREPROCESSING AND AUGMENTATION
+============================================================
+Image size          : 224 x 224
+Normalization mean  : [0.485, 0.456, 0.406]
+Normalization std   : [0.229, 0.224, 0.225]
+
+Training:
+  - RandomResizedCrop
+  - HorizontalFlip
+  - VerticalFlip
+  - Rotation ±30°
+  - ColorJitter
+  - ImageNet Normalization
+
+Validation:
+  - Resize 224 x 224
+  - ImageNet Normalization
+
+Test:
+  - Resize 224 x 224
+  - ImageNet Normalization

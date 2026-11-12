@@ -1,0 +1,13 @@
+Check,Result
+Expected Total Images,20320
+Actual Split Images,20320
+Expected Classes,13
+Actual Classes,13
+Train Images,14210
+Validation Images,3053
+Test Images,3057
+Train-Val Path Overlap,0
+Train-Test Path Overlap,0
+Val-Test Path Overlap,0
+Cross-Split SHA256 Leakage,0
+Original Dataset Modified,NO

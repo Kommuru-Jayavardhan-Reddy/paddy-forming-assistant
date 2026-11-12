@@ -1,0 +1,15 @@
+=================================================================
+SINGLE IMAGE PREDICTION
+EfficientNet-B4 Phase-C
+=================================================================
+
+Image: images.jpg
+
+Predicted Disease : brown_spot
+Confidence        : 93.52%
+
+Top-3 Predictions
+-----------------------------------------------------------------
+1. brown_spot : 93.52%
+2. leaf_smut : 1.77%
+3. tungro : 1.23%

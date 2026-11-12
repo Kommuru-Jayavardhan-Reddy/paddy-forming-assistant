@@ -1,0 +1,90 @@
+
+============================================================
+STEP 3D: XGBOOST CLASSICAL ML BASELINE
+============================================================
+
+Execution Time:
+2026-09-19 17:24:11
+
+Model:
+XGBoost
+
+Feature Dimension:
+1982
+
+Number of Classes:
+13
+
+Classes:
+['bacterial_leaf_blight', 'bacterial_leaf_streak', 'bacterial_panicle_blight', 'blast', 'brown_spot', 'dead_heart', 'downy_mildew', 'hispa', 'leaf_scald', 'leaf_smut', 'normal', 'sheath_blight', 'tungro']
+
+Training Configuration
+----------------------
+n_estimators = 200
+max_depth = 6
+learning_rate = 0.1
+subsample = 0.8
+colsample_bytree = 0.8
+tree_method = hist
+random_state = 42
+n_jobs = -1
+objective = multi:softprob
+eval_metric = mlogloss
+
+Dataset Shapes
+---------------
+Train      : (14210, 1982)
+Validation : (3053, 1982)
+Test       : (3057, 1982)
+
+Training Time:
+3207.05 seconds
+
+Validation Accuracy:
+0.8536
+
+Validation Macro F1:
+0.7964
+
+Test Accuracy:
+0.8538
+
+Test Macro F1:
+0.7876
+
+============================================================
+TEST CLASSIFICATION REPORT
+============================================================
+
+                          precision    recall  f1-score   support
+
+   bacterial_leaf_blight     0.9432    0.9222    0.9326       630
+   bacterial_leaf_streak     0.9167    0.5789    0.7097        57
+bacterial_panicle_blight     0.9032    0.5385    0.6747        52
+                   blast     0.7574    0.8596    0.8053       356
+              brown_spot     0.8695    0.8819    0.8756       491
+              dead_heart     0.7880    0.9120    0.8455       216
+            downy_mildew     0.9388    0.4894    0.6434        94
+                   hispa     0.8045    0.7375    0.7696       240
+              leaf_scald     0.8072    0.7128    0.7571        94
+               leaf_smut     1.0000    0.5000    0.6667         6
+                  normal     0.8400    0.9130    0.8750       368
+           sheath_blight     0.7872    0.7789    0.7831        95
+                  tungro     0.8820    0.9190    0.9001       358
+
+                accuracy                         0.8538      3057
+               macro avg     0.8644    0.7495    0.7876      3057
+            weighted avg     0.8581    0.8538    0.8509      3057
+
+
+============================================================
+ACTUAL TRAINED MODEL
+============================================================
+
+Saved:
+YES
+
+Model Path:
+/content/drive/MyDrive/final year project/models/ml/xgboost_v1.json
+
+============================================================

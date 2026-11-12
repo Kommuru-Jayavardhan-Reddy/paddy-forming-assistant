@@ -1,0 +1,28 @@
+STEP 4E — TTA TEST RESULTS
+=================================================================
+
+Accuracy        : 0.950213
+Macro Precision : 0.933045
+Macro Recall    : 0.889830
+Macro F1        : 0.908293
+Weighted F1     : 0.949797
+
+                          precision    recall  f1-score   support
+
+   bacterial_leaf_blight       0.97      0.98      0.97       627
+   bacterial_leaf_streak       0.96      0.81      0.88        57
+bacterial_panicle_blight       0.95      0.78      0.86        51
+                   blast       0.92      0.94      0.93       356
+              brown_spot       0.97      0.95      0.96       488
+              dead_heart       0.96      0.98      0.97       217
+            downy_mildew       0.91      0.90      0.90        96
+                   hispa       0.92      0.91      0.91       240
+              leaf_scald       0.95      0.91      0.92        95
+               leaf_smut       0.75      0.50      0.60         6
+                  normal       0.94      0.98      0.96       365
+           sheath_blight       0.99      0.98      0.98        95
+                  tungro       0.95      0.96      0.95       360
+
+                accuracy                           0.95      3053
+               macro avg       0.93      0.89      0.91      3053
+            weighted avg       0.95      0.95      0.95      3053

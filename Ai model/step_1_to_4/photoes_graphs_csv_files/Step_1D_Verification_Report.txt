@@ -1,0 +1,21 @@
+===========================================================================
+STEP 1D — DATASET SPLIT VERIFICATION REPORT
+===========================================================================
+
+Expected Images: 20,320
+Verified Split Images: 20,320
+Classes: 13
+
+Train Images: 14,210
+Validation Images: 3,053
+Test Images: 3,057
+
+Train-Val Path Overlap: 0
+Train-Test Path Overlap: 0
+Val-Test Path Overlap: 0
+Cross-Split SHA256 Leakage: 0
+
+Original Dataset Modified: NO
+Real-world test set kept separate: YES
+
+FINAL STATUS: PASS

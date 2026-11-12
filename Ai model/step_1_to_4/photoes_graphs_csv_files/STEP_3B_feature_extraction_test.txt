@@ -1,0 +1,51 @@
+
+============================================================
+STEP 3B: TEST HAND-CRAFTED FEATURE EXTRACTION
+============================================================
+
+Execution Time:
+2026-09-19 15:49:44
+
+Sample Image:
+/content/drive/MyDrive/final year project/Dataset_Split/train/bacterial_leaf_blight/DSC_0374.JPG
+
+Feature Configuration
+---------------------
+HSV:
+- H bins = 64
+- S bins = 64
+- V bins = 64
+- Total HSV features = 192
+
+LBP:
+- P = 24
+- R = 3
+- Method = uniform
+- Total LBP features = 26
+
+HOG:
+- Orientations = 9
+- Pixels per cell = (8, 8)
+- Cells per block = (2, 2)
+- Total HOG features = 1764
+
+TOTAL FEATURES:
+1982
+
+Status:
+Feature extraction test completed successfully.
+
+Actual ML Model Saved:
+NO
+
+Reason:
+STEP 3B only tests feature extraction on one image.
+No ML model is trained in this step.
+
+Code Backup:
+/content/drive/MyDrive/final year project/code/STEP_3B_test_handcrafted_feature_extraction.py
+
+Result Log:
+/content/drive/MyDrive/final year project/results/STEP_3B_feature_extraction_test.txt
+
+============================================================

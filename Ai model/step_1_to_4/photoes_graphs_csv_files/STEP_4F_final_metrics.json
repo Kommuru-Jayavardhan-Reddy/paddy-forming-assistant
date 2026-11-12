@@ -1,0 +1,10 @@
+{
+  "xgboost_baseline": 85.38,
+  "standard_test_acc": 94.5,
+  "standard_weighted_f1": 0.9445,
+  "standard_macro_f1": 0.9064,
+  "tta_test_acc": 94.64,
+  "tta_weighted_f1": 0.9457,
+  "tta_macro_f1": 0.9071,
+  "improvement_over_baseline": 9.26
+}

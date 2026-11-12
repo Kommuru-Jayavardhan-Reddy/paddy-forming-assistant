@@ -1,0 +1,31 @@
+STEP 4C - EFFICIENTNET-B4 PHASE B FINE-TUNING
+======================================================================
+
+Architecture      : EfficientNet-B4
+Phase             : Phase B
+Backbone          : Unfrozen
+Epochs            : 5
+Early Backbone LR : 1e-5
+Last Blocks LR    : 1e-4
+Classifier LR     : 1e-4
+Weight Decay      : 1e-4
+Optimizer         : AdamW
+Loss              : CrossEntropyLoss
+Label Smoothing   : 0.1
+Train Samples     : 14219
+Validation Samples: 3042
+Best Epoch        : 4
+Best Val Accuracy : 0.844839
+Training Time     : 18.80 minutes
+GPU               : Tesla T4
+Completed At      : 2026-09-20 11:01:47.782773
+
+======================================================================
+EPOCH HISTORY
+======================================================================
+
+Epoch 1 | Train Loss: 1.2289 | Train Acc: 0.7237 | Val Loss: 1.1061 | Val Acc: 0.7725 | Early LR: 0.00001000 | Last LR: 0.00010000 | Classifier LR: 0.00010000
+Epoch 2 | Train Loss: 1.1297 | Train Acc: 0.7661 | Val Loss: 1.0269 | Val Acc: 0.8143 | Early LR: 0.00000905 | Last LR: 0.00009045 | Classifier LR: 0.00009045
+Epoch 3 | Train Loss: 1.0646 | Train Acc: 0.8009 | Val Loss: 0.9882 | Val Acc: 0.8274 | Early LR: 0.00000655 | Last LR: 0.00006545 | Classifier LR: 0.00006545
+Epoch 4 | Train Loss: 1.0180 | Train Acc: 0.8259 | Val Loss: 0.9638 | Val Acc: 0.8448 | Early LR: 0.00000345 | Last LR: 0.00003455 | Classifier LR: 0.00003455
+Epoch 5 | Train Loss: 1.0004 | Train Acc: 0.8343 | Val Loss: 0.9591 | Val Acc: 0.8432 | Early LR: 0.00000095 | Last LR: 0.00000955 | Classifier LR: 0.00000955

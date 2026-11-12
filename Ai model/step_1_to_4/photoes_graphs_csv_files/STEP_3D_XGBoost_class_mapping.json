@@ -1,0 +1,47 @@
+{
+    "class_to_idx": {
+        "bacterial_leaf_blight": 0,
+        "bacterial_leaf_streak": 1,
+        "bacterial_panicle_blight": 2,
+        "blast": 3,
+        "brown_spot": 4,
+        "dead_heart": 5,
+        "downy_mildew": 6,
+        "hispa": 7,
+        "leaf_scald": 8,
+        "leaf_smut": 9,
+        "normal": 10,
+        "sheath_blight": 11,
+        "tungro": 12
+    },
+    "idx_to_class": {
+        "0": "bacterial_leaf_blight",
+        "1": "bacterial_leaf_streak",
+        "2": "bacterial_panicle_blight",
+        "3": "blast",
+        "4": "brown_spot",
+        "5": "dead_heart",
+        "6": "downy_mildew",
+        "7": "hispa",
+        "8": "leaf_scald",
+        "9": "leaf_smut",
+        "10": "normal",
+        "11": "sheath_blight",
+        "12": "tungro"
+    },
+    "classes": [
+        "bacterial_leaf_blight",
+        "bacterial_leaf_streak",
+        "bacterial_panicle_blight",
+        "blast",
+        "brown_spot",
+        "dead_heart",
+        "downy_mildew",
+        "hispa",
+        "leaf_scald",
+        "leaf_smut",
+        "normal",
+        "sheath_blight",
+        "tungro"
+    ]
+}

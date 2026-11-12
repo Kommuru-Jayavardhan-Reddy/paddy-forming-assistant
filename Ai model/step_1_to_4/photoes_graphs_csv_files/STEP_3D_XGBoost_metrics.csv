@@ -1,0 +1,2 @@
+model,validation_accuracy,validation_macro_f1,test_accuracy,test_macro_f1,training_time_seconds,feature_dimension,num_classes,n_estimators,max_depth,learning_rate
+XGBoost,0.8535866360956437,0.7963708157945342,0.8537782139352306,0.7875542624671361,3207.051906824112,1982,13,200,6,0.1

@@ -1,0 +1,33 @@
+STEP 4E — FINAL TEST EVALUATION
+======================================================================
+
+Best Epoch: 1
+Best Validation Accuracy: 0.9337
+
+Test Accuracy: 0.9325
+Macro Precision: 0.9331
+Macro Recall: 0.8710
+Macro F1: 0.8946
+Weighted F1: 0.9320
+
+CLASSIFICATION REPORT
+======================================================================
+                          precision    recall  f1-score   support
+
+   bacterial_leaf_blight     0.9501    0.9713    0.9606       627
+   bacterial_leaf_streak     0.9592    0.8246    0.8868        57
+bacterial_panicle_blight     0.8864    0.7647    0.8211        51
+                   blast     0.8986    0.8961    0.8973       356
+              brown_spot     0.9644    0.9447    0.9545       488
+              dead_heart     0.9679    0.9724    0.9701       217
+            downy_mildew     0.8557    0.8646    0.8601        96
+                   hispa     0.9039    0.8625    0.8827       240
+              leaf_scald     0.9213    0.8632    0.8913        95
+               leaf_smut     1.0000    0.5000    0.6667         6
+                  normal     0.9249    0.9781    0.9507       365
+           sheath_blight     0.9889    0.9368    0.9622        95
+                  tungro     0.9091    0.9444    0.9264       360
+
+                accuracy                         0.9325      3053
+               macro avg     0.9331    0.8710    0.8946      3053
+            weighted avg     0.9327    0.9325    0.9320      3053

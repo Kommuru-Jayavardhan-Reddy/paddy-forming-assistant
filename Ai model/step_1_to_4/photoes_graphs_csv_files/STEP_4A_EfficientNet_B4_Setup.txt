@@ -1,0 +1,14 @@
+STEP 4A: EFFICIENTNET-B4 SETUP
+============================================================
+
+Architecture       : EfficientNet-B4
+Device             : cuda
+Number of Classes  : 13
+Input Size         : 224 x 224
+Backbone           : Frozen
+Total Parameters   : 18,473,301
+Trainable Params   : 924,685
+Classifier          : 1792 -> 512 -> 13
+Dropout            : 0.4
+Model File         : /content/gdrive/MyDrive/final year project/models/dl/efficientnet_b4_setup_v1.pth
+Created At         : 2026-09-20 10:23:47.320126

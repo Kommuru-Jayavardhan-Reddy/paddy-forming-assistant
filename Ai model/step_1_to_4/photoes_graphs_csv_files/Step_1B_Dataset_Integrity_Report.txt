@@ -1,0 +1,23 @@
+===========================================================================
+STEP 1B — DATASET INTEGRITY & DUPLICATE AUDIT
+===========================================================================
+
+Dataset Path: /content/drive/MyDrive/final year project/Dataset
+Total Classes: 13
+Total Files: 20,320
+Valid Images: 20,320
+Corrupt Images: 0
+Non-Image Files: 0
+Duplicate Groups: 1,231
+Duplicate Files: 2,506
+Within-Class Duplicate Groups: 1,231
+Cross-Class Duplicate Groups: 0
+Class Imbalance Ratio: 104.47x
+
+===========================================================================
+FINAL STATUS
+===========================================================================
+
+NO IMAGES WERE DELETED.
+NO IMAGES WERE MOVED.
+NO IMAGES WERE MODIFIED.

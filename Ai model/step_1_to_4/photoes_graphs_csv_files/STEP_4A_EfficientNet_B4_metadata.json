@@ -1,0 +1,49 @@
+{
+    "step": "4A",
+    "architecture": "EfficientNet-B4",
+    "phase": "Transfer Learning Setup",
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "num_classes": 13,
+    "classes": [
+        "bacterial_leaf_blight",
+        "bacterial_leaf_streak",
+        "bacterial_panicle_blight",
+        "blast",
+        "brown_spot",
+        "dead_heart",
+        "downy_mildew",
+        "hispa",
+        "leaf_scald",
+        "leaf_smut",
+        "normal",
+        "sheath_blight",
+        "tungro"
+    ],
+    "class_to_idx": {
+        "bacterial_leaf_blight": 0,
+        "bacterial_leaf_streak": 1,
+        "bacterial_panicle_blight": 2,
+        "blast": 3,
+        "brown_spot": 4,
+        "dead_heart": 5,
+        "downy_mildew": 6,
+        "hispa": 7,
+        "leaf_scald": 8,
+        "leaf_smut": 9,
+        "normal": 10,
+        "sheath_blight": 11,
+        "tungro": 12
+    },
+    "input_size": [
+        224,
+        224
+    ],
+    "backbone": "Frozen",
+    "classifier": "1792 -> 512 -> 13",
+    "dropout": 0.4,
+    "total_parameters": 18473301,
+    "trainable_parameters": 924685,
+    "model_path": "/content/gdrive/MyDrive/final year project/models/dl/efficientnet_b4_setup_v1.pth",
+    "created_at": "2026-09-20 10:23:46.803308"
+}
